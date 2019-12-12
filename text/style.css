@@ -1,0 +1,16 @@
+  /* Balise universelle */
+* {
+
+    font-size: 1em;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-page {
+    
+    width: 80%;
+    height: 70em;
+    margin: 0rem auto;
+    max-width: 71em;
+    min-width: 33em ;
+}
