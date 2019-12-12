@@ -8,9 +8,27 @@
 
 #main-page {
     
-    width: 80%;
-    height: 70em;
-    margin: 0rem auto;
-    max-width: 71em;
-    min-width: 33em ;
+  width: 80%;
+  height: 70em;
+  margin: 0rem auto;
+  max-width: 71em;
+  min-width: 33em ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box {
+        
+  background-color: lightgray;
+  width: 100%;
+  min-height: 30em;
+  box-shadow: black 0.125em 0.125em 0.5em;
+  border-radius: 0.25em;
+  margin-bottom: 5rem;
+}
+
+#back {
+
+  background-image: url("images/back.jpg");
 }
