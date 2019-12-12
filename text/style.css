@@ -16,6 +16,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 35rem;
+
 }
 
 .box {
@@ -26,6 +28,7 @@
   box-shadow: black 0.125em 0.125em 0.5em;
   border-radius: 0.25em;
   margin-bottom: 5rem;
+  
 
 }
 
@@ -58,3 +61,48 @@
 
 }
 
+
+article {
+  width: 100%;
+}
+
+
+#profil {
+    
+  margin: 0rem auto;
+  width: 6.25em;
+  border: dashed black 0.125em;
+  border-radius: 50%;
+  padding: 0.0625rem;
+  display: flex;
+  justify-content: center;
+}
+
+#head-title {
+    
+  font-weight: bold;
+  font-family: serif;
+  font-size: 2em;
+  font-family: Dayrom, serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  
+}
+
+
+#logo-CA {
+    
+  max-height: 4.75em;
+  margin: 0.5rem 0rem 0rem 1rem;
+  position: absolute;
+  right: 2em;
+  top: 0em;
+  
+
+}
+
+.flex-row article {
+  height: 100%;
+}
