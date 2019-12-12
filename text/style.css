@@ -26,9 +26,35 @@
   box-shadow: black 0.125em 0.125em 0.5em;
   border-radius: 0.25em;
   margin-bottom: 5rem;
+
 }
 
 #back {
 
   background-image: url("images/back.jpg");
 }
+
+.flex-row {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;    
+
+}
+
+.flex-column {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  
+}
+
+.center {
+    
+  display: flex;
+  justify-content: center;
+
+}
+
