@@ -28,6 +28,7 @@
   box-shadow: black 0.125em 0.125em 0.5em;
   border-radius: 0.25em;
   margin-bottom: 5rem;
+  position: relative;
   
 
 }
@@ -35,6 +36,10 @@
 #back {
 
   background-image: url("images/back.jpg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
 }
 
 .flex-row {
