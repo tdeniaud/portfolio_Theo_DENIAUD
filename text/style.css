@@ -50,7 +50,6 @@
     
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   
 }
 
@@ -103,6 +102,3 @@ article {
 
 }
 
-.flex-row article {
-  height: 100%;
-}
