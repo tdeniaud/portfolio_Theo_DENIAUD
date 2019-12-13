@@ -129,3 +129,10 @@ article {
     
   margin: 13.4rem 0rem 13.4rem 0rem;
 }
+
+#back-skill {
+    
+  background-image: url("images/back-skill.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+}
