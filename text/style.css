@@ -112,3 +112,20 @@ article {
   width: 4.5em;
 
 }
+
+#back-xp {
+    
+  background-image: url("images/back-xp.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+}
+#alpha-xp {
+  padding: 3rem 0rem;
+  background-color: rgba(255,255,255,0.4);
+
+
+}
+#vertical-center-ajust-xp {
+    
+  margin: 13.4rem 0rem 13.4rem 0rem;
+}
