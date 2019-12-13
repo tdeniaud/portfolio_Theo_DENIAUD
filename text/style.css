@@ -119,13 +119,13 @@ article {
   background-repeat: no-repeat;
   height: 100%;
 }
-#alpha-xp {
+.alpha {
   padding: 3rem 0rem;
   background-color: rgba(255,255,255,0.4);
 
 
 }
-#vertical-center-ajust-xp {
+.vertical-center-ajust {
     
   margin: 13.4rem 0rem 13.4rem 0rem;
 }
