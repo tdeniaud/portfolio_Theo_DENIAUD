@@ -42,7 +42,7 @@ article {
 
 }
 
-#flex-row-around {
+.flex-row-around {
 
   display: flex;
   flex-direction: row;
@@ -58,6 +58,9 @@ article {
 
 }
 
+.border {
+  border: solid black 0.25em;
+}
 
 /* CLASSES RECURRENTES */
 
