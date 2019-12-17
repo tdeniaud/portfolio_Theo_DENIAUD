@@ -46,7 +46,7 @@ article {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;    
+  align-items: stretch;    
 
 }
 
@@ -275,4 +275,10 @@ article {
   cursor: pointer;
 }
 
+
+.small-bold {
+
+  font-size: 0.75em;
+  font-weight: bold;
+}
 

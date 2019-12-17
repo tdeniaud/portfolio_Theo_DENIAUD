@@ -1,3 +1,10 @@
+@keyframes load {
+
+    0% { width: 0%;}
+    100% { width: 60%;}
+
+}
+
 /* PROGRESSBAR PERSONNALISEE*/
 
 #progress-html {
@@ -37,6 +44,129 @@
 }
   
 #progress-css:after {
+  
+    content: '';
+    display: block;
+    box-shadow: black 0.25em 0.25em 0.25em;
+    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
+    width: 70%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+#progress-js {
+
+    background: #333;
+    border-radius: 0.80em;
+    height: 0.75em;
+    width: 8em;
+    padding: 0.125em;
+    box-shadow: black 0.25em 0.25em 0.25em;
+  
+}
+
+#progress-replace {
+
+    background: #333;
+    border-radius: 0.80em;
+    height: 0.75em;
+    width: 8em;
+    padding: 0.125em;
+    box-shadow: black 0.25em 0.25em 0.25em;
+  
+}
+#progress-replace:after {
+  
+    content: '';
+    display: block;
+    box-shadow: black 0.25em 0.25em 0.25em;
+    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
+    width: 70%;
+    height: 100%;
+    border-radius: 0.5em;
+    animation: forwards 1s load;
+
+}
+
+
+
+#progress-php {
+
+    background: #333;
+    border-radius: 0.80em;
+    height: 0.75em;
+    width: 8em;
+    padding: 0.125em;
+    box-shadow: black 0.25em 0.25em 0.25em;
+  
+}
+  
+#progress-php:after {
+  
+    content: '';
+    display: block;
+    box-shadow: black 0.25em 0.25em 0.25em;
+    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
+    width: 70%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+#progress-sql {
+
+    background: #333;
+    border-radius: 0.80em;
+    height: 0.75em;
+    width: 8em;
+    padding: 0.125em;
+    box-shadow: black 0.25em 0.25em 0.25em;
+  
+}
+  
+#progress-sql:after {
+  
+    content: '';
+    display: block;
+    box-shadow: black 0.25em 0.25em 0.25em;
+    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
+    width: 70%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+#progress-python {
+
+    background: #333;
+    border-radius: 0.80em;
+    height: 0.75em;
+    width: 8em;
+    padding: 0.125em;
+    box-shadow: black 0.25em 0.25em 0.25em;
+  
+}
+  
+#progress-python:after {
+  
+    content: '';
+    display: block;
+    box-shadow: black 0.25em 0.25em 0.25em;
+    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
+    width: 70%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+#progress-c {
+
+    background: #333;
+    border-radius: 0.80em;
+    height: 0.75em;
+    width: 8em;
+    padding: 0.125em;
+    box-shadow: black 0.25em 0.25em 0.25em;
+  
+}
+  
+#progress-c:after {
   
     content: '';
     display: block;
