@@ -144,6 +144,11 @@ article {
 
 }
 
+#linkedin:hover{
+
+  width: 4em;
+}
+
 #logo-CA {
     
   max-height: 4.75em;
@@ -265,3 +270,22 @@ article {
   position: fixed;
   padding: 2rem;
 }
+
+#menu:hover{
+  cursor: pointer;
+}
+
+
+/* PROGRESSBAR */
+
+#progress {
+
+  background: #333;
+  border-radius: 0.80em;
+  height: 0.75em;
+  width: 4em;
+  
+
+}
+
+
