@@ -66,6 +66,14 @@ h2 {
   align-items: center;    
 
 }
+#flex-row-around {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;    
+
+}
 
 .flex-column {
     
@@ -151,4 +159,9 @@ article {
   background-image: url("images/back-skill.jpg");
   background-repeat: no-repeat;
   height: 100%;
+}
+
+.margin {
+    
+  margin: 1rem;
 }
