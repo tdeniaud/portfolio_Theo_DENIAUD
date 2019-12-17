@@ -284,6 +284,9 @@ article {
   border-radius: 0.80em;
   height: 0.75em;
   width: 4em;
+  padding: 0.125em;
+  box-shadow: black 0.25em 0.25em 0.25em;
+
   
 
 }
