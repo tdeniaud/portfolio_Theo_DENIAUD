@@ -50,6 +50,14 @@ article {
   align-items: stretch;    
 
 }
+.flex-row-between {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; 
+
+}
 #flex-row-around-no-strech {
 
   display: flex;
@@ -311,4 +319,21 @@ article {
 }
 #more li:hover {
   text-decoration: underline;
+}
+
+.reseaux-photo {
+  height: 34em;
+  position: relative;
+  margin-bottom: -0.25em;
+}
+
+.reseaux-photo:hover{
+
+  cursor:pointer;
+}
+
+#desc {
+  position: absolute;
+  bottom: 0em;
+  width: 100%;
 }
