@@ -234,3 +234,22 @@ article {
   width: 100%;
 
 }
+
+#foot p {
+
+  text-transform: uppercase;
+  margin: 1rem 0rem 0rem 1rem;
+  color: white;
+    
+}
+
+#menu {
+
+  
+  height: 1.9em;
+  width: 1.9em;
+  position: absolute;
+  right: 1.5em;
+        top: 20%;
+  background-image: url("images/menu.png");
+}
