@@ -13,6 +13,10 @@ h2 {
 
 }
 
+h3 {
+  display: none;
+}
+
 article {
 
   width: 100%;
@@ -282,3 +286,6 @@ article {
   font-weight: bold;
 }
 
+#more a{
+  color: white;
+}
