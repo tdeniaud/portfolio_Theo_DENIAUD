@@ -297,6 +297,7 @@ article {
 
   content: '';
   display: block;
+  box-shadow: black 0.25em 0.25em 0.25em;
   background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
   width: 75%;
   height: 100%;
