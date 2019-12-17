@@ -1,0 +1,48 @@
+/* PROGRESSBAR PERSONNALISEE*/
+
+#progress-html {
+
+    background: #333;
+    border-radius: 0.80em;
+    height: 0.75em;
+    width: 8em;
+    padding: 0.125em;
+    box-shadow: black 0.25em 0.25em 0.25em;
+  
+}
+  
+  /* AJOUT DE LA BARRE DE CHARGEMENT VERTE */
+  
+  #progress-html:after {
+  
+    content: '';
+    display: block;
+    box-shadow: black 0.25em 0.25em 0.25em;
+    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
+    width: 75%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+
+#progress-css {
+
+    background: #333;
+    border-radius: 0.80em;
+    height: 0.75em;
+    width: 8em;
+    padding: 0.125em;
+    box-shadow: black 0.25em 0.25em 0.25em;
+  
+}
+  
+#progress-css:after {
+  
+    content: '';
+    display: block;
+    box-shadow: black 0.25em 0.25em 0.25em;
+    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
+    width: 70%;
+    height: 100%;
+    border-radius: 0.5em;
+}
