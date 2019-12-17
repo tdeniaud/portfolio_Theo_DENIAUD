@@ -177,6 +177,7 @@ article {
   text-decoration: none;
   padding: 0.75rem;
   box-shadow: 0.125em 0.125em 0.5em black ;
+  margin: 0rem auto;
 
 
 }
@@ -190,6 +191,7 @@ article {
     
   border-top-right-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
-  margin: 0rem auto;
+  margin: 0rem auto 3rem;
+
 
 }
