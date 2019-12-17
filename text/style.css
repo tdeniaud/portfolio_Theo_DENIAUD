@@ -260,7 +260,7 @@ article {
   background-color: rgba(0, 0, 0, 0.98);
   min-height: 18em;
   width: 100%;
-  display: block; /* Modification par JS du display pour faire apparaitre le menu */
+  display: none; /* Modification par JS du display pour faire apparaitre le menu */
   z-index: 1; /* Afficher la barre menu devant, block more en back */
   position: fixed;
   padding: 2rem;
