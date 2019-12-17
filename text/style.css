@@ -70,6 +70,12 @@ article {
   border: solid black 0.25em;
 }
 
+.border-top-bottom {
+  border-top: solid black 0.25em;
+  border-bottom: solid black 0.25em;
+
+}
+
 /* CLASSES RECURRENTES */
 
 .logo-xp {
@@ -346,7 +352,32 @@ article {
 
 #desc {
   position: absolute;
-  bottom: 0em;
+  bottom: 2em;
+  left: 2em;
   width: 100%;
   display: none;
+}
+
+#desc2 {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  width: 100%;
+  display: none;
+}
+#desc3 {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  width: 100%;
+  display: none;
+}
+
+
+.flex-column-relative {
+    
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
 }
