@@ -1,3 +1,4 @@
+
 function menuAgrandir() {
 
     // on récupère l'élément
@@ -25,3 +26,4 @@ function load(){
     document.getElementById("progress-js").id = "progress-replace";   
 
 }
+

@@ -9,14 +9,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> <!-- Insertion de la police Roboto (sans Serif) -->
     <link rel="stylesheet" href="text/style.css" /> <!-- Insertion de la feuille de style chargée de la mise en page-->
+    
     <script src="text/interaction.js"></script> <!-- Insertion feuille JS pour les interactions -->
-
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> <!-- Insertion de la librairie jQuery -->
+    <script src="text/jQuery_interaction.js"></script>
+    
     <title>Portfolio Théo DENIAUD</title>
 
 </head>
 
 <body>
-    
+
     <div id="main-page">
             
         <section>
@@ -26,140 +29,140 @@
                <div class="flex-row-between">
 
                     <div class="flex-column">
-                    
+                      
                         <div class="border">
-                    
-                            <img class="reseaux-photo" src="text/images/baie_serveur_vide.jpg"/>
+                      
+                            <a href="#Mes"><img id="reseaux-photo" src="text/images/baie_serveur_vide.jpg"></a>
+                      
                             <div id="desc">salut</div>
-                    
-                        </div>
+                      
+                        </div>              
                             
                     </div>
                                        
                     <div class="flex-column">
-                                    
+
                         <div class="border">
+
+                            <img id="reseaux-photo2" src="text/images/serveur.jpg"/>
+
+                        </div>            
                         
-                            <img class="reseaux-photo" src="text/images/serveur.jpg"/>
-                        
-                        </div>
-                    
                     </div>
-               
+                    
                     <div class="flex-column">
-               
+
                         <div class="border">
-               
-                            <img class="reseaux-photo" src="text/images/baie_serveur.jpg"/>
-               
+                                
+                            <img id="reseaux-photo3" src="text/images/baie_serveur.jpg"/>
+
                         </div>
-                    
+                              
                     </div>
-            
+                    
                 </div>
             
             </div>
         
         </section>
         
-        <section id="#"> 
+        <section id="Mes"> 
            
-                <div class="box">
+            <div class="box">
                    
-                    <div class="flex-row">
+                <div class="flex-row">
                       
-                        <article class="flex-column">
-                        
-                            
-    
-                        </article>
+                    <article class="flex-column">
+                    
+                    </article>
                       
-                        <article class="flex-column">
+                    <article class="flex-column">
                            
                             
                        
-                        </article>
+                    </article>
                    
-                    </div>
-               
                 </div>
+               
+            </div>
            
-            </section>
+        </section>
         
     </div>
 
     <footer>
 
-            <div id="foot">
+        <div id="foot">
                             
-                <p>Cliquer sur l'icone pour accéder au menu</p>
+            <p>Cliquer sur l'icone pour accéder au menu</p>
                     
-                <div id="menu" onclick="menuAgrandir();"></div>
+            <div id="menu" onclick="menuAgrandir();"></div>
             
-            </div>
+        </div>
                 
-            <div id="more">
+        <div id="more">
                     
-                <div id="flex-row-around-no-strech">
+            <div id="flex-row-around-no-strech">
     
-                    <div class="flex-column">
+                <div class="flex-column">
                     
     
-                        <h3>MENU DE NAVIGATION INTERNE</h3>
+                    <h3>MENU DE NAVIGATION INTERNE</h3>
     
-                        <nav>
+                    <nav>
                         
     
-                            <ul>
+                        <ul>
             
-                                <li><a href="#">Mon CV</a></li>
+                            <li><a href="#">Mon CV</a></li>
     
-                                <li><a href="#Mon_expérience">Mon expérience</a></li>
+                            <li><a href="#Mon_expérience">Mon expérience</a></li>
     
-                                <li><a href="#Mes_compétences">Mes compétences</a></li>
+                            <li><a href="#Mes_compétences">Mes compétences</a></li>
     
-                                <li><a href="#Ma_formation">Ma formation</a></li>
+                            <li><a href="#Ma_formation">Ma formation</a></li>
             
     
-                            </ul>
+                        </ul>
                         
     
-                        </nav>
+                    </nav>
     
-                    </div>
+                </div>
                 
-                    <div class="flex-column">
+                <div class="flex-column">
                     
-                        <h3>MENU DE NAVIGATION </h3>
+                    <h3>MENU DE NAVIGATION </h3>
         
-                        <nav>
+                    <nav>
                             
-                            <ul>
+                        <ul>
                 
-                                <li><a href="index.html">Mon CV</a></li>
+                            <li><a href="index.html">Mon CV</a></li>
 
-                                <li><a href="reseaux.html">Réseaux</a></li>
+                            <li><a href="reseaux.html">Réseaux</a></li>
         
-                                <li><a href="#">Contact</a></li>
+                            <li><a href="#">Contact</a></li>
         
-                                <li><a href="#">Recommander</a></li>            
+                            <li><a href="#">Recommander</a></li>            
         
-                            </ul>
+                        </ul>
                             
         
-                        </nav>
-        
-                    </div>
-    
-                    <div class="flex-column">
-    
-                        <h3>INFORMATIONS</h3>
-                    </div>
+                    </nav>
         
                 </div>
+    
+                <div class="flex-column">
+    
+                    <h3>INFORMATIONS</h3>
                     
+                </div>
+        
             </div>
+                    
+        </div>
             
-        </footer>
+    </footer>
 
 </body>

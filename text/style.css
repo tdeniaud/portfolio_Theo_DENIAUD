@@ -321,19 +321,32 @@ article {
   text-decoration: underline;
 }
 
-.reseaux-photo {
+#reseaux-photo {
   height: 34em;
   position: relative;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.25rem;
+
+}
+#reseaux-photo2 {
+  height: 34em;
+  position: relative;
+  margin-bottom: -0.25rem;
+
+}
+#reseaux-photo3 {
+  height: 34em;
+  position: relative;
+  margin-bottom: -0.25rem;
 }
 
 .reseaux-photo:hover{
 
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #desc {
   position: absolute;
   bottom: 0em;
   width: 100%;
+  display: none;
 }
