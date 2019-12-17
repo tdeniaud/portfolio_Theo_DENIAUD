@@ -13,9 +13,6 @@ h2 {
 
 }
 
-h3 {
-  display: none;
-}
 
 article {
 
@@ -51,6 +48,13 @@ article {
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;    
+
+}
+#flex-row-around-no-strech {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
 }
 
@@ -286,6 +290,22 @@ article {
   font-weight: bold;
 }
 
-#more a{
+#more a, h3{
   color: white;
+}
+
+#more li {
+
+  margin-bottom: 2rem;
+  list-style-type: none;
+  width : 100%;
+
+}
+
+#more a {
+  text-decoration: none;
+
+}
+#more li:hover {
+  text-decoration: underline;
 }
