@@ -1,10 +1,28 @@
   /* Balise universelle */
+
 * {
 
-    font-size: 1em;
-    color: black;
-    font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+
 }
+
+h2 {
+
+  font-size: 2em;
+  text-align: center;
+
+}
+
+article {
+
+  width: 100%;
+
+}
+
+
+/* ----------------------- */
 
 #main-page {
     
@@ -20,6 +38,44 @@
 
 }
 
+#flex-row-around {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;    
+
+}
+
+
+/* CLASSES RECURRENTES */
+
+.logo-xp {
+    
+  width: 4.5em;
+
+}
+
+.alpha {
+
+  padding: 1rem 0rem;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+
+}
+
+.margin {
+    
+  margin: 1rem;
+
+}
+
+.vertical-center-ajust {
+    
+  margin: 13.4rem 0rem 13.4rem 0rem;
+
+}
+
 .box {
         
   background-color: lightgray;
@@ -30,8 +86,97 @@
   margin-bottom: 5rem;
   position: relative;
   
+}
+
+.flex-row {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;    
 
 }
+.flex-column {
+    
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.center {
+    
+  display: flex;
+  justify-content: center;
+
+}
+
+
+/* BLOC PRESENTATION */
+
+#icon-pdf {
+    
+  display: flex;
+  width: 10%;
+  text-align: center;
+  min-width: 6.5em;
+  background-color: white;
+  border-radius: 1.5em;
+  text-decoration: none;
+  padding: 0.75rem;
+  box-shadow: 0.125em 0.125em 0.5em black ;
+  margin: 0rem auto;
+
+}
+
+#linkedin {
+
+  display: flex;
+  box-shadow: 0.125em 0.125em 0.5em black ;
+  margin: 1rem;
+  width: 3em;
+  border-radius: 1em;  
+  border-top-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  margin: 0rem auto 3rem;
+
+}
+
+#logo-CA {
+    
+  max-height: 4.75em;
+  margin: 0.5rem 0rem 0rem 1rem;
+  position: absolute;
+  right: 2em;
+  top: 0em;
+    
+}
+
+#head-title {
+    
+  font-weight: bold;
+  font-family: serif;
+  font-size: 2em;
+  font-family: Dayrom, serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#profil {
+    
+  margin: 0rem auto;
+  width: 6.25em;
+  border: dashed black 0.125em;
+  border-radius: 50%;
+  padding: 0.0625rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+/* Background id */
 
 #back {
 
@@ -50,109 +195,12 @@
 
 }
 
-h2 {
-
-  font-size: 2em;
-  text-align: center;
-
-
-}
-
-.flex-row {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;    
-
-}
-#flex-row-around {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;    
-
-}
-
-.flex-column {
-    
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.center {
-    
-  display: flex;
-  justify-content: center;
-
-}
-
-
-article {
-  width: 100%;
-}
-
-
-#profil {
-    
-  margin: 0rem auto;
-  width: 6.25em;
-  border: dashed black 0.125em;
-  border-radius: 50%;
-  padding: 0.0625rem;
-  display: flex;
-  justify-content: center;
-}
-
-#head-title {
-    
-  font-weight: bold;
-  font-family: serif;
-  font-size: 2em;
-  font-family: Dayrom, serif;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-
-  
-}
-
-
-#logo-CA {
-    
-  max-height: 4.75em;
-  margin: 0.5rem 0rem 0rem 1rem;
-  position: absolute;
-  right: 2em;
-  top: 0em;
-  
-
-}
-
-.logo-xp {
-    
-  width: 4.5em;
-
-}
-
 #back-xp {
     
   background-image: url("images/back-xp.jpg");
   background-repeat: no-repeat;
   height: 100%;
-}
-.alpha {
-  padding: 1rem 0rem;
-  height: 100%;
-  background-color: rgba(255,255,255,0.4);
 
-
-}
-.vertical-center-ajust {
-    
-  margin: 13.4rem 0rem 13.4rem 0rem;
 }
 
 #back-skill {
@@ -160,39 +208,5 @@ article {
   background-image: url("images/back-skill.jpg");
   background-repeat: no-repeat;
   height: 100%;
-}
-
-.margin {
-    
-  margin: 1rem;
-}
-
-#icon-pdf {
-    
-  display: flex;
-  width: 10%;
-  text-align: center;
-  min-width: 6.5em;
-  background-color: white;
-  border-radius: 1.5em;
-  text-decoration: none;
-  padding: 0.75rem;
-  box-shadow: 0.125em 0.125em 0.5em black ;
-  margin: 0rem auto;
-
-
-}
-
-#linkedin {
-  display: flex;
-  box-shadow: 0.125em 0.125em 0.5em black ;
-  margin: 1rem;
-  width: 3em;
-  border-radius: 1em;
-    
-  border-top-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
-  margin: 0rem auto 3rem;
-
-
+  
 }
