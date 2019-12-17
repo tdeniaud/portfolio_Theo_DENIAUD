@@ -276,7 +276,7 @@ article {
 }
 
 
-/* PROGRESSBAR */
+/* PROGRESSBAR PERSONNALISEE*/
 
 #progress {
 
@@ -286,6 +286,18 @@ article {
   width: 4em;
   
 
+}
+
+/* AJOUT DE LA BARRE DE CHARGEMENT VERTE */
+
+#progress:after {
+
+  content: '';
+  display: block;
+  background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
+  width: 75%;
+  height: 100%;
+  border-radius: 0.5em;
 }
 
 
