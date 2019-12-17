@@ -221,3 +221,16 @@ article {
   border-bottom-left-radius: var(--border-radius-image);
 
 }
+
+
+/* FOOTER */
+
+#foot{
+
+  position: fixed;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 1);
+  min-height: 3em;
+  width: 100%;
+
+}
