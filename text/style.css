@@ -20,10 +20,13 @@ article {
 
 }
 
+@media (min-width:1012px){
+
 :root {
 
   --border-radius-image :  0.25em;
   --taille-desc: 75%;
+  --taille-bloc-BSI: 100%;
 
 }
 
@@ -71,11 +74,7 @@ article {
   border: solid black 0.25em;
 }
 
-.border-top-bottom {
-  border-top: solid black 0.25em;
-  border-bottom: solid black 0.25em;
 
-}
 
 /* CLASSES RECURRENTES */
 
@@ -329,19 +328,19 @@ article {
 }
 
 #reseaux-photo {
-  height: 34em;
+  height: var(--taille-bloc-BSI);
   position: relative;
   margin-bottom: -0.25rem;
 
 }
 #reseaux-photo2 {
-  height: 34em;
+  height: var(--taille-bloc-BSI);
   position: relative;
   margin-bottom: -0.25rem;
 
 }
 #reseaux-photo3 {
-  height: 34em;
+  height: var(--taille-bloc-BSI);
   position: relative;
   margin-bottom: -0.25rem;  
 
@@ -363,7 +362,7 @@ article {
 #desc2 {
   position: absolute;
   bottom: 0.25em;
-  width: 100%;
+  width: 97%;
   height: var(--taille-desc);
   display: none;
   background-color: white;
@@ -388,3 +387,8 @@ article {
   position: relative;
   
 }
+}
+
+@media (max-width: 64em){
+
+  
