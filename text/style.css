@@ -23,6 +23,7 @@ article {
 :root {
 
   --border-radius-image :  0.25em;
+  --taille-desc: 50%;
 
 }
 
@@ -331,46 +332,55 @@ article {
   height: 34em;
   position: relative;
   margin-bottom: -0.25rem;
+  cursor: pointer;
 
 }
 #reseaux-photo2 {
   height: 34em;
   position: relative;
   margin-bottom: -0.25rem;
+  cursor: pointer;
 
 }
 #reseaux-photo3 {
   height: 34em;
   position: relative;
-  margin-bottom: -0.25rem;
-}
-
-.reseaux-photo:hover{
-
+  margin-bottom: -0.25rem;  
   cursor: pointer;
+
 }
+
+
 
 #desc {
   position: absolute;
-  bottom: 2em;
-  left: 2em;
-  width: 100%;
+  bottom: 0.25em;
+  width: 98%;
+  height: var(--taille-desc);
   display: none;
+  background-color: white;
+  opacity:0.9;
+
 }
 
 #desc2 {
   position: absolute;
-  bottom: 2em;
-  left: 2em;
+  bottom: 0.25em;
   width: 100%;
+  height: var(--taille-desc);
   display: none;
+  background-color: white;
+  opacity:0.9;
 }
 #desc3 {
   position: absolute;
-  bottom: 2em;
-  left: 2em;
-  width: 100%;
+  bottom: 0.25em;
+  width: 98%;
+  height: var(--taille-desc);
   display: none;
+  background-color: white;
+  opacity:0.9;
+
 }
 
 
