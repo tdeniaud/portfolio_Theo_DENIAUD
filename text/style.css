@@ -23,7 +23,7 @@ article {
 :root {
 
   --border-radius-image :  0.25em;
-  --taille-desc: 50%;
+  --taille-desc: 75%;
 
 }
 
@@ -332,21 +332,18 @@ article {
   height: 34em;
   position: relative;
   margin-bottom: -0.25rem;
-  cursor: pointer;
 
 }
 #reseaux-photo2 {
   height: 34em;
   position: relative;
   margin-bottom: -0.25rem;
-  cursor: pointer;
 
 }
 #reseaux-photo3 {
   height: 34em;
   position: relative;
   margin-bottom: -0.25rem;  
-  cursor: pointer;
 
 }
 
