@@ -1,0 +1,56 @@
+@media (max-width: 80em){
+    :root {
+
+        --border-radius-image :  0.25em;
+        --taille-desc: 75%;
+        --taille-bloc-BSI: 25em;
+      
+      }
+
+      #box-BSI {
+              
+        background-color: lightgray;
+        width: 100%;
+        min-height: var(--taille-bloc-BSI);
+        box-shadow: black 0.125em 0.125em 0.5em;
+        border-radius: 0.25em;
+        margin-bottom: 5rem;
+        position: relative;
+        
+      }
+      
+      #desc {
+        position: absolute;
+        bottom: 0.25em;
+        width: 98%;
+        height: var(--taille-desc);
+        display: none;
+        background-color: white;
+        opacity:0.9;
+        font-size: 0.75em;
+
+      
+      }
+      
+      #desc2 {
+        position: absolute;
+        bottom: 0.25em;
+        width: 97%;
+        height: var(--taille-desc);
+        display: none;
+        background-color: white;
+        opacity:0.9;
+        font-size: 0.75em;
+      }
+      #desc3 {
+        position: absolute;
+        bottom: 0.25em;
+        width: 98%;
+        height: var(--taille-desc);
+        display: none;
+        background-color: white;
+        opacity:0.9;
+        font-size: 0.75em;
+
+      }
+}
