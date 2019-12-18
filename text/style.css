@@ -1,25 +1,3 @@
-* {
-
-  font-size: 1em;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-
-}
-
-h2 {
-
-  font-size: 2em;
-  text-align: center;
-
-}
-
-
-article {
-
-  width: 100%;
-
-}
-
 @media (min-width:80em){
 
 :root {
