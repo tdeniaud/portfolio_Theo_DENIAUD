@@ -20,13 +20,13 @@ article {
 
 }
 
-@media (min-width:1012px){
+@media (min-width:80em){
 
 :root {
 
   --border-radius-image :  0.25em;
   --taille-desc: 75%;
-  --taille-bloc-BSI: 100%;
+  --taille-bloc-BSI: 33em;
 
 }
 

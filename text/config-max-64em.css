@@ -1,4 +1,4 @@
-@media (max-width: 64em){
+@media (max-width: 80em){
     :root {
 
         --border-radius-image :  0.25em;
@@ -85,7 +85,7 @@
               
         background-color: lightgray;
         width: 100%;
-        min-height: 30em;
+        min-height: var(--taille-bloc-BSI);
         box-shadow: black 0.125em 0.125em 0.5em;
         border-radius: 0.25em;
         margin-bottom: 5rem;
@@ -333,6 +333,8 @@
         display: none;
         background-color: white;
         opacity:0.9;
+        font-size: 0.75em;
+
       
       }
       
@@ -344,6 +346,7 @@
         display: none;
         background-color: white;
         opacity:0.9;
+        font-size: 0.75em;
       }
       #desc3 {
         position: absolute;
@@ -353,7 +356,8 @@
         display: none;
         background-color: white;
         opacity:0.9;
-      
+        font-size: 0.75em;
+
       }
       
       
