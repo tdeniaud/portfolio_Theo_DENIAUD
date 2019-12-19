@@ -1,0 +1,177 @@
+
+/* Config page réseaux */
+
+@media (max-width: 64em){
+    :root {
+
+        --border-radius-image :  0.25em;
+        --taille-desc: 75%;
+        --taille-bloc-BSI: 25em;
+        --taille-police: 0.75em;
+      
+      }
+
+      #box-BSI {
+              
+        background-color: lightgray;
+        width: 100%;
+        min-height: var(--taille-bloc-BSI);
+        box-shadow: black 0.125em 0.125em 0.5em;
+        border-radius: 0.25em;
+        margin-bottom: 5rem;
+        position: relative;
+        
+      }
+      
+      #desc {
+        position: absolute;
+        bottom: -0.25em;
+        width: 100%;
+        height: var(--taille-desc);
+        display: none;
+        background-color: white;
+        opacity:0.9;
+        font-size: var(--taille-police);
+
+      
+      }
+      
+      #desc2 {
+        position: absolute;
+        bottom: -0.25em;
+        width: 100%;
+        height: var(--taille-desc);
+        display: none;
+        background-color: white;
+        opacity:0.9;
+        font-size: var(--taille-police);
+      }
+      #desc3 {
+        position: absolute;
+        bottom: -0.25em;
+        width: 100%;
+        height: var(--taille-desc);
+        display: none;
+        background-color: white;
+        opacity:0.9;
+        font-size: var(--taille-police);
+
+      }
+}
+
+@media (max-width: 48em){
+  :root {
+
+      --border-radius-image :  0.25em;
+      --taille-desc: 75%;
+      --taille-bloc-BSI: 15em;
+      --taille-police: 0.75em;
+    
+    }
+
+    #box-BSI {
+            
+      background-color: lightgray;
+      width: 100%;
+      min-height: var(--taille-bloc-BSI);
+      box-shadow: black 0.125em 0.125em 0.5em;
+      border-radius: 0.25em;
+      margin-bottom: 5rem;
+      position: relative;
+      
+    }
+    
+    #desc {
+      position: absolute;
+      bottom: -0.25em;
+      width: 100%;
+      height: var(--taille-desc);
+      display: none;
+      background-color: white;
+      opacity:0.9;
+      font-size: var(--taille-police);
+
+    
+    }
+    
+    #desc2 {
+      position: absolute;
+      bottom: -0.25em;
+      width: 100%;
+      height: var(--taille-desc);
+      display: none;
+      background-color: white;
+      opacity:0.9;
+      font-size: var(--taille-police);
+    }
+    #desc3 {
+      position: absolute;
+      bottom: -0.25em;
+      width: 100%;
+      height: var(--taille-desc);
+      display: none;
+      background-color: white;
+      opacity:0.9;
+      font-size: var(--taille-police);
+
+    }
+}
+
+@media (max-width: 27em){
+  :root {
+
+      --border-radius-image :  0.25em;
+      --taille-desc: 97%;
+      --taille-bloc-BSI: 12em;
+      --taille-police: 0.5em;
+    
+    }
+
+    #box-BSI {
+            
+      background-color: lightgray;
+      width: 80%;
+      margin: 0rem auto;
+      min-height: var(--taille-bloc-BSI);
+      box-shadow: black 0.125em 0.125em 0.5em;
+      border-radius: 0.25em;
+      margin-bottom: 5rem;
+      position: relative;
+      
+    }
+    
+    #desc {
+      position: absolute;
+      bottom: -0.25em;
+      width: 100%;
+      height: var(--taille-desc);
+      display: none;
+      background-color: white;
+      opacity:0.9;
+      font-size: var(--taille-police);
+
+    
+    }
+    
+    #desc2 {
+      position: absolute;
+      bottom: -0.25em;
+      width: 100%;
+      height: var(--taille-desc);
+      display: none;
+      background-color: white;
+      opacity:0.9;
+      font-size: var(--taille-police);
+    }
+    #desc3 {
+      position: absolute;
+      bottom: -0.25em;
+      width: 100%;
+      height: var(--taille-desc);
+      display: none;
+      background-color: white;
+      opacity:0.9;
+      font-size: var(--taille-police);
+
+    }
+}

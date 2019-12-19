@@ -327,8 +327,8 @@
 
 #desc {
   position: absolute;
-  bottom: 0.25em;
-  width: 98%;
+  bottom: -0.25em;
+  width: 100%;
   height: var(--taille-desc);
   display: none;
   background-color: white;
@@ -338,8 +338,8 @@
 
 #desc2 {
   position: absolute;
-  bottom: 0.25em;
-  width: 97%;
+  bottom: -0.25em;
+  width: 100%;
   height: var(--taille-desc);
   display: none;
   background-color: white;
@@ -347,8 +347,8 @@
 }
 #desc3 {
   position: absolute;
-  bottom: 0.25em;
-  width: 98%;
+  bottom: -0.25em;
+  width: 100%;
   height: var(--taille-desc);
   display: none;
   background-color: white;
