@@ -24,37 +24,141 @@
             <div class="box">
                
                <form method="post" action="enregistrement-BDD.php">
-                    <section>
+                    <section class="margin">
                 
-                            <h4>Titre</h4>
+                            <h4>Me contacter</h4>
                             <fieldset>
-                                <label>Identité :</label>
-                                <label><input name="sexe" type="radio" value="H">M.</label>
-                                <label><input name="sexe" type="radio" value="F">Mme.</label>
-                
-                
-                                <label>Nom :</label>
-                                <label><input name="nom" type="text"></label>
-                
-                
-                                <label>Prénom :</label>
-                                <label><input name="nom" type="text"></label>
-                
-                                <span>Structure professionnelle :</span>
-                                <label><input name="Entreprise" type="text"></label>
-                
-                                <span>Structure professionnelle :</span>
-                                <label><input name="entreprise" type="text"></label>
-                
-                                <label>Votre message</label>
-                                <textarea name="msg" placeholder="Veuillez indiquer votre message"></textarea>
+                                <div class="flex-column">
+                                        <label>Identité :</label>
+                                        <div class="flex-row">
+                                            <label><input name="sexe" type="radio" value="H">M.</label>
+                                            <label><input name="sexe" type="radio" value="F">Mme.</label>
+                                        </div>
+                                        
+                                        <br>
+                        
+                                        <label>Nom :</label>
+                                        <label><input name="nom" type="text" maxlength="25" title="votre nom"></label>
+                                        <br>
+                        
+                                        <label>Prénom :</label>
+                                        <label><input name="nom" type="text" maxlength="25"></label>
+                                </div>
                                 
+                            </fieldset>
+                            <fieldset>
+                                <div class="flex-row">
+                                    <div class="flex-column">
+                                            <span>Structure professionnelle :</span>
+                                            <label><input name="Entreprise" type="text"></label>
+                                    </div>
+                                    <div class="flex-column">
+                                            <label>Votre message</label>
+                                            <textarea name="msg" class="champs" placeholder="Veuillez indiquer votre message"></textarea>
+                                    </div>
+                                       
+                                        
+                                </div>
+                               
                             </fieldset>
                         </section>
                </form>
                 
 
-                </div>
+            </div>
+            <div id="space"></div>
+            <div class="box">
+               
+                    <form method="post" action="enregistrement-BDD.php">
+                         <section class="margin">
+                     
+                                 <h4>Recommander</h4>
+                                 <fieldset>
+                                     <div class="flex-column">
+                                             <label>Identité :</label>
+                                             <div class="flex-row">
+                                                 <label><input name="sexe" type="radio" value="H">M.</label>
+                                                 <label><input name="sexe" type="radio" value="F">Mme.</label>
+                                             </div>
+                                             
+                                             <br>
+                             
+                                             <label>Nom :</label>
+                                             <label><input name="nom" type="text" maxlength="25" title="votre nom"></label>
+                                             <br>
+                             
+                                             <label>Prénom :</label>
+                                             <label><input name="nom" type="text" maxlength="25"></label>
+                                     </div>
+                                     
+                                 </fieldset>
+                                 <fieldset>
+                                     <div class="flex-row">
+                                         <div class="flex-column">
+                                                 <span>Structure professionnelle :</span>
+                                                 <label><input name="Entreprise" type="text"></label>
+                                         </div>
+                                         <div class="flex-column">
+                                                 <label>Votre message</label>
+                                                 <textarea name="msg" class="champs" placeholder="Veuillez indiquer votre message"></textarea>
+                                         </div>
+                                            
+                                             
+                                     </div>
+                                    
+                                 </fieldset>
+                             </section>
+                    </form>
+                     
+     
+                 </div>
         
     </div>
+    <footer>
+
+        <div id="foot">
+                        
+            <p>Cliquer sur l'icone pour accéder au menu</p>
+                
+            <div id="menu" onclick="menuAgrandir();"></div>
+        
+        </div>
+            
+        <div id="more">
+                
+            <div id="flex-row-around-no-strech">
+
+                <div class="flex-column">
+                
+                    <h3>MENU DE NAVIGATION </h3>
+    
+                    <nav>
+                        
+                        <ul>
+            
+                            <li><a href="index.html">Mon CV</a></li>
+
+                            <li><a href="reseaux.html">Réseaux</a></li>
+    
+                            <li><a href="contact.html">Contact</a></li>
+    
+                            <li><a href="#">Recommander</a></li>            
+    
+                        </ul>
+                        
+    
+                    </nav>
+    
+                </div>
+
+                <div class="flex-column">
+
+                    <h3>INFORMATIONS</h3>
+                </div>
+    
+            </div>
+                
+        </div>
+        
+    </footer>
 </body>

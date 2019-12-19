@@ -12,14 +12,12 @@
 #main-page {
     
   width: 80%;
-  height: 70em;
   margin: 0rem auto;
   max-width: 71em;
   min-width: 33em ;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 35rem;
 
 }
 
@@ -363,4 +361,19 @@
   flex-direction: column;
   position: relative;
   
+}
+
+
+/* FORMULAIRE */
+
+.champs {
+	word-break: normal;
+	min-height:10rem;
+	resize: none;
+	width: 55%;
+	text-indent: normal;
+}
+
+#space {
+  height: 12em;
 }
