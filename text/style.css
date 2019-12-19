@@ -381,8 +381,6 @@
 	word-break: normal;
 	min-height:10rem;
 	resize: none;
-	width: 55%;
-	text-indent: normal;
 }
 
 #space {
@@ -400,4 +398,9 @@ fieldset {
 fieldset .flex-column {
   text-align: center;
   align-items: center;
+}
+
+input[type="text"], .champs {
+  border-radius: 0.5em;
+  width: 15em;
 }
