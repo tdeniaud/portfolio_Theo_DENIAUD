@@ -19,3 +19,7 @@ article {
   width: 100%;
 
 }
+
+label {
+  margin-bottom: 1em;
+}

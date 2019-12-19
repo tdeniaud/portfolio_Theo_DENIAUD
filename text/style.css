@@ -91,6 +91,17 @@
   
 }
 
+.box-BSI {
+        
+  background-color: lightgray;
+  width: 100%;
+  min-height: var(--taille-bloc-BSI);
+  box-shadow: black 0.125em 0.125em 0.5em;
+  border-radius: 0.25em;
+  margin-bottom: 5rem;
+  position: relative;
+  
+}
 .flex-row {
 
   display: flex;
@@ -376,4 +387,17 @@
 
 #space {
   height: 12em;
+}
+
+#size-10em {
+  width: 10em;
+}
+
+fieldset {
+  width: 50%;
+}
+
+fieldset .flex-column {
+  text-align: center;
+  align-items: center;
 }
