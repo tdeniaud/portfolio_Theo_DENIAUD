@@ -1,5 +1,5 @@
 
-/* Config page réseaux */
+/* Config spécifique à la page réseaux */
 
 @media (max-width: 64em){
     :root {
@@ -59,6 +59,8 @@
       }
 }
 
+/*Config pour tablette */
+
 @media (max-width: 48em){
   :root {
 
@@ -117,6 +119,8 @@
     }
 }
 
+/* Config pour smartphone */
+
 @media (max-width: 27em){
   :root {
 
@@ -174,4 +178,46 @@
       font-size: var(--taille-police);
 
     }
+
+
+    #back {
+
+      background-image: url("images/back.jpg");
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: var(--border-radius-image);
+    
+    }
+    
+    #back-learn {
+
+      display: none;
+    
+    }
+    
+    #back-xp {
+        
+      display: none;
+
+    }
+    
+    #back-skill {
+        
+      display: none;
+    
+    }
+    
+
+    .box {
+        
+      background-color: lightgray;
+      width: 75%;
+      min-height: 20em;
+      box-shadow: black 0.125em 0.125em 0.5em;
+      border-radius: 0.25em;
+      margin-bottom: 5rem;
+      position: relative;
+        }
+
 }

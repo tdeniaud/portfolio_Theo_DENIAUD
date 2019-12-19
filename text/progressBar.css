@@ -5,17 +5,32 @@
 
 }
 
+
+:root {
+
+    --background: #333;
+    --border-radius: 0.80em;
+    --height-progress: 0.75em;
+    --width-progress: 8em;
+    --padding-progress: 0.125em;
+    --box-shadow: black 0.25em 0.25em 0.25em;
+
+    --background-after: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));
+    --width-after: 75%;
+    --height-after: 100%;
+    --border-radius-after: 0.5em;
+}
 /* PROGRESSBAR PERSONNALISEE*/
 
 #progress-html {
 
-    background: #333;
-    border-radius: 0.80em;
-    height: 0.75em;
-    width: 8em;
-    padding: 0.125em;
-    box-shadow: black 0.25em 0.25em 0.25em;
-  
+    background: var(--background);
+    border-radius: var(--border-radius);
+    height: var(--height-progress);
+    width: var(--width-progress);
+    padding: var(--padding-progress);
+    box-shadow: var(--box-shadow);
+ 
 }
   
   /* AJOUT DE LA BARRE DE CHARGEMENT VERTE */
@@ -24,22 +39,22 @@
   
     content: '';
     display: block;
-    box-shadow: black 0.25em 0.25em 0.25em;
-    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
-    width: 75%;
-    height: 100%;
-    border-radius: 0.5em;
+    box-shadow: var(--box-shadow);
+    background: var(--background-after);
+    width: var(--width-after);
+    height: var(--height-after);
+    border-radius: var(--border-radius-after);
 }
 
 
 #progress-css {
 
-    background: #333;
-    border-radius: 0.80em;
-    height: 0.75em;
-    width: 8em;
-    padding: 0.125em;
-    box-shadow: black 0.25em 0.25em 0.25em;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    height: var(--height-progress);
+    width: var(--width-progress);
+    padding: var(--padding-progress);
+    box-shadow: var(--box-shadow);
   
 }
   
@@ -47,43 +62,43 @@
   
     content: '';
     display: block;
-    box-shadow: black 0.25em 0.25em 0.25em;
-    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
-    width: 70%;
-    height: 100%;
-    border-radius: 0.5em;
+    box-shadow: var(--box-shadow);
+    background: var(--background-after);
+    width: var(--width-after);
+    height: var(--height-after);
+    border-radius: var(--border-radius-after);
 }
 
 #progress-js {
 
-    background: #333;
-    border-radius: 0.80em;
-    height: 0.75em;
-    width: 8em;
-    padding: 0.125em;
-    box-shadow: black 0.25em 0.25em 0.25em;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    height: var(--height-progress);
+    width: var(--width-progress);
+    padding: var(--padding-progress);
+    box-shadow: var(--box-shadow);
   
 }
 
 #progress-replace {
 
-    background: #333;
-    border-radius: 0.80em;
-    height: 0.75em;
-    width: 8em;
-    padding: 0.125em;
-    box-shadow: black 0.25em 0.25em 0.25em;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    height: var(--height-progress);
+    width: var(--width-progress);
+    padding: var(--padding-progress);
+    box-shadow: var(--box-shadow);
   
 }
 #progress-replace:after {
   
     content: '';
     display: block;
-    box-shadow: black 0.25em 0.25em 0.25em;
-    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
-    width: 70%;
-    height: 100%;
-    border-radius: 0.5em;
+    box-shadow: var(--box-shadow);
+    background: var(--background-after);
+    width: var(--width-after);
+    height: var(--height-after);
+    border-radius: var(--border-radius-after);
     animation: forwards 1s load;
 
 }
@@ -92,12 +107,12 @@
 
 #progress-php {
 
-    background: #333;
-    border-radius: 0.80em;
-    height: 0.75em;
-    width: 8em;
-    padding: 0.125em;
-    box-shadow: black 0.25em 0.25em 0.25em;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    height: var(--height-progress);
+    width: var(--width-progress);
+    padding: var(--padding-progress);
+    box-shadow: var(--box-shadow);
   
 }
   
@@ -105,21 +120,21 @@
   
     content: '';
     display: block;
-    box-shadow: black 0.25em 0.25em 0.25em;
-    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
-    width: 70%;
-    height: 100%;
-    border-radius: 0.5em;
+    box-shadow: var(--box-shadow);
+    background: var(--background-after);
+    width: var(--width-after);
+    height: var(--height-after);
+    border-radius: var(--border-radius-after);
 }
 
 #progress-sql {
 
-    background: #333;
-    border-radius: 0.80em;
-    height: 0.75em;
-    width: 8em;
-    padding: 0.125em;
-    box-shadow: black 0.25em 0.25em 0.25em;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    height: var(--height-progress);
+    width: var(--width-progress);
+    padding: var(--padding-progress);
+    box-shadow: var(--box-shadow);
   
 }
   
@@ -127,20 +142,20 @@
   
     content: '';
     display: block;
-    box-shadow: black 0.25em 0.25em 0.25em;
-    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
-    width: 70%;
-    height: 100%;
-    border-radius: 0.5em;
+    box-shadow: var(--box-shadow);
+    background: var(--background-after);
+    width: var(--width-after);
+    height: var(--height-after);
+    border-radius: var(--border-radius-after);
 }
 #progress-python {
 
-    background: #333;
-    border-radius: 0.80em;
-    height: 0.75em;
-    width: 8em;
-    padding: 0.125em;
-    box-shadow: black 0.25em 0.25em 0.25em;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    height: var(--height-progress);
+    width: var(--width-progress);
+    padding: var(--padding-progress);
+    box-shadow: var(--box-shadow);
   
 }
   
@@ -148,21 +163,21 @@
   
     content: '';
     display: block;
-    box-shadow: black 0.25em 0.25em 0.25em;
-    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
-    width: 70%;
-    height: 100%;
-    border-radius: 0.5em;
+    box-shadow: var(--box-shadow);
+    background: var(--background-after);
+    width: var(--width-after);
+    height: var(--height-after);
+    border-radius: var(--border-radius-after);
 }
 
 #progress-c {
 
-    background: #333;
-    border-radius: 0.80em;
-    height: 0.75em;
-    width: 8em;
-    padding: 0.125em;
-    box-shadow: black 0.25em 0.25em 0.25em;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    height: var(--height-progress);
+    width: var(--width-progress);
+    padding: var(--padding-progress);
+    box-shadow: var(--box-shadow);
   
 }
   
@@ -170,9 +185,9 @@
   
     content: '';
     display: block;
-    box-shadow: black 0.25em 0.25em 0.25em;
-    background: repeating-linear-gradient(to bottom right, green, rgb(0, 255, 0));;
-    width: 70%;
-    height: 100%;
-    border-radius: 0.5em;
+    box-shadow: var(--box-shadow);
+    background: var(--background-after);
+    width: var(--width-after);
+    height: var(--height-after);
+    border-radius: var(--border-radius-after);
 }
