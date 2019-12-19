@@ -52,20 +52,30 @@
                                                                        
                                 <label>Nom :</label>
                                             
-                                <label><input name="nom" type="text" maxlength="25" title="votre nom"></label>
+                                <label><input name="nom" type="text" maxlength="25" title="votre nom" required></label>
                             
                                 <label>Prénom :</label>
                                             
-                                <label><input name="nom" type="text" maxlength="25"></label>
+                                <label><input name="nom" type="text" maxlength="25" required></label>
+                                
+                                <label>@mail :</label>
+                                            
+                                <label><input name="mail" type="email" required></label>
+
+                                <label>Téléphone :</label>
+                                            
+                                <label><input name="tel" type="tel" ></label>
                                     
                                 <label>Structure professionnelle :</label>
                                                 
-                                <label><input name="Entreprise" type="text"></label>
+                                <label><input name="Entreprise" type="text" required></label>
                                         
                                                
                                 <label>Votre message</label>
                                                 
-                                <textarea name="msg" class="champs" placeholder="Veuillez indiquer votre message"></textarea>
+                                <textarea name="msg" class="champs" placeholder="Veuillez indiquer votre message" required></textarea>
+
+                                <input type="submit" value="envoyer" />
                                               
                             </div>   
                                
@@ -110,20 +120,30 @@
                                                                                
                                     <label>Nom :</label>
                                                     
-                                    <label><input name="nom" type="text" maxlength="25" title="votre nom"></label>
+                                    <label><input name="nom" type="text" maxlength="25" title="votre nom" required></label>
                                     
                                     <label>Prénom :</label>
                                                     
-                                    <label><input name="nom" type="text" maxlength="25"></label>
+                                    <label><input name="nom" type="text" maxlength="25" required></label>
                                             
                                     <label>Structure professionnelle :</label>
                                                         
-                                    <label><input name="Entreprise" type="text"></label>
+                                    <select name="employeur" >
+                                            
+                                        <option value="none">Structure professionnelle</option>
+                                        
+                                        <option value="CHU">CHU</option>
+                                        
+                                        <option value="mairie">Mairie Orvault</option>
+                                    
+                                    </select>
                                                 
                                                        
                                     <label>Votre message</label>
                                                         
-                                    <textarea name="msg" class="champs" placeholder="Veuillez indiquer votre message"></textarea>
+                                    <textarea name="msg" class="champs" placeholder="Veuillez indiquer votre message" required></textarea>
+
+                                    <input type="submit" value="envoyer" />
                                                       
                                 </div>   
                                        

@@ -400,7 +400,8 @@ fieldset .flex-column {
   align-items: center;
 }
 
-input[type="text"], .champs {
+input[type="text"], input[type="email"], input[type="tel"], .champs, select {
   border-radius: 0.5em;
   width: 15em;
 }
+
