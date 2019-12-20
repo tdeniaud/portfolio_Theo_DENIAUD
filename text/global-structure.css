@@ -20,6 +20,15 @@ article {
 
 }
 
-label {
+
+label, select,textarea {
   margin-bottom: 1em;
+}
+
+:root {
+
+  --border-radius-image :  0.25em;
+  --taille-desc: 75%;
+  --taille-bloc-BSI: 33em;
+
 }

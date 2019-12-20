@@ -193,6 +193,8 @@
     
     }
     
+    /* Supprimer les background-image sur la version mobile */
+
     #back-learn {
 
       display: none;
