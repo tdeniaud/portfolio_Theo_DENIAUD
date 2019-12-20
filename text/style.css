@@ -406,8 +406,18 @@ fieldset .flex-column {
 input[type="text"], input[type="email"], input[type="tel"], .champs, select {
   border-radius: 0.5em;
   width: 15em;
+  padding: 0.25rem;
 }
 
 #titre {
   margin: 0.5rem 0rem;
+}
+
+input[type="submit"]{
+  border-radius: 0.5em;
+  margin-top: 1rem;
+}
+
+label, select,textarea {
+  margin: 0.25rem;
 }
