@@ -18,6 +18,8 @@
     
     <script src="text/interaction.js"></script> <!-- Insertion feuille JS pour les interactions -->
     <script src="text/typewriter.js"></script> <!-- Insertion feuille JS pour les interactions -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> <!-- Insertion de la librairie jQuery -->
+    <script src="text/modal.js"></script>
 
 
     <title>Portfolio Théo DENIAUD</title>
@@ -25,6 +27,8 @@
 </head>
 
 <body onload="typeWriter_titre()">
+    <div id="fond"></div>
+
         
     <!-- Début de la page centrée -->
 
@@ -92,9 +96,10 @@
                     <article class="margin">
 
                         <div class="flex-row">
-        
-                            <p><strong>2019</strong> : Administrateur CL Val de Chézine - Mandat </p>
-        
+
+                            <a href="#" id="show"><p><strong>2019</strong> : Administrateur CL Val de Chézine - Mandat </p></a>
+                            <div id="modal-credit" class="popup"></div>
+                            
                             <img class="logo-xp" src="text/images/CA.png" alt="logo du Crédit Agricole" />
                 
         

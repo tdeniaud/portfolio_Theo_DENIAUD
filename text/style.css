@@ -407,3 +407,29 @@ input[type="submit"]{
   border-radius: 0.5em;
   margin-top: 1rem;
 }
+
+
+#fond {
+  position: absolute;
+  z-index: 9000;
+  background-color: black;
+  display: none;
+  border-radius: 0.75em;
+}
+
+.popup {
+  position: fixed;
+  width: 28em;
+  height: 12.5em;
+  display: none;
+  z-index: 9999;
+  padding: 1.25em;
+  border-radius: 1.25em;
+  background-color: lightgray;
+  border: 0.1em solid grey;
+}
+
+#modal-credit {
+  width: 39em;
+  height: 31.25em;
+}
