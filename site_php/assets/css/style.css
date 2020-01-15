@@ -1,0 +1,29 @@
+#profil {
+
+    margin: 0rem auto;
+    width: 6.25em;
+    border: dashed black 0.125em;
+    border-radius: 50%;
+    padding: 0.0625rem;
+    display: flex;
+    justify-content: center;
+
+}
+.banniere {
+    margin-bottom: 2rem;
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: cover;
+    width: 100%;
+}
+
+.alpha {
+
+    padding: 1rem 0rem;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+    padding-bottom: 2rem;
+
+
+}
