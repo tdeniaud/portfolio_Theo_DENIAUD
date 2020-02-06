@@ -13,19 +13,30 @@
 				</li>
 
 				<li class="nav-item <?php echo (current_url() == site_url("")) ? "active" : "" ?>">
-					<a class="nav-link" href="<?= site_url(''); ?>">page 1</a>
-				</li>
-
-				<li class="nav-item <?php echo (current_url() == site_url("")) ? "active" : "" ?>">
-					<a class="nav-link" href="<?= site_url(''); ?>">page 2</a>
+					<a class="nav-link" href="<?= site_url(''); ?>">Stage</a>
 				</li>
 
 				<li class="nav-item <?php echo (current_url() == site_url("")) ? "active" : "" ?>">
 					<a class="nav-link" href="<?= site_url(''); ?>">Événements</a>
 				</li>
 
+				<li class="nav-item <?php echo (current_url() == site_url("")) ? "active" : "" ?>">
+					<a class="nav-link" href="<?= site_url(''); ?>">Contact</a>
+				</li>
+
+				<li class="nav-item <?php echo (current_url() == site_url("")) ? "active" : "" ?>">
+					<a class="nav-link" href="https://www.linkedin.com/in/th%C3%A9o-deniaud-528b28149/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+				</li>
 
 
+
+
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item <?php echo (current_url() == site_url("")) ? "active" : "" ?>">
+					<a class="nav-link d-lg-inline-block  ml-md-auto" href="<?= site_url(''); ?>">Se connecter</a>
+				</li>
 			</ul>
 
 
