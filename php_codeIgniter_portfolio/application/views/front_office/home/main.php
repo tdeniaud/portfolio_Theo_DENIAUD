@@ -30,7 +30,7 @@
 
 					<div class="card-body">
 						<h5 class="card-title">Mon expérience </h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text">Entrepreneur, animateur, adjoint administratif ... <br/> Chaque expérience est unique et permet de se développer personnellement et professionnellement. </p>
 						<div class="d-flex justify-content-between align-items-center">
 
 							<div class="d-flex justify-content-between align-items-center">
@@ -70,7 +70,7 @@
 					<div class="card-body">
 						<h5 class="card-title">Mes compétences </h5>
 
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text">Travail d'équipe, autonomie, gestion de projet ... <br/> La montée en compétence est quotidienne et on ne cessera jamais d'évoluer au fil des années. </p>
 						<div class="d-flex justify-content-between align-items-center">
 								<button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#MesSkills">Voir plus</button>
 
@@ -110,7 +110,7 @@
 					<div class="card-body">
 						<h5 class="card-title">Ma formation </h5>
 
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text">Apprendre à apprendre, la clé de la réussite.<br/> L'apprentissage n'a pas de limites, à nous d'être acteur de notre formation et non spectateur de celle-ci.  </p>
 						<div class="d-flex justify-content-between align-items-center">
 
 							<div class="d-flex justify-content-between align-items-center">
@@ -150,7 +150,7 @@
 					<img class="card-img-top" src="assets/images/back-348.jpg" alt="Mes Projets">
 					<div class="card-body">
 						<h5 class="card-title"> Mes projets</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text">Voir toujours plus grand et ne jamais se contenter du minimum. <br/>L'ambition n'a de limites que celles qu'on lui fixe </p>
 						<div class="d-flex justify-content-between align-items-center">
 
 							<div class="d-flex justify-content-between align-items-center">
@@ -189,7 +189,7 @@
 					<img class="card-img-top" src="assets/images/back-network.jpg" alt="Network">
 					<div class="card-body">
 						<h5 class="card-title">Réseaux / BSI</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text">Réfléchir à une infrastructure réseau, la mettre en place et la maintenir en état. Un rôle primordial que l'institution d'un BDSI pour réaliser cette tâche. </p>
 						<div class="d-flex justify-content-between align-items-center">
 
 							<div class="d-flex justify-content-between align-items-center">
@@ -228,7 +228,7 @@
 					<img class="card-img-top" src="assets/images/back-other.jpg" alt="Autres">
 					<div class="card-body">
 						<h5 class="card-title">Autres</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text">Pour toute autre information ...</p>
 						<div class="d-flex justify-content-between align-items-center">
 
 
