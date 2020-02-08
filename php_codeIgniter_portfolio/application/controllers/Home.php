@@ -13,7 +13,8 @@ class Home extends MY_Controller {
 
 		$this->data['css'] = $this->layout->add_css(array(
 			'assets/plugins/bootstrap/css/bootstrap.min',
-			'assets/css/styles'
+			'assets/css/styles',
+			'assets/css/portfolio_home'
 		));
 		// Chargement des JS
 		$this->data['js'] = $this->layout->add_js(array(
