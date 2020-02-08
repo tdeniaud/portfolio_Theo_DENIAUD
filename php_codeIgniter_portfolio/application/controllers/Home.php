@@ -19,7 +19,8 @@ class Home extends MY_Controller {
 		$this->data['js'] = $this->layout->add_js(array(
 			'assets/plugins/jquery-3.3.1.min',
 			'assets/plugins/bootstrap/js/bootstrap.min',
-			'assets/js/typewriter'
+			'assets/js/typewriter',
+			'assets/js/home'
 
 		));
 

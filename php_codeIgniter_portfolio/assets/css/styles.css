@@ -161,8 +161,7 @@ span.bg-green, .bg-green {
 
 #profil {
 
-	margin: 0rem auto;
-	width: 6.25em;
+	margin: 5rem auto 0rem auto;
 	border: dashed black 0.125em;
 	border-radius: 50%;
 	padding: 0.0625rem;
@@ -195,3 +194,43 @@ span.bg-green, .bg-green {
 
 }
 
+footer {
+	height: 10em;
+}
+
+.banniere .container {
+	padding-bottom: 10%;
+	padding-top: 5%;
+}
+
+.banniere .container h1 {
+	padding-top: 5%;
+}
+
+.banniere .container p {
+	padding: 1%
+}
+
+#mainNav {
+	padding: 1.5em 1em;
+}
+
+#mainNav a {
+	font-size: 1.5em;
+}
+
+#mainNav.navbar-shrink {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+#mainNav.navbar-shrink a {
+	font-size: 1em;
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}

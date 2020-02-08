@@ -7,11 +7,11 @@
 
 			<div class="container">
 				<img id="profil" src="assets/images/profil.jpg" alt="photo profil" />
-				<h1 class="heading">Théo DENIAUD</h1>
+				<h1 class="heading">THEO DENIAUD</h1>
 				<p class="lead text-muted" id="desc"></p>
 
 				<p>
-					<a href="assets/CV.pdf" target="blank" class="btn btn-primary my-2">Télécharger mon CV</a>
+					<a href="assets/CV.pdf" target="blank" class="btn btn-info my-2 btn-lg">Télécharger mon CV</a>
 				</p>
 			</div>
 		</div>
