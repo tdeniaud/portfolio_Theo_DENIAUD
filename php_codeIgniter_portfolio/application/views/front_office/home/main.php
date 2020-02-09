@@ -4,7 +4,8 @@
 			<div class="container">
 				<img id="profil" src="assets/images/profil.jpg" alt="photo profil" />
 				<h1 class="heading">THEO DENIAUD</h1>
-				<p class="lead text-muted" id="desc"></p>
+				<p><span class="text-slider-items">Etudiant en première</span><strong class="text-slider"></strong></p>
+
 				<a href="assets/CV.pdf" target="blank" class="btn download_btn my-2 btn-lg">TELECHARGER CV</a>
 			</div>
 		</div>

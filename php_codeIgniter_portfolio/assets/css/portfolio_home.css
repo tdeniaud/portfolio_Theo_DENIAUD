@@ -235,3 +235,7 @@ ul.social-buttons li a {
 #h6em {
 	height: 6em;
 }
+
+p .text-slider-items {
+	display: none;
+}

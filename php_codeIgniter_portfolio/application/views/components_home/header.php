@@ -26,7 +26,7 @@
 					<li class="nav-item">
 						<a class="nav-link js-scroll" href="#contact">Contact</a>
 					</li>
-					
+
 					<li class="nav-item">
 						<a class="nav-link js-scroll" href="#">Se connecter</a>
 					</li>
