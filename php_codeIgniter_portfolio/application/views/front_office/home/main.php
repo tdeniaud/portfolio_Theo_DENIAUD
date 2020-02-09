@@ -1,4 +1,4 @@
-<section class="text-center">
+<section class="text-center" id="top_page">
 	<div class="banniere">
 		<div class="alpha">
 
@@ -10,9 +10,8 @@
 				<h1 class="heading">THEO DENIAUD</h1>
 				<p class="lead text-muted" id="desc"></p>
 
-				<p>
-					<a href="assets/CV.pdf" target="blank" class="btn btn-info my-2 btn-lg">Télécharger mon CV</a>
-				</p>
+
+					<a href="assets/CV.pdf" target="blank" class="btn download_btn my-2 btn-lg">TELECHARGER CV</a>
 			</div>
 		</div>
 
@@ -24,7 +23,7 @@
 		<div class="row">
 
 		<div class="col-lg-6">
-			<a class="portfolio-item" href="#">
+			<a class="portfolio-item" href="#MonXP">
             <span class="caption">
               <span class="caption-content">
                 <h2>Mon expérience</h2>
@@ -37,7 +36,7 @@
 		</div>
 
 		<div class="col-lg-6">
-			<a class="portfolio-item" href="#">
+			<a class="portfolio-item" href="#MesCompétences">
             <span class="caption">
 				<span class="caption-content">
 					<h2>Mes compétences</h2>
@@ -52,7 +51,7 @@
 		</div>
 
 			<div class="col-lg-6">
-				<a class="portfolio-item" href="#">
+				<a class="portfolio-item" href="#MaFormation">
             <span class="caption">
 				<span class="caption-content">
 					<h2>Ma formation</h2>
@@ -117,7 +116,7 @@
 
 			<section class="showcase">
 				<div class="container-fluid p-0">
-					<div class="row no-gutters">
+					<div class="row no-gutters" id="MonXP">
 
 						<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-xp.jpg');"></div>
 						<div class="col-lg-6 order-lg-1 my-auto showcase-text">
@@ -151,18 +150,99 @@
 
 						</div>
 					</div>
-					<div class="row no-gutters">
+					<div class="row no-gutters" id="MesCompétences">
 						<div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/images/back-skill.jpg');"></div>
-						<div class="col-lg-6 my-auto showcase-text">
-							<h2>Updated For Bootstrap 4</h2>
-							<p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+						<div class="col-lg-6 my-auto showcase-text pr-5 pl-5">
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="progress-wrap">
+										<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">90%</span></h3>
+										<div class="progress">
+											<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+												 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											</div>
+										</div>
+									</div>
+									<div class="progress-wrap">
+										<h3><span class="name-left">Javascript</span><span class="value-right">60%</span></h3>
+										<div class="progress">
+											<div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+												 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+											</div>
+										</div>
+									</div>
+									<div class="progress-wrap">
+										<h3><span class="name-left">PHP</span><span class="value-right">75%</span></h3>
+										<div class="progress">
+											<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+												 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											</div>
+										</div>
+									</div>
+
+									<div class="progress-wrap">
+										<h3><span class="name-left">MySQL</span><span class="value-right">60%</span></h3>
+										<div class="progress">
+											<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+												 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="progress-wrap">
+										<h3><span class="name-left">Design</span><span class="value-right">50%</span></h3>
+										<div class="progress">
+											<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
+												 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+											</div>
+										</div>
+									</div>
+
+									<div class="progress-wrap">
+										<h3><span class="name-left">Python</span><span class="value-right">65%</span></h3>
+										<div class="progress">
+											<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+												 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+											</div>
+										</div>
+									</div>
+									<div class="progress-wrap">
+										<h3><span class="name-left">Windows Server 2019</span><span class="value-right">40%</span></h3>
+										<div class="progress">
+											<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+												 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
 						</div>
 					</div>
-					<div class="row no-gutters">
+					<div class="row no-gutters" id="MaFormation">
 						<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-learn.jpg');"></div>
 						<div class="col-lg-6 order-lg-1 my-auto showcase-text">
-							<h2>Easy to Use &amp; Customize</h2>
-							<p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+
+
+							<div class="row justify-content-between align-items-center mb-3">
+
+								<p><strong>2016</strong> : PSC1 - Prévention et Secours Civiques de niveau 1</p>
+							</div>
+							<div class="row justify-content-between align-items-center mb-3">
+
+								<p><strong>2019</strong> : Baccalauréat général Scientifique Sciences de l'Ingénieur</p>
+								<img class="logo" src="assets/images/logo_appert.png" alt="logo du lycée Nicolas Appert"/>
+
+							</div>
+							<div class="row justify-content-between align-items-center mb-3">
+
+								<p><strong>2019</strong> : Etudiant en Bachelor Informatique </p>
+								<img class="logo" src="assets/images/logo.png" alt="logo de Campus Academy"/>
+
+							</div>
 						</div>
 					</div>
 				</div>
