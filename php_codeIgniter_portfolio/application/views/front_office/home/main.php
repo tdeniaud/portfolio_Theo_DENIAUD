@@ -112,7 +112,63 @@
 			</div>
 
 
-
 		</div>
 	</div>
+
+			<section class="showcase">
+				<div class="container-fluid p-0">
+					<div class="row no-gutters">
+
+						<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-xp.jpg');"></div>
+						<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+
+								<div class="row justify-content-between align-items-center mb-3">
+									<p><strong>2019</strong> : Administrateur CL Val de Chézine - Mandat </p>
+									<img class="logo" src="assets/images/CA.png" alt="logo du Crédit Agricole" />
+								</div>
+								<div class="row justify-content-between align-items-center mb-3">
+									<p><strong>2019</strong> : Gestionnaire comptable et achat - CDD</p>
+									<img class="logo" src="assets/images/CHU.png" alt="logo du CHU"/>
+								</div>
+								<div class="row justify-content-between align-items-center mb-3">
+									<p><strong>2018</strong> : Ajoint territoral d'animation - CEE</p>
+									<img class="logo" src="assets/images/orvault.png" alt="logo de la ville d'Orvault"/>
+
+								</div>
+
+								<div class="row justify-content-between align-items-center mb-3">
+									<p><strong>2017</strong> : Coopérant - Responsable comité finances - CAPE</p>
+									<img class="logo" src="assets/images/cjs.png" alt="logo des CJS"/>
+
+								</div>
+
+								<div class="row justify-content-between align-items-center mb-3">
+
+									<p><strong>2015</strong> : Stagiaire - Magasin de dépannage informatique - Stage</p>
+									<img class="logo" src="assets/images/clicmicro.jpg" alt="logo des CJS"/>
+
+								</div>
+
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/images/back-skill.jpg');"></div>
+						<div class="col-lg-6 my-auto showcase-text">
+							<h2>Updated For Bootstrap 4</h2>
+							<p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-learn.jpg');"></div>
+						<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+							<h2>Easy to Use &amp; Customize</h2>
+							<p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
 </div>
