@@ -10,6 +10,9 @@
 			<li> <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
 			<li> <a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
 			<li> <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+			<li> <a class="github" href="#"><i class="fab fa-github"></i></a></li>
+
+
 		</ul>
 	</div>
 

@@ -1,41 +1,39 @@
 <header>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<a class="navbar-brand" href="<?= base_url(); ?>">HOME</a>
 
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	<nav class="navbar navbar-id navbar-trans navbar-expand-md fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand" href="<?= site_url(''); ?>">PORTFOLIO</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+					aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+				<ul class="navbar-nav">
 
-				<li class="nav-item <?php echo (current_url() == base_url("")) ? "active" : "" ?>">
-					<a class="nav-link" href="<?= site_url(''); ?>"><i class="fa fa-home"></i> </a>
-				</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll active" href="#top_page"><i class="fa fa-home"></i> </a>
+					</li>
 
-				<li class="nav-item <?php echo (current_url() == base_url("")) ? "active" : "" ?>">
-					<a class="nav-link" href="<?= base_url(''); ?>">Stage</a>
-				</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll " href="#about">Stage</a>
+					</li>
 
-				<li class="nav-item <?php echo (current_url() == base_url("")) ? "active" : "" ?>">
-					<a class="nav-link" href="<?= base_url(''); ?>">Événements</a>
-				</li>
-
-				<li class="nav-item <?php echo (current_url() == base_url("")) ? "active" : "" ?>">
-					<a class="nav-link" href="<?= base_url(''); ?>">Contact</a>
-				</li>
-
-
-
-
-
-			</ul>
-			<ul class="navbar-nav">
-				<li class="nav-item <?php echo (current_url() == site_url("")) ? "active" : "" ?>">
-					<a class="nav-link d-lg-inline-block  ml-md-auto" href="<?= site_url(''); ?>">Se connecter</a>
-				</li>
-			</ul>
-
-
+					<li class="nav-item">
+						<a class="nav-link js-scroll" href="#work">Événements</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll" href="#contact">Contact</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link js-scroll" href="#">Se connecter</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
+
+
 </header>

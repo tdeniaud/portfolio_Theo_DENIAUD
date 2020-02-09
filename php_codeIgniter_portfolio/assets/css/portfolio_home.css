@@ -205,6 +205,15 @@ ul.social-buttons li a.linkedin:hover {
 	color: #fff;
 	background-color: #0976b4 ;
 }
+ul.social-buttons li a.github {
+	border: 2px solid #000;
+	color: #000;
+}
+ul.social-buttons li a.github:hover {
+	border: 2px solid #000;
+	color: #fff;
+	background-color: #000 ;
+}
 
 ul.social-buttons li a {
 	display: block;

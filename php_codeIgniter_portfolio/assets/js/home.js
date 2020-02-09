@@ -1,25 +1,19 @@
 (function($) {
 	"use strict";
 
-	var navbarCollapse = function() {
-		if ($("#mainNav").offset().top > 100) {
-			$("#mainNav").addClass("navbar-shrink");
-		} else {
-			$("#mainNav").removeClass("navbar-shrink");
-		}
-	};
-	// Collapse now if page is not at top
-	navbarCollapse();
-	// Collapse the navbar when page is scrolled
-	$(window).scroll(navbarCollapse);
-
 	// Scroll to top button appear
-	$(document).scroll(function() {
-		var scrollDistance = $(this).scrollTop();
-		if (scrollDistance > 100) {
-			$('.scroll-to-top').fadeIn();
+	$(window).trigger('scroll');
+	$(window).on('scroll', function () {
+		var pixels = 50;
+		var top = 1200;
+		if ($(window).scrollTop() > pixels) {
+			$('.navbar-expand-md').addClass('navbar-reduce');
+			$('.navbar-expand-md').removeClass('navbar-trans');
 		} else {
-			$('.scroll-to-top').fadeOut();
+			$('.navbar-expand-md').addClass('navbar-trans');
+			$('.navbar-expand-md').removeClass('navbar-reduce');
 		}
+
 	});
+
 })(jQuery);
