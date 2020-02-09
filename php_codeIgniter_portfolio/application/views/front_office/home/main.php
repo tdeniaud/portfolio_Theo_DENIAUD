@@ -157,7 +157,7 @@
 
 	<div class="container-fluid p-0">
 
-		<div class="row no-gutters" id="MonXP">
+		<div class="row no-gutters shadow-sm" id="MonXP">
 
 			<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-xp.jpg');"></div>
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
@@ -307,7 +307,7 @@
 			</div>
 		</div>
 
-		<div class="row no-gutters" id="MaFormation">
+		<div class="row no-gutters shadow-sm" id="MaFormation">
 
 			<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-learn.jpg');"></div>
 
@@ -325,7 +325,7 @@
 
 					</div>
 
-					<div class="row justify-content-between align-items-center mb-3">
+					<div class="row justify-content-between align-items-center mb-5">
 
 						<p><strong>2019</strong> : Etudiant en Bachelor Informatique </p>
 						<img class="logo" src="assets/images/logo.png" alt="logo de Campus Academy"/>

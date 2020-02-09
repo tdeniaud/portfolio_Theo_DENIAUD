@@ -24,10 +24,6 @@
 					<a class="nav-link" href="<?= base_url(''); ?>">Contact</a>
 				</li>
 
-				<li class="nav-item <?php echo (current_url() == base_url("")) ? "active" : "" ?>">
-					<a class="nav-link" rel="noopener" href="https://www.linkedin.com/in/th%C3%A9o-deniaud-528b28149/" target="_blank"><i class="fab fa-linkedin"></i></a>
-
-				</li>
 
 
 

@@ -3,7 +3,7 @@
 
 <?php $this->load->view('components_home/head', $css) ?>
 
-<body class="landing-page bg-secondary" onload="typeWriter_titre()">
+<body class="landing-page bg-light" onload="typeWriter_titre()">
 
 <?php $this->load->view('components_home/header') ?>
 
