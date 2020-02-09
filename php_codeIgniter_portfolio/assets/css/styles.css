@@ -427,3 +427,82 @@ footer {
 .scroll-to-top i {
 	font-weight: 800;
 }
+
+
+
+ul.social-buttons {
+	float: right;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.list-inline {
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+}
+
+ul.social-buttons li a.twitter {
+	border: 2px solid #55acee;
+	color: #55acee;
+}
+ul.social-buttons li a.twitter:hover {
+	border: 2px solid #55acee;
+	color: #fff;
+	background-color: #55acee ;
+}
+ul.social-buttons li a.facebook {
+	border: 2px solid #3b5998;
+	color: #3b5998;
+}
+ul.social-buttons li a.facebook:hover {
+	border: 2px solid #3b5998;
+	color: #fff;
+	background-color: #3b5998 ;
+}
+
+ul.social-buttons li a.instagram {
+	border: 2px solid #ff7f45;
+	color: #ff7f45;
+}
+ul.social-buttons li a.instagram:hover {
+	border: 2px solid #ff7f45;
+	color: #fff;
+	background-color: #ff7f45 ;
+}
+
+ul.social-buttons li a.linkedin {
+	border: 2px solid #0976b4;
+	color: #0976b4;
+}
+ul.social-buttons li a.linkedin:hover {
+	border: 2px solid #0976b4;
+	color: #fff;
+	background-color: #0976b4 ;
+}
+ul.social-buttons li a.github {
+	border: 2px solid #000;
+	color: #000;
+}
+ul.social-buttons li a.github:hover {
+	border: 2px solid #000;
+	color: #fff;
+	background-color: #000 ;
+}
+
+ul.social-buttons li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 0%;
+	font-size: 1em;
+	line-height: 36px;
+	outline: 0;
+	background-color: rgba(71,69,80,0);
+	transition: all .3s;
+}
+
+.list-inline>li {
+	display: inline-block;
+	padding: 0rem 0.35rem 0rem 0.35rem;
+}

@@ -13,9 +13,11 @@
 				<ul class="navbar-nav">
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll active" href="#top_page"><i class="fa fa-home"></i> </a>
+						<a class="nav-link js-scroll active" href="<?= site_url(''); ?>"><i class="fa fa-home"></i> </a>
 					</li>
-
+					<li class="nav-item">
+						<a class="nav-link js-scroll " href="#MesCompetences">Mes compétences</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll " href="#about">Stage</a>
 					</li>
