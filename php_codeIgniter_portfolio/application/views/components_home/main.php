@@ -3,7 +3,7 @@
 
 <?php $this->load->view('components_home/head', $css) ?>
 
-<body class="landing-page bg-secondary">
+<body class="landing-page bg-light">
 
 <?php $this->load->view('components_home/header') ?>
 
