@@ -320,34 +320,35 @@
 	<form action="#">
 		<div class="row form-group">
 			<div class="col-md-6">
-				<input type="text" id="prenom" class="form-control" placeholder="Votre prénom">
+				<input type="text" id="Prénom" name="Prénom" class="form-control" placeholder="Votre prénom">
 			</div>
 		</div>
 		<div class="row form-group">
 			<div class="col-md-6">
-				<input type="text" id="nom" class="form-control" placeholder="Votre nom">
+				<input type="text" id="Nom" name="Nom" class="form-control" placeholder="Votre nom">
 			</div>
 		</div>
 
 		<div class="row form-group">
 			<div class="col-md-12">
-				<input type="email" id="email" class="form-control" placeholder="Votre adresse e-mail">
+				<input type="email" id="Email" name="Email" class="form-control" placeholder="Votre adresse e-mail">
 			</div>
 		</div>
 		<div class="row form-group">
 			<div class="col-md-12">
-				<label for="personne">Vous êtes : </label>
+				<label for="Personnalité">Vous êtes : </label>
 
-				<select class="custom-select" id="personne">
+				<select class="custom-select" id="Personnalité">
 					<option selected>Sélectionner un élément ...</option>
-					<option value="1">Un Recruteur</option>
+					<option value="1">Un recruteur</option>
 					<option value="2">Un simple visiteur</option>
 					<option value="3">Un pirate</option>
-				</select>			</div>
+				</select>
+			</div>
 		</div>
 		<div class="row form-group">
 			<div class="col-md-12">
-				<select class="custom-select" id="objet">
+				<select class="custom-select" id="Objet">
 					<option selected>Sélectionner un élément ...</option>
 					<option value="1">Demande d'information</option>
 					<option value="2">Recommandation</option>
