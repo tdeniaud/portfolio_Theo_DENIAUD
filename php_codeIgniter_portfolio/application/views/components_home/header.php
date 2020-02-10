@@ -16,7 +16,7 @@
 						<a class="nav-link js-scroll active" href="<?= site_url(''); ?>"><i class="fa fa-home"></i> </a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll " href="#MesCompetences">Mes compétences</a>
+						<a class="nav-link js-scroll " href="#CV">Parcours</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll " href="#about">Stage</a>
@@ -26,7 +26,7 @@
 						<a class="nav-link js-scroll" href="#work">Événements</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll" href="#contact">Contact</a>
+						<a class="nav-link js-scroll" href="#Contact">Contact</a>
 					</li>
 
 					<li class="nav-item">

@@ -132,10 +132,10 @@
 
 </div>
 
-<section class="showcase bg-light pb-5">
+<section class="showcase bg-light pb-5" id="CV">
 
 	<div class="container-fluid p-0">
-		<div class="row no-gutters shadow-sm" id="MonXP">
+		<div class="row no-gutters shadow" id="MonXP">
 			<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-xp.jpg');"></div>
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 					<div class="row justify-content-between align-items-center mb-3">
@@ -312,9 +312,63 @@
 
 </section>
 
-<section>
+<div class="showcase bg-light pb-5">
+	<div class="row no-gutters shadow" id="Contact">
+		<div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/images/mail.jpg');"></div>
+		<div class="col-lg-6 my-auto showcase-text">
 
-	
+	<form action="#">
+		<div class="row form-group">
+			<div class="col-md-6">
+				<input type="text" id="prenom" class="form-control" placeholder="Votre prénom">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-6">
+				<input type="text" id="nom" class="form-control" placeholder="Votre nom">
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-12">
+				<input type="email" id="email" class="form-control" placeholder="Votre adresse e-mail">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-12">
+				<label for="personne">Vous êtes : </label>
+
+				<select class="custom-select" id="personne">
+					<option selected>Sélectionner un élément ...</option>
+					<option value="1">Un Recruteur</option>
+					<option value="2">Un simple visiteur</option>
+					<option value="3">Un pirate</option>
+				</select>			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-12">
+				<select class="custom-select" id="objet">
+					<option selected>Sélectionner un élément ...</option>
+					<option value="1">Demande d'information</option>
+					<option value="2">Recommandation</option>
+					<option value="3">Autre</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-12">
+				<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Send Message" class="btn btn-primary">
+		</div>
+
+	</form>
+		</div>
+	</div>
+</div>
 </section>
 
 

@@ -21,7 +21,7 @@ class Home extends MY_Controller {
 
 		));
 
-		$this->data['contenu'] = $this->contentManager->getContent("*");
+		//$this->data['contenu'] = $this->contentManager->getContent("*");
 
         // Chargement de la vue
         $this->data['title'] = '';
