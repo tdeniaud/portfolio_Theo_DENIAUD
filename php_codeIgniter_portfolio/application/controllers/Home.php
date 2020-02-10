@@ -6,23 +6,22 @@ class Home extends MY_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('Content_model','contentManager');
 
 	}
 
 	public function index() {
 
 		$this->data['css'] = $this->layout->add_css(array(
-			'assets/plugins/bootstrap/css/bootstrap.min',
-			'assets/css/styles',
 			'assets/css/portfolio_home'
 		));
 		// Chargement des JS
 		$this->data['js'] = $this->layout->add_js(array(
-			'assets/plugins/bootstrap/js/bootstrap.min',
 			'assets/js/home'
 
-
 		));
+
+		$this->data['contenu'] = $this->contentManager->getContent("*");
 
         // Chargement de la vue
         $this->data['title'] = '';

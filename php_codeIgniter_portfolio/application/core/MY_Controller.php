@@ -12,7 +12,6 @@ class MY_Controller extends CI_Controller {
 
 
         $this->load->library('layout');
-        //$this->load->model('user_model', 'userManager');
 
         $this->checkIfLoggedIn();
 
@@ -26,7 +25,6 @@ class MY_Controller extends CI_Controller {
         ));
         // Chargement des JS
         $this->data['js'] = $this->layout->add_js(array(
-            'assets/plugins/jquery-3.3.1.min',
             'assets/plugins/bootstrap/js/bootstrap.min',
             'assets/plugins/sweetalert/sweetalert2.all.min',
             'assets/plugins/fontawesome/all.min'
@@ -69,8 +67,7 @@ class MY_Back extends CI_Controller {
 		$this->data['js'] = $this->layout->add_js(array(
 			'assets/plugins/jquery-3.3.1.min',
 			'assets/plugins/bootstrap/js/bootstrap.min',
-			'assets/plugins/stickyfill/dist/stickyfill.min',
-			'assets/js/main',
+			'assets/js/main'
 		));
 
 		$this->session->userdata('active_user') == null ? redirect('') : 'dashboard';
