@@ -17,7 +17,8 @@ class Home extends MY_Controller {
 		));
 		// Chargement des JS
 		$this->data['js'] = $this->layout->add_js(array(
-			'assets/js/home'
+			'assets/js/home',
+			'assets/js/contact_validation'
 
 		));
 
@@ -33,14 +34,14 @@ class Home extends MY_Controller {
     }
 
 
-	public function saveMessage() {
+	public function enregistrer() {
 
 		$dataRecues = $this->input->post();
 
 		$rulesArray = array(
 			array(
-				'field' => 'Prénom',
-				'label' => 'Prénom',
+				'field' => 'Prenom',
+				'label' => 'Prenom',
 				'rules' => 'trim|required|min_length[6]'
 			),
 			array(
@@ -52,16 +53,6 @@ class Home extends MY_Controller {
 				'field' => 'Email',
 				'label' => 'Email',
 				'rules' => 'trim|required|valid_email'
-			),
-			array(
-				'field' => 'Personnalité',
-				'label' => 'Personnalité',
-				'rules' => 'required'
-			),
-			array(
-				'field' => 'Objet',
-				'label' => 'Objet',
-				'rules' => 'required'
 			),
 			array(
 				'field' => 'Message',
@@ -83,15 +74,7 @@ class Home extends MY_Controller {
 
 		} else {
 
-			$data['fname'] = $this->input->post('Prénom');
-			$data['lname'] = $this->input->post('Nom');
-			$data['email'] = $this->input->post('Email');
-			$data['message'] = $this->input->post('Message');
-
-			$data['updated_at'] = date('Y-m-d H:i:s');
-
-			$this->db->insert('message', $data);
-
+			console.log('ok');
 
 		}
 

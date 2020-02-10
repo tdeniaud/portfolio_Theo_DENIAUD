@@ -317,28 +317,34 @@
 		<div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/images/mail.jpg');"></div>
 		<div class="col-lg-6 my-auto showcase-text">
 
-	<form action="#" id="contact">
+	<form id="form-contact">
 		<div class="row form-group">
 			<div class="col-md-6">
-				<input type="text" id="Prénom" name="Prénom" class="form-control" placeholder="Votre prénom">
+				<input type="text" id="Prenom" name="Prenom" class="form-control" placeholder="Votre prénom" required>
+				<p class="field-error" data-field="Prenom"></p>
+
 			</div>
 		</div>
 		<div class="row form-group">
 			<div class="col-md-6">
-				<input type="text" id="Nom" name="Nom" class="form-control" placeholder="Votre nom">
+				<input type="text" id="Nom" name="Nom" class="form-control" placeholder="Votre nom" required>
+				<p class="field-error" data-field="Nom"></p>
+
 			</div>
 		</div>
 
 		<div class="row form-group">
 			<div class="col-md-12">
-				<input type="email" id="Email" name="Email" class="form-control" placeholder="Votre adresse e-mail">
+				<input type="email" id="Email" name="Email" class="form-control" placeholder="Votre adresse e-mail" required>
+				<p class="field-error" data-field="Email"></p>
+
 			</div>
 		</div>
 		<div class="row form-group">
 			<div class="col-md-12">
-				<label for="Personnalité">Vous êtes : </label>
+				<label for="Poste">Vous êtes : </label>
 
-				<select class="custom-select" id="Personnalité" name="Personnalité">
+				<select class="custom-select" id="Poste" name="Poste">
 					<option selected>Sélectionner un élément ...</option>
 					<option value="1">Un recruteur</option>
 					<option value="2">Un simple visiteur</option>
@@ -359,7 +365,9 @@
 
 		<div class="row form-group">
 			<div class="col-md-12">
-				<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Votre message"></textarea>
+				<textarea name="Message" id="Message" cols="30" rows="10" class="form-control" placeholder="Votre message" required></textarea>
+				<p class="field-error" data-field="Message"></p>
+
 			</div>
 		</div>
 		<div class="form-group">
