@@ -317,7 +317,7 @@
 		<div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/images/mail.jpg');"></div>
 		<div class="col-lg-6 my-auto showcase-text">
 
-	<form action="#">
+	<form action="#" id="contact">
 		<div class="row form-group">
 			<div class="col-md-6">
 				<input type="text" id="Prénom" name="Prénom" class="form-control" placeholder="Votre prénom">
@@ -338,7 +338,7 @@
 			<div class="col-md-12">
 				<label for="Personnalité">Vous êtes : </label>
 
-				<select class="custom-select" id="Personnalité">
+				<select class="custom-select" id="Personnalité" name="Personnalité">
 					<option selected>Sélectionner un élément ...</option>
 					<option value="1">Un recruteur</option>
 					<option value="2">Un simple visiteur</option>
@@ -348,7 +348,7 @@
 		</div>
 		<div class="row form-group">
 			<div class="col-md-12">
-				<select class="custom-select" id="Objet">
+				<select class="custom-select" id="Objet" name="Objet">
 					<option selected>Sélectionner un élément ...</option>
 					<option value="1">Demande d'information</option>
 					<option value="2">Recommandation</option>
@@ -359,7 +359,7 @@
 
 		<div class="row form-group">
 			<div class="col-md-12">
-				<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+				<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Votre message"></textarea>
 			</div>
 		</div>
 		<div class="form-group">
