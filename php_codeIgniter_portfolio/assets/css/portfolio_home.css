@@ -162,3 +162,7 @@
 p .text-slider-items {
 	display: none;
 }
+
+.field-error {
+	color: black;
+}

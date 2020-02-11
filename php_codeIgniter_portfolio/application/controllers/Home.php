@@ -42,7 +42,7 @@ class Home extends MY_Controller {
 			array(
 				'field' => 'Prenom',
 				'label' => 'Prenom',
-				'rules' => 'trim|required|min_length[6]'
+				'rules' => 'trim|required|min_length[3]'
 			),
 			array(
 				'field' => 'Nom',
@@ -52,7 +52,7 @@ class Home extends MY_Controller {
 			array(
 				'field' => 'Email',
 				'label' => 'Email',
-				'rules' => 'trim|required|valid_email'
+				'rules' => 'trim|valid_email'
 			),
 			array(
 				'field' => 'Message',
