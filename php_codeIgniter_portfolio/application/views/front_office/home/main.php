@@ -320,6 +320,7 @@
 	<form id="form-contact">
 		<div class="row form-group">
 			<div class="col-md-6">
+				<label for="Prenom">Prenom</label>
 				<input type="text" id="Prenom" name="Prenom" class="form-control" placeholder="Votre prénom" required>
 				<p class="field-error" data-field="Prenom"></p>
 

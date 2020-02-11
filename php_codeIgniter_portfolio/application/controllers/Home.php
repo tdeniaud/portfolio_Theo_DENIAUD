@@ -25,7 +25,6 @@ class Home extends MY_Controller {
 		//$this->data['contenu'] = $this->contentManager->getContent("*");
 
         // Chargement de la vue
-        $this->data['title'] = '';
         $this->data['subview'] = 'front_office/home/main';
 
 
