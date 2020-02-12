@@ -11,7 +11,7 @@ class Content_model extends CI_Model
 
 	public function getContent($select, $where = null, $value = null, $returnType = 'array') {
 	    $this->db->select($select)
-            ->from('article');
+            ->from('CV');
 
         if($where != null && $value != null){
             $this->db->where($where,$value);

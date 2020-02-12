@@ -12,6 +12,11 @@ class Home extends MY_Controller {
 
 	public function index() {
 
+
+		$articles= $this->contentManager->getContent("*");
+		$this->data['donnees'] = $articles;
+
+
 		$this->data['css'] = $this->layout->add_css(array(
 			'assets/css/portfolio_home'
 		));
@@ -28,8 +33,7 @@ class Home extends MY_Controller {
         $this->data['subview'] = 'front_office/home/main';
 
 
-        $this->load->view('components_home/main_home', $this->data);
-
+        $this->load->view('components_home/main', $this->data);
     }
 
 

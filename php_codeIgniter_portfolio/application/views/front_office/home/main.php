@@ -138,40 +138,18 @@
 		<div class="row no-gutters shadow" id="MonXP">
 			<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-xp.jpg');"></div>
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+
+
+					<?php foreach ($donnees as $article) { ?>
 					<div class="row justify-content-between align-items-center mb-3">
 
-						<p><strong>2019</strong> : Administrateur CL Val de Chézine - Mandat </p>
-						<img class="logo" src="assets/images/CA.png" alt="logo du Crédit Agricole" />
+						<p><strong><?= $article->annee ?> : </strong><?= htmlspecialchars($article->contenu) ?></p>
+							<img class="logo" src="<?= $article->img_url ?>" alt="<?= $article->img_alt ?>"/>
 
 					</div>
 
-					<div class="row justify-content-between align-items-center mb-3">
+					<?php } ?>
 
-						<p><strong>2019</strong> : Gestionnaire comptable et achat - CDD</p>
-						<img class="logo" src="assets/images/CHU.png" alt="logo du CHU"/>
-
-					</div>
-
-					<div class="row justify-content-between align-items-center mb-3">
-
-						<p><strong>2018</strong> : Ajoint territoral d'animation - CEE</p>
-						<img class="logo" src="assets/images/orvault.png" alt="logo de la ville d'Orvault"/>
-
-					</div>
-
-					<div class="row justify-content-between align-items-center mb-3">
-
-						<p><strong>2017</strong> : Coopérant - Responsable comité finances - CAPE</p>
-						<img class="logo" src="assets/images/cjs.png" alt="logo des CJS"/>
-
-					</div>
-
-					<div class="row justify-content-between align-items-center mb-3">
-
-						<p><strong>2015</strong> : Stagiaire - Magasin de dépannage informatique - Stage</p>
-						<img class="logo" src="assets/images/clicmicro.jpg" alt="logo des CJS"/>
-
-					</div>
 
 				</div>
 			</div>
@@ -328,6 +306,8 @@
 		</div>
 		<div class="row form-group">
 			<div class="col-md-6">
+				<label for="Nom">Nom</label>
+
 				<input type="text" id="Nom" name="Nom" class="form-control" placeholder="Votre nom" required>
 				<p class="field-error" data-field="Nom"></p>
 
@@ -336,31 +316,20 @@
 
 		<div class="row form-group">
 			<div class="col-md-12">
+				<label for="Email">Adresse mail</label>
+
 				<input type="email" id="Email" name="Email" class="form-control" placeholder="Votre adresse e-mail" required>
 				<p class="field-error" data-field="Email"></p>
 
 			</div>
 		</div>
 		<div class="row form-group">
-			<div class="col-md-12">
-				<label for="Poste">Vous êtes : </label>
+			<div class="col-md-6">
+				<label for="Entreprise">Entreprise</label>
 
-				<select class="custom-select" id="Poste" name="Poste">
-					<option selected>Sélectionner un élément ...</option>
-					<option value="1">Un recruteur</option>
-					<option value="2">Un simple visiteur</option>
-					<option value="3">Un pirate</option>
-				</select>
-			</div>
-		</div>
-		<div class="row form-group">
-			<div class="col-md-12">
-				<select class="custom-select" id="Objet" name="Objet">
-					<option selected>Sélectionner un élément ...</option>
-					<option value="1">Demande d'information</option>
-					<option value="2">Recommandation</option>
-					<option value="3">Autre</option>
-				</select>
+				<input type="text" id="Entreprise" name="Entreprise" class="form-control" placeholder="Votre société">
+				<p class="field-error" data-field="Nom"></p>
+
 			</div>
 		</div>
 
@@ -372,7 +341,7 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<input type="submit" value="Send Message" class="btn btn-primary">
+			<input type="submit" value="Envoyer" class="btn btn-primary btn-sm">
 		</div>
 
 	</form>
@@ -380,6 +349,7 @@
 	</div>
 </div>
 </section>
+
 
 
 
