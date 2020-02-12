@@ -1,12 +1,16 @@
 CREATE TABLE CV (id INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
-annee CHAR(4) NOT NULL DEFAULT now(), contenu TEXT, img_alt VARCHAR (75), img_url VARCHAR(150) );
+annee CHAR(4) NOT NULL DEFAULT now(), contenu TEXT, img_alt VARCHAR (75), img_url VARCHAR(150), section VARCHAR(25));
 
 
-INSERT INTO CV (id,annee,contenu,img_alt,img_url)
-VALUES (null,"2019","Administrateur CL Val de Chézine - Mandat","logo du Crédit Agricole","assets/images/CA.png"),
-(null,"2019","Gestionnaire comptable et achat - CDD","logo du CHU de Nantes","assets/images/CHU.png"),
-(null,"2018","Ajoint territoral d''animation - CEE","logo de la ville d''Orvault","assets/images/orvault.png"),
-(null,"2017","Coopérant - Responsable comité finances - CAPE","logo des CJS","assets/images/cjs.png"),
-(null,"2015","Stagiaire - Magasin de dépannage informatique - Stage","logo de l'entreprise clicmicro","assets/images/clicmicro.jpg")
+INSERT INTO CV (id,annee,contenu,img_alt,img_url, section)
+VALUES (null,"2019","Administrateur CL Val de Chézine - Mandat","logo du Crédit Agricole","assets/images/CA.png","XP"),
+(null,"2019","Gestionnaire comptable et achat - CDD","logo du CHU de Nantes","assets/images/CHU.png","XP"),
+(null,"2018","Ajoint territoral d''animation - CEE","logo de la ville d''Orvault","assets/images/orvault.png","XP"),
+(null,"2017","Coopérant - Responsable comité finances - CAPE","logo des CJS","assets/images/cjs.png","XP"),
+(null,"2015","Stagiaire - Magasin de dépannage informatique - Stage","logo de l'entreprise clicmicro","assets/images/clicmicro.jpg","XP"),
+(null,"2016","PSC1 - Prévention et Secours Civiques de niveau 1","logo du ministere de l'éducation","assets/images/ministere.jpg","FORMATION"),
+(null,"2019","Baccalauréat général Scientifique Sciences de l''Ingénieur","logo du lycée Nicolas Appert","assets/images/logo_appert.png","FORMATION"),
+(null,"2019","Etudiant en Bachelor Informatique","logo de Campus Academy","assets/images/logo.png","FORMATION")
+
 
 

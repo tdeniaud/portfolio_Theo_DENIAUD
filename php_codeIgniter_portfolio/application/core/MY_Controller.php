@@ -20,7 +20,6 @@ class MY_Controller extends CI_Controller {
         $this->data['css'] = $this->layout->add_css(array(
             'assets/plugins/bootstrap/css/bootstrap.min',
             'assets/plugins/sweetalert/sweetalert2.min',
-            'assets/plugins/fontawesome/all.min',
             'assets/css/styles'
         ));
         // Chargement des JS

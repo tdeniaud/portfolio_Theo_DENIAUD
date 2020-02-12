@@ -13,8 +13,11 @@ class Home extends MY_Controller {
 	public function index() {
 
 
-		$articles= $this->contentManager->getContent("*");
-		$this->data['donnees'] = $articles;
+		$experiences = $this->contentManager->getContent("*","section","XP");
+		$this->data['experiences'] = $experiences;
+		$formations = $this->contentManager->getContent("*","section","FORMATION");
+		$this->data['formations'] = $formations;
+
 
 
 		$this->data['css'] = $this->layout->add_css(array(

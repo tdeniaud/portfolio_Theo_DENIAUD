@@ -140,11 +140,11 @@
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 
 
-					<?php foreach ($donnees as $article) { ?>
+					<?php foreach ($experiences as $experience) { ?>
 					<div class="row justify-content-between align-items-center mb-3">
 
-						<p><strong><?= $article->annee ?> : </strong><?= htmlspecialchars($article->contenu) ?></p>
-							<img class="logo" src="<?= $article->img_url ?>" alt="<?= $article->img_alt ?>"/>
+						<p><strong><?= $experience->annee ?> : </strong><?= htmlspecialchars($experience->contenu) ?></p>
+							<img class="logo" src="<?= $experience->img_url ?>" alt="<?= $experience->img_alt ?>"/>
 
 					</div>
 
@@ -263,25 +263,16 @@
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 
 
-					<div class="row justify-content-between align-items-center mb-3">
+					<?php foreach ($formations as $formation) { ?>
+						<div class="row justify-content-between align-items-center mb-3">
 
-						<p><strong>2016</strong> : PSC1 - Prévention et Secours Civiques de niveau 1</p>
+							<p><strong><?= $formation->annee ?> : </strong><?= htmlspecialchars($formation->contenu) ?></p>
+							<img class="logo" src="<?= $formation->img_url ?>" alt="<?= $formation->img_alt ?>"/>
 
-					</div>
+						</div>
 
-					<div class="row justify-content-between align-items-center mb-3">
+					<?php } ?>
 
-						<p><strong>2019</strong> : Baccalauréat général Scientifique Sciences de l'Ingénieur</p>
-						<img class="logo" src="assets/images/logo_appert.png" alt="logo du lycée Nicolas Appert"/>
-
-					</div>
-
-					<div class="row justify-content-between align-items-center mb-5">
-
-						<p><strong>2019</strong> : Etudiant en Bachelor Informatique </p>
-						<img class="logo" src="assets/images/logo.png" alt="logo de Campus Academy"/>
-
-					</div>
 
 				</div>
 			</div>
