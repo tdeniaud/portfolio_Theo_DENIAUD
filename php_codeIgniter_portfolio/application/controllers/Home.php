@@ -30,8 +30,6 @@ class Home extends MY_Controller {
 
 		));
 
-		//$this->data['contenu'] = $this->contentManager->getContent("*");
-
         // Chargement de la vue
         $this->data['subview'] = 'front_office/home/main';
 
@@ -48,12 +46,12 @@ class Home extends MY_Controller {
 			array(
 				'field' => 'Prenom',
 				'label' => 'Prenom',
-				'rules' => 'trim|required|min_length[3]'
+				'rules' => 'trim|required|min_length[3]|min_length[25]'
 			),
 			array(
 				'field' => 'Nom',
 				'label' => 'Nom',
-				'rules' => 'trim|required'
+				'rules' => 'trim|required|min_length[3]|max_length[50]'
 			),
 			array(
 				'field' => 'Email',
@@ -63,7 +61,7 @@ class Home extends MY_Controller {
 			array(
 				'field' => 'Message',
 				'label' => 'Message',
-				'rules' => 'required'
+				'rules' => 'required|max_length[255]'
 			)
 		);
 
