@@ -1,5 +1,5 @@
 CREATE TABLE CV (id INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
-annee CHAR(4) NOT NULL DEFAULT now(), contenu TEXT, img_alt VARCHAR (75), img_url VARCHAR(150), section VARCHAR(25));
+annee CHAR(4) NOT NULL, contenu TEXT, img_alt VARCHAR (75), img_url VARCHAR(150), section VARCHAR(25));
 
 
 INSERT INTO CV (id,annee,contenu,img_alt,img_url, section)
@@ -14,3 +14,9 @@ VALUES (null,"2019","Administrateur CL Val de Chézine - Mandat","logo du Crédi
 
 
 
+CREATE TABLE Contact(id INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT, prenom VARCHAR(25) NOT NULL,
+nom VARCHAR(50) NOT NULL, societe VARCHAR(75),email VARCHAR(75) NOT NULL)
+
+
+CREATE TABLE Message(id INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT, id_contact INT UNSIGNED NOT NULL, contenu TEXT NOT NULL, updated_at DATETIME NOT NULL,
+CONSTRAINT FOREIGN KEY fk_id_contact_Message_Contact_id (id_contact) REFERENCES Contact(id))

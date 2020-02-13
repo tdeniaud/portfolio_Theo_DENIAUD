@@ -188,6 +188,11 @@ span.bg-green, .bg-green {
 
 }
 
+.message {
+	resize: none;
+	overflow-wrap: break-word;
+	width: 100%;
+}
 
 section#top_page.text-center.banniere {
 	height: 100% ;

@@ -13,9 +13,9 @@ class Home extends MY_Controller {
 	public function index() {
 
 
-		$experiences = $this->contentManager->getContent("*","section","XP");
+		$experiences = $this->contentManager->getCV("*","section","XP");
 		$this->data['experiences'] = $experiences;
-		$formations = $this->contentManager->getContent("*","section","FORMATION");
+		$formations = $this->contentManager->getCV("*","section","FORMATION");
 		$this->data['formations'] = $formations;
 
 
@@ -46,7 +46,7 @@ class Home extends MY_Controller {
 			array(
 				'field' => 'Prenom',
 				'label' => 'Prenom',
-				'rules' => 'trim|required|min_length[3]|min_length[25]'
+				'rules' => 'trim|required|min_length[3]|max_length[25]'
 			),
 			array(
 				'field' => 'Nom',
@@ -56,7 +56,11 @@ class Home extends MY_Controller {
 			array(
 				'field' => 'Email',
 				'label' => 'Email',
-				'rules' => 'trim|valid_email'
+				'rules' => 'trim|valid_email|required|min_length[8]'
+			),array(
+				'field' => 'Entreprise',
+				'label' => 'Entreprise',
+				'rules' => 'trim|min_length[3]|max_length[75]'
 			),
 			array(
 				'field' => 'Message',
@@ -78,7 +82,22 @@ class Home extends MY_Controller {
 
 		} else {
 
-			console.log('ok');
+			$data['prenom'] = htmlspecialchars($this->input->post('Prenom'));
+			$data['nom'] = htmlspecialchars($this->input->post('Nom'));
+			$data['societe'] = htmlspecialchars($this->input->post('Entreprise'));
+			$data['email'] = htmlspecialchars($this->input->post('Email'));
+
+
+			$id_contact = $this->contentManager->getContact("id","email",...);
+			var_dump($id_contact);
+			$message['id_contact'] = $id_contact;
+
+			$message['contenu'] = htmlspecialchars($this->input->post('Message'));
+
+			$message['updated_at'] = date('Y-m-d H:i:s');
+
+			$this->db->insert('contact', $data);
+			$this->db->insert('message', $message);
 
 		}
 
