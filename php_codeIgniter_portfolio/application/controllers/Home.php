@@ -86,19 +86,17 @@ class Home extends MY_Controller {
 			$data['nom'] = htmlspecialchars($this->input->post('Nom'));
 			$data['societe'] = htmlspecialchars($this->input->post('Entreprise'));
 			$data['email'] = htmlspecialchars($this->input->post('Email'));
+			$this->db->insert('contact', $data);
 
+			$id_contact =  $this->contentManager->getContact($data['email']);
 
-			$id_contact = $this->contentManager->getContact("id","email",...);
-			var_dump($id_contact);
-			$message['id_contact'] = $id_contact;
+			$message['id_contact'] = $id_contact->id;
 
 			$message['contenu'] = htmlspecialchars($this->input->post('Message'));
 
 			$message['updated_at'] = date('Y-m-d H:i:s');
 
-			$this->db->insert('contact', $data);
 			$this->db->insert('message', $message);
-
 		}
 
 	}
