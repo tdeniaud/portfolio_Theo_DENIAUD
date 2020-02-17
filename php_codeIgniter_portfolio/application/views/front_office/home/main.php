@@ -33,7 +33,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-xp.webp" alt="Mon expérience">
+					<img class="img-fluid lazy" data-src="assets/images/back-xp.jpg" alt="Mon expérience">
 
 				</a>
 			</div>
@@ -51,7 +51,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-skill.webp" alt="Mes expériences">
+					<img class="img-fluid lazy" data-src="assets/images/back-skill.jpg" alt="Mes expériences">
 
 				</a>
 			</div>
@@ -69,7 +69,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-learn.webp" alt="Ma Formation">
+					<img class="img-fluid lazy" data-src="assets/images/back-learn.jpg" alt="Ma Formation">
 
 				</a>
 			</div>
@@ -87,7 +87,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back.webp" alt="Ma Formation">
+					<img class="img-fluid lazy" data-src="assets/images/back.jpg" alt="Ma Formation">
 
 				</a>
 			</div>
@@ -105,7 +105,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-network.webp" alt="Network">
+					<img class="img-fluid lazy" data-src="assets/images/back-network.jpg" alt="Network">
 
 				</a>
 			</div>
@@ -122,7 +122,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-other.webp" alt="Autres">
+					<img class="img-fluid lazy" data-src="assets/images/back-other.jpg" alt="Autres">
 
 				</a>
 			</div>
@@ -136,7 +136,7 @@
 
 	<div class="container-fluid p-0">
 		<div class="row no-gutters shadow" id="MonXP">
-			<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-xp.webp');"></div>
+			<img class="col-lg-6 order-lg-2" src="assets/images/back-xp.jpg"/>
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 
 
@@ -156,7 +156,7 @@
 		</div>
 
 		<div class="row no-gutters" id="MesCompetences">
-			<div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/images/back-skill.webp');"></div>
+			<img class="col-lg-6" src="assets/images/back-skill.jpg"/>
 				<div class="col-lg-6 my-auto showcase-text pr-5 pl-5">
 
 					<div class="row">
@@ -259,7 +259,7 @@
 		</div>
 
 		<div class="row no-gutters shadow-sm" id="MaFormation">
-			<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/back-learn.webp');"></div>
+			<img class="col-lg-6 order-lg-2" src="assets/images/back-learn.jpg"/>
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 
 
@@ -281,65 +281,7 @@
 
 </section>
 
-<div class="showcase bg-light pb-5">
-	<div class="row no-gutters shadow" id="Contact">
-		<div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/images/mail.webp');"></div>
-		<div class="col-lg-6 my-auto showcase-text">
 
-	<form id="form-contact">
-		<div class="row form-group">
-			<div class="col-md-6">
-				<label for="Prenom">Prénom</label>
-				<input type="text" id="Prenom" name="Prenom" class="form-control" placeholder="Votre prénom">
-				<p class="field-error" data-field="Prenom"></p>
-
-			</div>
-
-			<div class="col-md-6">
-				<label for="Nom">Nom</label>
-
-				<input type="text" id="Nom" name="Nom" class="form-control" placeholder="Votre nom">
-				<p class="field-error" data-field="Nom"></p>
-
-			</div>
-		</div>
-
-		<div class="row form-group">
-			<div class="col-md-6">
-				<label for="Email">Adresse mail</label>
-
-				<input type="email" id="Email" name="Email" class="form-control" placeholder="Votre adresse e-mail">
-				<p class="field-error" data-field="Email"></p>
-
-			</div>
-
-			<div class="col-md-6">
-				<label for="Entreprise">Entreprise</label>
-
-				<input type="text" id="Entreprise" name="Entreprise" class="form-control" placeholder="Votre société">
-				<p class="field-error" data-field="Entreprise"></p>
-
-			</div>
-		</div>
-
-		<div class="row form-group">
-			<div class="col-md-12">
-				<label for="Message">Votre message</label>
-
-				<textarea class="message" name="Message" id="Message" rows="10" class="form-control" placeholder="Votre message"></textarea>
-				<p class="field-error" data-field="Message"></p>
-
-			</div>
-		</div>
-		<div class="form-group float-right">
-			<input type="submit" value="Envoyer" class="btn btn-primary btn-sm">
-		</div>
-
-	</form>
-		</div>
-	</div>
-</div>
-</section>
 
 
 

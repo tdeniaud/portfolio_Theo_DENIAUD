@@ -13,13 +13,13 @@
 				<ul class="navbar-nav">
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll active" href="<?= site_url(''); ?>"><i class="fa fa-home"></i> </a>
+						<a class="nav-link js-scroll active" href="<?= site_url('home'); ?>"><i class="fa fa-home"></i> </a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll " href="#CV">Parcours</a>
+						<a class="nav-link js-scroll " href="#MonXP">Parcours</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll" href="#Contact">Contact</a>
+						<a class="nav-link js-scroll" href="<?= site_url('contact'); ?>">Contact</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll " href="#about">Stage</a>

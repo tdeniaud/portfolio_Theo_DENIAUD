@@ -51,7 +51,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'home';
 $route['home'] = 'home';
-$route['message'] = 'home/enregistrer';
+$route['contact'] = 'contact';
+$route['enregistrer'] = 'contact/enregistrer';
 
-$route['404_override'] = '';
+
+$route['404_override'] = 'errors/error_404';
 $route['translate_uri_dashes'] = FALSE;

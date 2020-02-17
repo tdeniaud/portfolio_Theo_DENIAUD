@@ -4,7 +4,7 @@ $(document).on('submit', '#form-contact', function (e) {
     //Permet de désactiver toutes les actions par défaut du comportement html (ici un bouton submit doit recharger la page. Ici on empêche ce rechargement)
     e.preventDefault();
     var formData = $(this).serialize();
-    var url = site_url + 'message';
+    var url = site_url + 'contact'; /* préciser index.php/contact */
     var elementSelected = $('p.field-error');
 
     $.ajax({

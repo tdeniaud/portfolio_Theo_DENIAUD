@@ -40,7 +40,7 @@ $config['base_url'] = $protocol.$host.'/php_codeIgniter_portfolio';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

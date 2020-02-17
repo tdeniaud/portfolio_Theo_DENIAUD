@@ -72,16 +72,12 @@
 }
 
 .showcase {
-	margin-top: 5rem;
+	margin-top: 6rem;
 }
 .showcase .showcase-text {
 	padding: 3rem;
 }
 
-.showcase .showcase-img {
-	min-height: 30rem;
-	background-size: cover;
-}
 
 @media (min-width: 768px) {
 	.showcase .showcase-text {
