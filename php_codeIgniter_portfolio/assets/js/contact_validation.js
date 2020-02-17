@@ -4,7 +4,7 @@ $(document).on('submit', '#form-contact', function (e) {
     //Permet de désactiver toutes les actions par défaut du comportement html (ici un bouton submit doit recharger la page. Ici on empêche ce rechargement)
     e.preventDefault();
     var formData = $(this).serialize();
-    var url = site_url + 'contact'; /* préciser index.php/contact */
+    var url = site_url + 'enregistrer'; /* préciser index.php/contact */
     var elementSelected = $('p.field-error');
 
     $.ajax({
@@ -30,10 +30,13 @@ $(document).on('submit', '#form-contact', function (e) {
                Swal.fire({
                    position : 'center',
                    icon : 'success',
-                   title : 'Bienvenue ! Vous allez être redirigé...',
+                   title : 'Bienvenue ! Vous allez être redirigé vers la page d\'accueil ...',
                    showConfirmButton : false,
                    timer : 1500
                });
+			   setTimeout(function(){
+				   window.location.href = site_url;
+			   }, 1500);
 
 
 

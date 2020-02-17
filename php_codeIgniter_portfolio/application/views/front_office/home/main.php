@@ -1,11 +1,11 @@
-<section class="text-center banniere" id="top_page">
+<section class="text-center img-fullscreen" id="top_page">
 
 	<div class="alpha">
-		<div class="container d-flex flex-column align-items-center">
+		<div class="container d-flex flex-column align-items-center h-100 justify-content-center">
 
-			<img id="profil" src="assets/images/profil.jpg" alt="photo profil" class="d-flex mt-5"/>
-			<h1 class="heading">THEO DENIAUD</h1>
-			<p><span class="text-slider-items">Etudiant en première année de Bachelor Informatique,Développeur Web,Technicien de Proximité,Futur CEO d'une SAS en robotique de service</span><strong class="text-slider"></strong></p>
+			<img id="profil" src="assets/images/profil.jpg" alt="photo profil" class="d-flex mt-5 mb-5"/>
+			<h1 class="heading mb-3">THEO DENIAUD</h1>
+			<p class="mb-5"><span class="text-slider-items">Etudiant en première année de Bachelor Informatique,Développeur Web,Technicien de Proximité,Futur CEO d'une SAS en robotique de service</span><strong class="text-slider"></strong></p>
 			<a href="assets/CV.pdf" target="blank" class="btn download_btn my-2 btn-lg">TELECHARGER CV</a>
 
 		</div>
@@ -33,7 +33,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid lazy" data-src="assets/images/back-xp.jpg" alt="Mon expérience">
+					<img class="img-fluid" src="assets/images/back-xp.jpg" alt="Mon expérience">
 
 				</a>
 			</div>
@@ -51,7 +51,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid lazy" data-src="assets/images/back-skill.jpg" alt="Mes expériences">
+					<img class="img-fluid" src="assets/images/back-skill.jpg" alt="Mes expériences">
 
 				</a>
 			</div>
@@ -69,7 +69,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid lazy" data-src="assets/images/back-learn.jpg" alt="Ma Formation">
+					<img class="img-fluid" src="assets/images/back-learn.jpg" alt="Ma Formation">
 
 				</a>
 			</div>
@@ -87,7 +87,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid lazy" data-src="assets/images/back.jpg" alt="Ma Formation">
+					<img class="img-fluid" src="assets/images/back-2000.jpg" alt="Ma Formation">
 
 				</a>
 			</div>
@@ -105,7 +105,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid lazy" data-src="assets/images/back-network.jpg" alt="Network">
+					<img class="img-fluid" src="assets/images/back-network.jpg" alt="Network">
 
 				</a>
 			</div>
@@ -122,7 +122,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid lazy" data-src="assets/images/back-other.jpg" alt="Autres">
+					<img class="img-fluid" src="assets/images/back-other.jpg" alt="Autres">
 
 				</a>
 			</div>
@@ -259,7 +259,7 @@
 		</div>
 
 		<div class="row no-gutters shadow-sm" id="MaFormation">
-			<img class="col-lg-6 order-lg-2" src="assets/images/back-learn.jpg"/>
+			<img class="col-lg-6 order-lg-2 lazyload" data-src="assets/images/back-learn.jpg"/>
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 
 

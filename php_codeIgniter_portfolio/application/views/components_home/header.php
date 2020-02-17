@@ -13,11 +13,17 @@
 				<ul class="navbar-nav">
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll active" href="<?= site_url('home'); ?>"><i class="fa fa-home"></i> </a>
+						<a class="nav-link js-scroll active" href="<?= site_url(''); ?>"><i class="fa fa-home"></i> </a>
 					</li>
-					<li class="nav-item">
+					<?php
+					if ($_SERVER['REQUEST_URI'] == "/php_codeIgniter_portfolio/home" || $_SERVER['REQUEST_URI'] == "/php_codeIgniter_portfolio/"){ ?>
+						<li class="nav-item">
 						<a class="nav-link js-scroll " href="#MonXP">Parcours</a>
 					</li>
+					<?php }
+
+					?>
+
 					<li class="nav-item">
 						<a class="nav-link js-scroll" href="<?= site_url('contact'); ?>">Contact</a>
 					</li>
