@@ -12,6 +12,7 @@ class MY_Controller extends CI_Controller {
 
 
         $this->load->library('layout');
+		$this->load->model('User_model', 'userManager');
 
         $this->checkIfLoggedIn();
 

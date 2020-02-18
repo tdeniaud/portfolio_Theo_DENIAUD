@@ -18,6 +18,9 @@ html,body {
 	background-color:  rgba(197,197,197,0.5)
 }
 
+#h6em {
+	height: 6em;
+}
 
 ol, ul {
   list-style: none;

@@ -1,0 +1,95 @@
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 4px;
+
+	height: 32px;
+	border: none;
+	border-bottom: 1px solid #AAA;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+	border-bottom: 2px solid #16a085;
+	color: #16a085;
+	transition: 0.2s ease;
+}
+
+input[type="submit"] {
+	margin-top: 28px;
+	width: 120px;
+	height: 32px;
+	background: #16a085;
+	border: none;
+	border-radius: 2px;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: 0.1s ease;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	opacity: 0.8;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+	opacity: 1;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	transition: 0.1s ease;
+}
+
+
+
+
+*:focus {
+	outline: none;
+}
+
+#login-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column !important;
+	margin: 15% auto 0% auto;
+	width: 600px;
+	padding: 10% 0%;
+	background: #FFF;
+	border-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 992px) {
+
+	#login-box {
+		width: 500px;
+		margin: 25% auto 0% auto;
+	}
+}
+
+@media (max-width: 768px) {
+
+	#login-box {
+		width: 450px;
+		margin: 25% auto 0% auto;
+	}
+}
+@media (max-width: 576px) {
+
+	#login-box {
+		width: 400px;
+		margin: 25% auto 0% auto;
+	}
+}

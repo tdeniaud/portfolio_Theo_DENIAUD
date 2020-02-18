@@ -6,7 +6,7 @@ class Authentification extends MY_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('auth_model', 'authManager');
+		$this->load->model('User_model', 'userManager');
 
 
 	}
@@ -15,12 +15,16 @@ class Authentification extends MY_Controller {
 
 		$this->data['css'] = $this->layout->add_css(array(
 			'assets/plugins/bootstrap/css/bootstrap.min',
-			'assets/css/styles'
+			'assets/css/styles',
+			'assets/css/forms'
 		));
+
 		// Chargement des JS
 		$this->data['js'] = $this->layout->add_js(array(
 			'assets/plugins/bootstrap/js/bootstrap.min',
-			'assets/js/auth'
+			'assets/js/auth',
+			'assets/js/preload',
+			'assets/js/home'
 		));
 
 		$this->data['subview'] = 'front_office/auth/main';
@@ -153,7 +157,7 @@ class Authentification extends MY_Controller {
 
 			$password = $this->input->post('registerPassword');
 
-			$passwordCipher = $this->authManager->cipherPassword($password);
+			$passwordCipher = $this->userManager->cipherPassword($password);
 
 
 

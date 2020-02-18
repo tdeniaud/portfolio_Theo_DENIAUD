@@ -19,7 +19,9 @@ class Contact extends MY_Controller {
 		// Chargement des JS
 		$this->data['js'] = $this->layout->add_js(array(
 			'assets/js/home',
-			'assets/js/contact_validation'
+			'assets/js/contact_validation',
+			'assets/js/preload'
+
 
 		));
 

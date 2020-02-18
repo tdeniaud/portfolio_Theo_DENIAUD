@@ -20,3 +20,15 @@ nom VARCHAR(50) NOT NULL, societe VARCHAR(75),email VARCHAR(75) NOT NULL UNIQUE)
 
 CREATE TABLE Message(id INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT, id_contact INT UNSIGNED NOT NULL, contenu TEXT NOT NULL, updated_at DATETIME NOT NULL,
 CONSTRAINT FOREIGN KEY fk_id_contact_Message_Contact_id (id_contact) REFERENCES Contact(id))
+
+
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `use_pseudo` varchar(255) NOT NULL,
+  `use_email` varchar(255) NOT NULL,
+  `use_password` varchar(255) NOT NULL,
+  `pok_pref` int(11) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $protocol = is_https() ? "https://" : "http://";
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : "";
 
-$config['base_url'] = $protocol.$host.'/php_codeIgniter_portfolio';
+$config['base_url'] = 'http://localhost/php_codeIgniter_portfolio';
 
 
 /*

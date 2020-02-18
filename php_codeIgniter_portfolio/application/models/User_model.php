@@ -7,8 +7,25 @@ class User_model extends CI_Model
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->library('encryption');
+		$this->encryption->initialize(
+			array(
+				'cipher' => 'aes-256',
+				'mode' => 'ctr',
+				'key' => 'SuperMotdePasse44'
+			)
+		);
+	}
+
+
+	public function hash_generate($p_input){
+
+		$password = $this->encryption->encrypt($p_input);
+
+		return $password;
 
 	}
+
 
 	public function attempt($input){
 

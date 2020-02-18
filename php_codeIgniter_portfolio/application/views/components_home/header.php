@@ -37,7 +37,7 @@
 
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll" href="#">Se connecter</a>
+						<a class="nav-link js-scroll" href="<?= site_url('auth'); ?>">Se connecter</a>
 					</li>
 				</ul>
 			</div>
