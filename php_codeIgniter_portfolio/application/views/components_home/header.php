@@ -36,14 +36,27 @@
 					</li>
 
 
+				</ul>
+				<ul class="navbar-nav">
+
+
+					<?php if ($this->logged){ ?>
+						<li class="nav-item <?php echo (current_url() == site_url("profil")) ? "active" : "" ?>">
+							<a class="nav-link" href="<?= site_url('profil'); ?>">Bonjour, <?= $this->appli_user->use_pseudo ?></a>
+						</li>
+
+					<?php } ?>
+
 					<li class="nav-item">
 						<?php if($this->logged){ ?>
 							<a class="nav-link" href="<?= site_url('logout'); ?>"><i class="fa fa-sign-out-alt"></i> </a>
 						<?php } else { ?>
-							<a class="nav-link" href="<?= site_url('auth'); ?>">Se connecter</a>
+							<a class="nav-link" href="<?= site_url('auth/login'); ?>">Connexion</a>
 						<?php } ?>
+
 					</li>
 				</ul>
+
 			</div>
 		</div>
 	</nav>

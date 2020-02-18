@@ -27,6 +27,8 @@ $(document).on('submit', '#form-signup', function (e) {
 		data : formData,
 		success : function (data) {
 			if (data.error) {
+				$('p.field-error').text('');
+
 
 				elementSelected.each(function () {
 					for (var key in data.error) {

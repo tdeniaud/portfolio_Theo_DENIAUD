@@ -155,12 +155,15 @@ class Authentification extends MY_Controller {
 
 		} else {
 
+			$password = $this->input->post('registerPassword');
+
+			$passwordHash = $this->userManager->hash_generate($password);
 
 
 
 			$data['use_pseudo'] = $this->input->post('registerPseudo');
 			$data['use_email'] = $this->input->post('registerEmail');
-			$data['use_password'] = $this->input->post('registerPassword');
+			$data['use_password'] = $passwordHash;
 			$data['created_at'] = date('Y-m-d H:i:s');
 			$data['updated_at'] = date('Y-m-d H:i:s');
 
@@ -191,7 +194,7 @@ class Authentification extends MY_Controller {
 	public function pseudo_check($data) {
 
 
-		$pseudoChecker = $this->userManager->checkExistUser('use_email', $data);
+		$pseudoChecker = $this->userManager->checkExistUser(array('use_pseudo'=> $data));
 
 		if ($pseudoChecker) {
 			$this->form_validation->set_message('pseudo_check', 'Ce pseudo est déjà utilisé');
@@ -203,10 +206,10 @@ class Authentification extends MY_Controller {
 	}
 	public function email_check($data) {
 
-		$emailChecker = $this->userManager->checkExistUser('use_email', $data);
+		$emailChecker = $this->userManager->checkExistUser(array('use_email'=> $data));
 
 
-		if ($emailChecker === true) {
+		if ($emailChecker) {
 			$this->form_validation->set_message('email_check', 'Cet email est déjà utilisé');
 			return false;
 		} else {

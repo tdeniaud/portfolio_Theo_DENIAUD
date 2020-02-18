@@ -12,7 +12,7 @@ class User_model extends CI_Model
 			array(
 				'cipher' => 'aes-256',
 				'mode' => 'ctr',
-				'key' => 'SuperMotdePasse44'
+				'key' => 'JeSuisuneCléEtmyMotdep@sseIsTrèsCOmpliqué,BonneCh@anceifyouwantetodécouvrirdiesesPasswort!!'
 			)
 		);
 	}
@@ -21,7 +21,6 @@ class User_model extends CI_Model
 	public function hash_generate($p_input){
 
 		$password = $this->encryption->encrypt($p_input);
-
 		return $password;
 
 	}
@@ -42,12 +41,12 @@ class User_model extends CI_Model
 
 
 
-	public function checkExistUser($where,$value) {
+	public function checkExistUser($where) {
 
 
 		$query = $this->db->select('*')
 			->from('users')
-			->where($where,$value)
+			->where($where)
 			->get();
 
 		if ($query->num_rows() > 0) {
@@ -118,13 +117,8 @@ class User_model extends CI_Model
 
 	public function hash_verify($p_bdd, $p_input){
 
-
-		$password_input = $this->encryption->encrypt($p_input);
-		$password_output = $this->encryption->decrypt($password_input);
-
 		$bdd_output = $this->encryption->decrypt($p_bdd);
 
-	
 
 		if ($p_input == $bdd_output){
 			return true;
@@ -134,7 +128,8 @@ class User_model extends CI_Model
 
 	}
 
-	public function getUser($select, $where = null, $value = null, $returnType = 'array') { //fonctions qui permet de selectionner des pokemons de la BDD
+
+	public function getUser($select, $where = null, $value = null, $returnType = 'array') {
 		$this->db->select($select)
 			->from('users');
 
@@ -142,19 +137,19 @@ class User_model extends CI_Model
 			$this->db->where($where,$value);
 		}
 
-		$result = $this->db->get(); //On definis la variable result
+		$result = $this->db->get();
 
-		if($returnType === 'row') { //Si le résultat n'est qu'une seule ligne
+		if($returnType === 'row') {
 			if ($result->num_rows() > 0) {
 				return $result->row();
 			} else {
 				return false;
 			}
-		} else { //Sinon, si il retourne un tableaucheckExistUser
+		} else {
 			if($result->num_rows() > 0){
-				return $result->result(); //On prevois leventuel bug, si il y a au minimum un resultat la code se passe comme prevue
+				return $result->result();
 			} else {
-				return false; //Sinon il y a une erreur
+				return false;
 			}
 		}
 	}
