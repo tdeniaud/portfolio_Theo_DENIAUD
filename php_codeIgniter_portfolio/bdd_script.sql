@@ -24,11 +24,10 @@ CONSTRAINT FOREIGN KEY fk_id_contact_Message_Contact_id (id_contact) REFERENCES 
 
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `use_pseudo` varchar(255) NOT NULL,
-  `use_email` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `use_pseudo` varchar(255) NOT NULL UNIQUE,
+  `use_email` varchar(255) NOT NULL UNIQUE,
   `use_password` varchar(255) NOT NULL,
-  `pok_pref` int(11) DEFAULT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);

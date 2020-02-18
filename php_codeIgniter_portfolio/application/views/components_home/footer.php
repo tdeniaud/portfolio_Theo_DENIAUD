@@ -2,7 +2,7 @@
 <a class="scroll-to-top rounded" href="#top_page">
 	<i class="fas fa-angle-up"></i>
 </a>
-<footer class="bg-dark">
+<footer class="bg-dark mt-5">
 
 	<div class="d-flex justify-content-center align-items-center" id="h6em">
 		<ul class="list-inline social-buttons wow fadeInUp">

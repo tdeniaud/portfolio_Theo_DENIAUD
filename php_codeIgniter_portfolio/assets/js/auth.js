@@ -38,7 +38,6 @@ $(document).on('submit', '#form-signup', function (e) {
 
 			} else {
 
-				//console.log(data.success);
 
 				Swal.fire({
 					position : 'center',
@@ -61,6 +60,7 @@ $(document).on('submit', '#form-signup', function (e) {
 
 
 $(document).on('submit', '#form-signin', function (e) {
+
 	//Permet de désactiver toutes les actions par défaut du comportement html (ici un bouton submit doit recharger la page. Ici on empêche ce rechargement)
 	e.preventDefault();
 	var pseudo = $('#loginPseudo').val();

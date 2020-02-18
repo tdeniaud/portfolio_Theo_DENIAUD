@@ -42,12 +42,12 @@ class User_model extends CI_Model
 
 
 
-	public function checkExistUser($where) {
+	public function checkExistUser($where,$value) {
 
 
 		$query = $this->db->select('*')
 			->from('users')
-			->where($where)
+			->where($where,$value)
 			->get();
 
 		if ($query->num_rows() > 0) {

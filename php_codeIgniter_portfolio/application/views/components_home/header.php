@@ -37,7 +37,11 @@
 
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll" href="<?= site_url('auth'); ?>">Se connecter</a>
+						<?php if($this->logged){ ?>
+							<a class="nav-link" href="<?= site_url('logout'); ?>"><i class="fa fa-sign-out-alt"></i> </a>
+						<?php } else { ?>
+							<a class="nav-link" href="<?= site_url('auth'); ?>">Se connecter</a>
+						<?php } ?>
 					</li>
 				</ul>
 			</div>
