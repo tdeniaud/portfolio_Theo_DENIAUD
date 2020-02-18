@@ -25,15 +25,14 @@ $(document).on('submit', '#form-contact', function (e) {
 
            } else {
 
-               //console.log(data.success);
-
                Swal.fire({
                    position : 'center',
                    icon : 'success',
-                   title : 'Bienvenue ! Vous allez être redirigé vers la page d\'accueil ...',
+                   title : 'Merci d\'avoir complété ce formulaire ! Vous allez être redirigé vers la page d\'accueil ...',
                    showConfirmButton : false,
                    timer : 1500
                });
+
 			   setTimeout(function(){
 				   window.location.href = site_url;
 			   }, 1500);

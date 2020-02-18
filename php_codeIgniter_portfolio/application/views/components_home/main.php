@@ -5,6 +5,16 @@
 
 <body class="landing-page bg-light">
 
+<div id="loader-wrapper">
+	<div id="loader"></div>
+
+	<div class="loader-section section-left"></div>
+	<div class="loader-section section-right"></div>
+
+</div>
+
+
+
 <?php $this->load->view('components_home/header') ?>
 
 <?php $this->load->view($subview) ?>

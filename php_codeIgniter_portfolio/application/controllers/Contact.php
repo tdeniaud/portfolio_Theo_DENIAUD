@@ -57,7 +57,7 @@ class Contact extends MY_Controller {
 			array(
 				'field' => 'Message',
 				'label' => 'Message',
-				'rules' => 'required|max_length[255]'
+				'rules' => 'required|min_length[10]|max_length[255]'
 			)
 		);
 

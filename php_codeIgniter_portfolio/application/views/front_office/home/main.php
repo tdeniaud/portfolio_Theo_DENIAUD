@@ -33,7 +33,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-xp.jpg" alt="Mon expérience">
+					<img class="img-fluid" src="assets/images/back-xp.jpg" alt="Photo by Pixabay from Pexels">
 
 				</a>
 			</div>
@@ -51,7 +51,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-skill.jpg" alt="Mes expériences">
+					<img class="img-fluid" src="assets/images/back-skill.jpg" alt="Photo by Brett Sayles from Pexels">
 
 				</a>
 			</div>
@@ -69,7 +69,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-learn.jpg" alt="Ma Formation">
+					<img class="img-fluid" src="assets/images/back-learn.jpg" alt="Photo by Startup Stock Photos from Pexels">
 
 				</a>
 			</div>
@@ -87,7 +87,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-2000.jpg" alt="Ma Formation">
+					<img class="img-fluid" src="assets/images/back-2000.jpg" alt="Photo by Eduardo Dutra from Pexels">
 
 				</a>
 			</div>
@@ -105,7 +105,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-network.jpg" alt="Network">
+					<img class="img-fluid" src="assets/images/back-network.jpg" alt="Photo by Pixabay from Pexels">
 
 				</a>
 			</div>
@@ -122,7 +122,7 @@
 						</span>
 					</span>
 
-					<img class="img-fluid" src="assets/images/back-other.jpg" alt="Autres">
+					<img class="img-fluid" src="assets/images/back-other.jpg" alt="Photo by Pixabay from Pexels">
 
 				</a>
 			</div>
@@ -136,7 +136,7 @@
 
 	<div class="container-fluid p-0">
 		<div class="row no-gutters shadow" id="MonXP">
-			<img class="col-lg-6 order-lg-2" src="assets/images/back-xp.jpg"/>
+			<img class="col-lg-6 order-lg-2 img-fluid" src="assets/images/back-xp.jpg" alt="Photo by Pixabay from Pexels">
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 
 
@@ -156,7 +156,7 @@
 		</div>
 
 		<div class="row no-gutters" id="MesCompetences">
-			<img class="col-lg-6" src="assets/images/back-skill.jpg"/>
+			<img class="col-lg-6 img-fluid" src="assets/images/back-skill.jpg" alt="Photo by Brett Sayles from Pexels">
 				<div class="col-lg-6 my-auto showcase-text pr-5 pl-5">
 
 					<div class="row">
@@ -259,7 +259,7 @@
 		</div>
 
 		<div class="row no-gutters shadow-sm" id="MaFormation">
-			<img class="col-lg-6 order-lg-2 lazyload" data-src="assets/images/back-learn.jpg"/>
+			<img class="col-lg-6 order-lg-2 img-fluidf" src="assets/images/back-learn.jpg" alt="Photo by Startup Stock Photos from Pexels">
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 
 

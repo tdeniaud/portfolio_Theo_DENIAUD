@@ -1,6 +1,6 @@
 <header>
 
-	<nav class="navbar navbar-id navbar-trans navbar-expand-md fixed-top" id="mainNav">
+	<nav class="navbar navbar-id navbar-trans navbar-expand-md fixed-top display-none" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand" href="<?= site_url(''); ?>">PORTFOLIO</a>
 			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
