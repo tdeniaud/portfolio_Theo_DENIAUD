@@ -14,17 +14,13 @@ class Authentification extends MY_Controller {
 	public function index() {
 
 		$this->data['css'] = $this->layout->add_css(array(
-			'assets/plugins/bootstrap/css/bootstrap.min',
-			'assets/css/styles',
-			'assets/css/forms',
-			'assets/css/portfolio_home'
+			'assets/css/forms'
 		));
 
 		// Chargement des JS
 		$this->data['js'] = $this->layout->add_js(array(
 			'assets/plugins/bootstrap/js/bootstrap.min',
 			'assets/js/auth',
-			'assets/js/preload',
 			'assets/js/home'
 		));
 

@@ -4,7 +4,7 @@
 </a>
 <footer class="bg-dark mt-5">
 
-	<div class="d-flex justify-content-center align-items-center" id="h6em">
+	<div class="d-flex justify-content-center align-items-center h-100">
 		<ul class="list-inline social-buttons wow fadeInUp">
 			<li> <a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
 			<li> <a class="facebook" rel="noopener" href="https://www.facebook.com/theo.deniaud.14" target="_blank" accesskey="f"><i class="fab fa-facebook-f"></i></a></li>

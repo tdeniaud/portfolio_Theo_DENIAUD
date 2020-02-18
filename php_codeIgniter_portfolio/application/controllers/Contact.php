@@ -14,13 +14,13 @@ class Contact extends MY_Controller {
 
 
 		$this->data['css'] = $this->layout->add_css(array(
-			'assets/css/portfolio_home'
+			'assets/css/forms'
 		));
+
 		// Chargement des JS
 		$this->data['js'] = $this->layout->add_js(array(
 			'assets/js/home',
 			'assets/js/contact_validation',
-			'assets/js/preload'
 
 
 		));

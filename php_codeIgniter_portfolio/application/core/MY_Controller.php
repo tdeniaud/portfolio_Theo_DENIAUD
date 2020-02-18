@@ -21,13 +21,15 @@ class MY_Controller extends CI_Controller {
         $this->data['css'] = $this->layout->add_css(array(
             'assets/plugins/bootstrap/css/bootstrap.min',
             'assets/plugins/sweetalert/sweetalert2.min',
-            'assets/css/styles'
+            'assets/css/styles',
+			'assets/css/nav'
         ));
         // Chargement des JS
         $this->data['js'] = $this->layout->add_js(array(
             'assets/plugins/bootstrap/js/bootstrap.min',
             'assets/plugins/sweetalert/sweetalert2.all.min',
-            'assets/plugins/fontawesome/all.min'
+            'assets/plugins/fontawesome/all.min',
+			'assets/js/preload'
         ));
 
 
@@ -63,11 +65,10 @@ class MY_Back extends CI_Controller {
 		$this->data['css'] = $this->layout->add_css(array(
 			'assets/plugins/bootstrap/css/bootstrap.min',
 			'assets/css/styles',
+			'assets/css/nav'
 		));
 		$this->data['js'] = $this->layout->add_js(array(
-			'assets/plugins/jquery-3.3.1.min',
-			'assets/plugins/bootstrap/js/bootstrap.min',
-			'assets/js/main'
+			'assets/plugins/bootstrap/js/bootstrap.min'
 		));
 
 		$this->session->userdata('active_user') == null ? redirect('') : 'dashboard';

@@ -56,7 +56,20 @@ button[type="submit"]:active {
 }
 
 
-
 *:focus {
 	outline: none;
+}
+
+
+.field-error{
+	color:#000;
+	font-size: 12px;
+	font-style: italic;
+	text-align: right;
+}
+
+#form-signin, #form-signup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

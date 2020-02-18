@@ -1,3 +1,6 @@
+/* --- Styles pour la page Home Portfolio --- */
+
+
 .portfolio-item {
 	display: block;
 	position: relative;
@@ -30,6 +33,8 @@
 	font-weight: 300;
 	font-size: 1.2rem;
 }
+
+/* Responsive */
 @media(max-width: 991px){
 	.portfolio-item{
 		margin: 2rem 0rem;
@@ -67,42 +72,7 @@
 	}
 }
 
-.col-lg-6 {
-	padding: 0rem;
-}
-
-.showcase {
-	margin-top: 6rem;
-}
-.showcase .showcase-text {
-	padding: 3rem;
-}
-
-
-@media (min-width: 768px) {
-	.showcase .showcase-text {
-		padding: 5rem;
-	}
-}
-
-.logo {
-	width: 4.5em;
-
-}
-
-
-.download_btn {
-	background-color: transparent;
-	color: white !important;
-	border-color: white;
-}
-
-.download_btn:hover {
-	background-color: rgba(255,255,255,0.1);
-
-}
-
-
+/* --- Barres de progression personnalisées --- */
 .progress-wrap {
 	width: 100%;
 	float: left;
@@ -153,297 +123,78 @@
 
 
 
+
+/* --- Typed JS --- */
+
 p .text-slider-items {
 	display: none;
 }
 
-.field-error {
-	color: black;
+
+/* --- Bannière full sreen first home page --- */
+
+.logo {
+	width: 4.5em;
+
+}
+
+.download_btn {
+	background-color: transparent;
+	color: white !important;
+	border-color: white;
+}
+
+.download_btn:hover {
+	background-color: rgba(255,255,255,0.1);
+
 }
 
 
+#profil {
 
+	border: solid black 0.125em;
+	border-radius: 50%;
 
+}
+.img-fullscreen {
+	background-image: url("../images/back-2000.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 
+}
 
-
-
-
-/*------------------------------------------------------------------
-[ Input ]*/
-
-.wrap-input100 {
+.message {
+	resize: none;
+	overflow-wrap: break-word;
 	width: 100%;
-	position: relative;
-	border-bottom: 1px solid #b2b2b2;
-	margin-bottom: 26px;
 }
 
-.label-input100 {
-	font-size: 15px;
-	color: #808080;
-	line-height: 1.2;
-	text-align: right;
-	position: absolute;
-	top: 14px;
-	left: -105px;
-	width: 80px;
-
+section#top_page.text-center.img-fullscreen {
+	height: 100% ;
+	min-height: 600px;
 }
 
-/*---------------------------------------------*/
-.input100 {
-	font-size: 15px;
-	color: #555555;
-	line-height: 1.2;
+.alpha {
 
-	display: block;
-	width: 100%;
-	background: transparent;
-	padding: 0 5px;
-}
-
-.focus-input100 {
-	position: absolute;
-	display: block;
-	width: 100%;
+	background-color: rgba(255,255,255,0.4);
 	height: 100%;
-	top: 0;
-	left: 0;
-	pointer-events: none;
 }
 
-.focus-input100::before {
-	content: "";
-	display: block;
-	position: absolute;
-	bottom: -1px;
-	left: 0;
-	width: 0;
-	height: 1px;
+#desc {
 
-	-webkit-transition: all 0.6s;
-	-o-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	transition: all 0.6s;
+	color: black !important;
 
-	background: #57b846;
 }
 
-
-/*---------------------------------------------*/
-input.input100 {
-	height: 45px;
+.banniere .container {
+	padding-bottom: 8%;
+	padding-top: 5%;
 }
 
-
-textarea.input100 {
-	min-height: 115px;
-	padding-top: 14px;
-	padding-bottom: 13px;
+.banniere .container h1 {
+	padding-top: 5%;
 }
 
-
-.input100:focus + .focus-input100::before {
-	width: 100%;
+.banniere .container p {
+	padding: 1%
 }
-
-.has-val.input100 + .focus-input100::before {
-	width: 100%;
-}
-
-
-/*------------------------------------------------------------------
-[ Button ]*/
-.container-contact100-form-btn {
-	width: 100%;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 8px;
-}
-
-.contact100-form-btn {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0 20px;
-	min-width: 160px;
-	height: 50px;
-	background-color: #57b846;
-	border-radius: 25px;
-
-	font-family: Poppins-Regular;
-	font-size: 16px;
-	color: #fff;
-	line-height: 1.2;
-
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-	transition: all 0.4s;
-}
-
-.contact100-form-btn i {
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-	transition: all 0.4s;
-}
-
-.contact100-form-btn:hover {
-	background-color: #333333;
-}
-
-.contact100-form-btn:hover i {
-	-webkit-transform: translateX(10px);
-	-moz-transform: translateX(10px);
-	-ms-transform: translateX(10px);
-	-o-transform: translateX(10px);
-	transform: translateX(10px);
-}
-
-
-/*------------------------------------------------------------------
-[ Responsive ]*/
-
-@media (max-width: 576px) {
-	.contact100-form {
-		padding: 43px 15px 57px 117px;
-	}
-}
-
-@media (max-width: 480px) {
-	.contact100-form {
-		padding: 43px 15px 57px 15px;
-	}
-
-	.label-input100 {
-		text-align: left;
-		position: unset;
-		top: unset;
-		left: unset;
-		width: 100%;
-		padding: 0 5px;
-	}
-}
-
-
-/*------------------------------------------------------------------
-[ Alert validate ]*/
-
-.validate-input {
-	position: relative;
-}
-
-.alert-validate::before {
-	content: attr(data-validate);
-	position: absolute;
-	max-width: 70%;
-	background-color: #fff;
-	border: 1px solid #c80000;
-	border-radius: 2px;
-	padding: 4px 25px 4px 10px;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 2px;
-	pointer-events: none;
-
-	color: #c80000;
-	font-size: 13px;
-	line-height: 1.4;
-	text-align: left;
-
-	visibility: hidden;
-	opacity: 0;
-
-	-webkit-transition: opacity 0.4s;
-	-o-transition: opacity 0.4s;
-	-moz-transition: opacity 0.4s;
-	transition: opacity 0.4s;
-}
-
-.alert-validate::after {
-	content: "\f06a";
-	font-family: FontAwesome;
-	display: block;
-	position: absolute;
-	color: #c80000;
-	font-size: 15px;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 8px;
-}
-
-.alert-validate:hover:before {
-	visibility: visible;
-	opacity: 1;
-}
-
-@media (max-width: 992px) {
-	.alert-validate::before {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
-
-
-input {
-	outline: none;
-	border: none;
-}
-
-input[type="number"] {
-	-moz-appearance: textfield;
-	appearance: none;
-	-webkit-appearance: none;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-}
-
-textarea {
-	outline: none;
-	border: none;
-}
-
-textarea:focus, input:focus {
-	border-color: transparent !important;
-}
-
-
-
-/*---------------------------------------------*/
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-iframe {
-	border: none !important;
-}
-
-
