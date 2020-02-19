@@ -94,7 +94,7 @@
 
 						<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
 
-							<h6 class="m-0 font-weight-bold text-primary">Title</h6>
+							<h6 class="m-0 font-weight-bold text-primary">Liste des utilisateurs</h6>
 
 						</div>
 
@@ -164,6 +164,71 @@
 					</div>
 
 				</div>
+
+
+				<div class="col-xl-8 col-lg-7">
+					<div class="card shadow mb-4">
+
+						<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+
+							<h6 class="m-0 font-weight-bold text-primary">Liste des messages</h6>
+
+						</div>
+
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12 ml-1">
+									<div class="table-responsive">
+										<table class="table table-hover table-grey-dark-plus">
+											<thead>
+											<tr>
+												<th scope="col">id</th>
+												<th scope="col">Contact</th>
+												<th scope="col">Contenu</th>
+
+												<th scope="col">Màj</th>
+											</tr>
+											</thead>
+											<tbody>
+											<?php foreach ($messages as $message) { ?>
+												<th scope="row"><?= $message->id ?></th>
+												<td class="align-middle"><?= $message->id_contact ?></td>
+												<td class="align-middle"><?= $message->contenu ?></td>
+
+												<td class="align-middle"><?= $message->updated_at ?></td>
+												</tr>
+											<?php } ?>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal fade" id="modal-user-edit">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modal-user-delete">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+						</div>
+					</div>
+
+				</div>
+
+
 			</div>
 
 

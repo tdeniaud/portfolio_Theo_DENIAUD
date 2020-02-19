@@ -200,7 +200,7 @@ class Panel extends MY_Controller {
 	}
 
 	public function deleteUser(){
-		
+
 	}
 
 }

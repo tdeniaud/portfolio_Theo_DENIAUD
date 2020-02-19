@@ -18,7 +18,6 @@
 
 						<label for="loginPseudo" class="sr-only">Pseudo</label>
 						<input type="text" id="loginPseudo" name="loginPseudo" class="form-control" placeholder="Pseudo" required autofocus>
-						<p class="field-error mb-2" data-field="loginPseudo"></p>
 
 					</div>
 
@@ -26,12 +25,13 @@
 
 						<label for="loginPassword" class="sr-only">Mot de Passe</label>
 						<input type="password" id="loginPassword" name="loginPassword" class="form-control" placeholder="Mot de Passe" required>
-						<p class="field-error mb-2" data-field="loginPassword"></p>
 
 					</div>
+					<p class="field-error mb-2" data-field="error_general"></p>
 
 
-				<button class="mt-4" type="submit">Connexion</button>
+
+					<button class="mt-4" type="submit">Connexion</button>
 
 				</form>
 
