@@ -29,7 +29,8 @@ class MY_Controller extends CI_Controller {
             'assets/plugins/bootstrap/js/bootstrap.min',
             'assets/plugins/sweetalert/sweetalert2.all.min',
             'assets/plugins/fontawesome/all.min',
-			'assets/js/preload'
+			'assets/js/preload',
+			'assets/js/main'
         ));
 
 

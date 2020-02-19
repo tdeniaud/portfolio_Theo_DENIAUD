@@ -1,0 +1,17 @@
+.navbar-nav {
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.sidebar {
+	width: 15% !important;
+	min-height: 100vh;
+	margin-bottom: 0;
+}
+
+.po85 {
+	width: 85% !important;
+}

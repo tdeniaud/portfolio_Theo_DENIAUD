@@ -51,7 +51,7 @@
 						<?php if($this->logged){ ?>
 							<a class="nav-link" href="<?= site_url('logout'); ?>"><i class="fa fa-sign-out-alt"></i> </a>
 						<?php } else { ?>
-							<a class="nav-link" href="<?= site_url('auth/login'); ?>">Connexion</a>
+							<a class="nav-link" href="<?= site_url('auth'); ?>">Connexion</a>
 						<?php } ?>
 
 					</li>

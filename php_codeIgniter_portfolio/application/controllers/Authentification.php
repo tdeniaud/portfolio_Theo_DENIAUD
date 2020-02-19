@@ -19,9 +19,8 @@ class Authentification extends MY_Controller {
 
 		// Chargement des JS
 		$this->data['js'] = $this->layout->add_js(array(
-			'assets/plugins/bootstrap/js/bootstrap.min',
 			'assets/js/auth',
-			'assets/js/home'
+			'assets/js/nav'
 		));
 
 		$this->data['subview'] = 'front_office/auth/main';
@@ -29,14 +28,19 @@ class Authentification extends MY_Controller {
 		$this->load->view('components_home/main', $this->data);
 	}
 
+	// Déconnexion et redirection
+
 	public  function logout(){
 		$this->session->sess_destroy();
 		redirect();
 	}
 
+	// Fonction de connexion
+
 	public function login_attempt() {
 
 
+		// Vérifie les champs selon les règles renseignées
 
 		$rulesArray = array(
 			array(
@@ -69,6 +73,7 @@ class Authentification extends MY_Controller {
 			$login = $this->input->post('loginPseudo');
 			$password = $this->input->post('loginPassword');
 
+			// Vérifier si l'utilisateur en dans la base de donnée
 
 			$checkUser = $this->userManager->checkExistUser(
 				array(
@@ -78,6 +83,8 @@ class Authentification extends MY_Controller {
 
 
 			if ($checkUser) {
+
+				// Vérifier que le mot de passe renseigné est identique à celui en bdd
 
 				$checkCouple = $this->userManager->hash_verify($checkUser->use_password, $password);
 

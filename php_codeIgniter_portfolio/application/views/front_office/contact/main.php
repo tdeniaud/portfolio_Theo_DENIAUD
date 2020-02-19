@@ -1,5 +1,5 @@
 
-<div class="showcase bg-light pb-5" id="top_page">
+<div class="showcase bg-light pb-5" >
 	<div class="row no-gutters shadow" id="Contact">
 		<img class="col-lg-6" src="assets/images/mail.jpg"/>
 		<div class="col-lg-6 my-auto showcase-text">
@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div class="form-group float-right">
-			<input type="submit" value="Envoyer" class="btn btn-primary btn-sm">
+			<input type="submit" value="Envoyer" class="btn btn-sm">
 		</div>
 
 	</form>

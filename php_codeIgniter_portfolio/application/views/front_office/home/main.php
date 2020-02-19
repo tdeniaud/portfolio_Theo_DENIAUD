@@ -1,4 +1,4 @@
-<section class="text-center img-fullscreen" id="top_page">
+<section class="text-center img-fullscreen" >
 
 	<div class="alpha">
 		<div class="container d-flex flex-column align-items-center h-100 justify-content-center">

@@ -19,16 +19,15 @@ class Home extends MY_Controller {
 		$this->data['formations'] = $formations;
 
 
-
+		// Chargement des CSS
 		$this->data['css'] = $this->layout->add_css(array(
-			'assets/css/portfolio_home'
+			'assets/css/portfolio_home',
+
+
 		));
-		// Chargement des JS
+
 		$this->data['js'] = $this->layout->add_js(array(
-			'assets/js/home',
-
-
-
+			'assets/js/nav'
 		));
 
         // Chargement de la vue

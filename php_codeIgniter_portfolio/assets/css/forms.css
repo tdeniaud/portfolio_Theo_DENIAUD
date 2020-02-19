@@ -73,3 +73,10 @@ button[type="submit"]:active {
 	flex-direction: column;
 	align-items: center;
 }
+
+
+.message {
+	resize: none;
+	overflow-wrap: break-word;
+	width: 100%;
+}

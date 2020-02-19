@@ -58,7 +58,7 @@ $route['enregistrer'] = 'contact/enregistrer';
 $route['404_override'] = 'errors/error_404';
 $route['translate_uri_dashes'] = FALSE;
 
-
+$route['profil']= 'panel';
 
 $route['auth'] = 'authentification';
 $route['register/attempt'] = 'authentification/register';

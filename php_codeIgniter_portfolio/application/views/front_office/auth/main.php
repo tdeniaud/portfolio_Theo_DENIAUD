@@ -1,11 +1,12 @@
 
-<div class="showcase bg-light pb-5" id="top_page">
+<div class="showcase bg-light pb-5">
 
 	<div class="row no-gutters shadow">
 
 		<img class="col-lg-6" src="assets/images/signin.jpg" alt="Photo by Tirachard Kumtanom from Pexels"/>
 
 		<div class="col-lg-6 my-auto showcase-text">
+			
 
 			<div class="login">
 
