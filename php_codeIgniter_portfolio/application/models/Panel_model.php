@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Content_model extends CI_Model
+class Panel_model extends CI_Model
 {
 
 	public function __construct()
@@ -9,7 +9,7 @@ class Content_model extends CI_Model
 		parent::__construct();
 	}
 
-	public function getCV($select, $where = null, $value = null, $returnType = 'array') {
+	public function getUser($select, $where = null, $value = null, $returnType = 'array') {
 	    $this->db->select($select)
             ->from('CV');
 
@@ -34,17 +34,6 @@ class Content_model extends CI_Model
             }
         }
     }
-
-	public function getContact($email) {
-		$result = $this->db->select('id')
-			->from('Contact')->where('email',$email)
-			->get()->row();
-		return $result;
-
-
-	}
-
-
 
 
 }

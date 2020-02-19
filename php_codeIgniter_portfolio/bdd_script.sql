@@ -31,3 +31,9 @@ CREATE TABLE `users` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 );
+
+
+create table recommandation (id int not null auto_increment PRIMARY KEY,
+recommandation VARCHAR (255) NOT NULL,
+id_user INT NOT NULL, etat CHAR(1) NOT NULL DEFAULT 'A',
+CONSTRAINT FOREIGN KEY fk_recommandation_id_user_users_id(id_user) REFERENCES users(id));

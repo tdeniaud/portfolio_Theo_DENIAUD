@@ -40,7 +40,15 @@
 				<ul class="navbar-nav">
 
 
-					<?php if ($this->logged){ ?>
+					<?php
+					if ($this->logged and $this->admin){ ?>
+						<li class="nav-item <?php echo (current_url() == site_url("admin")) ? "active" : "" ?>">
+							<a class="nav-link" href="<?= site_url('admin'); ?>">Bonjour, <?= $this->appli_user->use_pseudo ?></a>
+						</li>
+
+					<?php } ?>
+					<?php
+					if ($this->logged and !($this->admin)){ ?>
 						<li class="nav-item <?php echo (current_url() == site_url("profil")) ? "active" : "" ?>">
 							<a class="nav-link" href="<?= site_url('profil'); ?>">Bonjour, <?= $this->appli_user->use_pseudo ?></a>
 						</li>

@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div class="form-group float-right">
-			<input type="submit" value="Envoyer" class="btn btn-sm">
+			<button type="submit" class="btn-sm">Envoyer</button>
 		</div>
 
 	</form>

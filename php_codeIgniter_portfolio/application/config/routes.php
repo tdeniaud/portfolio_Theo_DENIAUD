@@ -58,9 +58,16 @@ $route['enregistrer'] = 'contact/enregistrer';
 $route['404_override'] = 'errors/error_404';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['profil']= 'panel';
+$route['profil']= 'home';
+$route['admin']='panel';
 
 $route['auth'] = 'authentification';
 $route['register/attempt'] = 'authentification/register';
 $route['login/attempt'] = 'authentification/login_attempt';
 $route['logout'] = 'authentification/logout';
+
+
+$route['administration/user/viewedit'] = 'panel/getviewedit';
+$route['administration/user/viewdelete'] = 'panel/getviewdelete';
+$route['administration/user/edit'] = 'panel/edit';
+$route['administration/user/delete'] = 'panel/delete';

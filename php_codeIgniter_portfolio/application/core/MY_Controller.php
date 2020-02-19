@@ -41,12 +41,19 @@ class MY_Controller extends CI_Controller {
 	public function checkIfLoggedIn() {
 
         $user = $this->session->userdata('user');
+        $use_name = $user;
         $email = $this->session->userdata('email');
         if($user && $email){
             $user = $this->userManager->checkExistUser(array('use_pseudo' => $user, 'use_email' => $email));
             if($user){
                 $this->appli_user = $user;
                 $this->logged = true;
+                if($use_name == 'admin123'){
+					$this->admin = true;
+
+				}else {
+					$this->admin = false;
+				}
             }
         }
 
