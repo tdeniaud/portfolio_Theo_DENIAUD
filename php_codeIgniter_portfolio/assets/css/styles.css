@@ -262,7 +262,7 @@ ul.social-buttons li a {
 
 
 .showcase {
-	margin-top: 6rem;
+	margin-top: 10rem;
 }
 .showcase .showcase-text {
 	padding: 3rem;
@@ -275,3 +275,6 @@ ul.social-buttons li a {
 	}
 }
 
+.mt-6 {
+	margin-top: 10rem;
+}

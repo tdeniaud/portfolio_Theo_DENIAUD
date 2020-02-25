@@ -60,6 +60,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['profil']= 'home';
 $route['admin']='panel';
+$route['mentions']='mention';
+
 
 $route['auth'] = 'authentification';
 $route['register/attempt'] = 'authentification/register';

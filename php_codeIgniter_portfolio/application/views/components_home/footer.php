@@ -14,6 +14,9 @@
 
 
 		</ul>
+		<ul class="mb-0">
+			<li><a href="<?= site_url('mentions'); ?>">Mentions Légales</a></li>
+		</ul>
 	</div>
 
 
