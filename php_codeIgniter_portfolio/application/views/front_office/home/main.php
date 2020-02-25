@@ -280,6 +280,23 @@
 	</div>
 
 </section>
+<section>
+	<div class="row">
+		<?php foreach ($recommandations as $recommandation) { ?>
+		<div class="col-lg-6 mx-auto">
+
+			<!-- CUSTOM BLOCKQUOTE -->
+			<blockquote class="blockquote blockquote-custom bg-white p-5 shadow m-5">
+				<div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+				<p class="mb-0 mt-2 font-italic">"<?= $recommandation->recommandation ?>"</p>
+				<footer class="blockquote-footer pt-4 mt-4 border-top"> <?= $recommandation->id_user ?>
+				</footer>
+			</blockquote><!-- END -->
+
+		</div>
+		<?php } ?>
+	</div>
+</section>
 
 
 

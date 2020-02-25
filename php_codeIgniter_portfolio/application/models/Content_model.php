@@ -9,9 +9,9 @@ class Content_model extends CI_Model
 		parent::__construct();
 	}
 
-	public function getCV($select, $where = null, $value = null, $returnType = 'array') {
+	public function getContent($select, $table, $where = null, $value = null, $returnType = 'array') {
 	    $this->db->select($select)
-            ->from('CV');
+            ->from($table);
 
         if($where != null && $value != null){
             $this->db->where($where,$value);

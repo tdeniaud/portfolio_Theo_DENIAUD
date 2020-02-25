@@ -13,10 +13,12 @@ class Home extends MY_Controller {
 	public function index() {
 
 
-		$experiences = $this->contentManager->getCV("*","section","XP");
+		$experiences = $this->contentManager->getContent("*","CV","section","XP");
 		$this->data['experiences'] = $experiences;
-		$formations = $this->contentManager->getCV("*","section","FORMATION");
+		$formations = $this->contentManager->getContent("*","CV","section","FORMATION");
 		$this->data['formations'] = $formations;
+
+		$this->data['recommandations'] = $this->contentManager->getContent("*","recommandation","etat","V");
 
 
 		// Chargement des CSS

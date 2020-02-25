@@ -128,7 +128,6 @@ class User_model extends CI_Model
 
 	}
 
-
 	public function getUser($select, $where = null, $value = null, $returnType = 'array') {
 		$this->db->select($select)
 			->from('users');
@@ -138,6 +137,7 @@ class User_model extends CI_Model
 		}
 
 		$result = $this->db->get();
+
 
 		if($returnType === 'row') {
 			if ($result->num_rows() > 0) {
@@ -153,6 +153,7 @@ class User_model extends CI_Model
 			}
 		}
 	}
+
 
 
 }
