@@ -122,9 +122,7 @@
 													<td class="align-middle"><?= $user->created_at ?></td>
 													<td class="align-middle"><?= $user->updated_at ?></td>
 													<td class="align-middle">
-														<!--<a class="btn btn-dark modify_user" data-user="$user->id" href=""><i class="fas fa-user-cog"></i></a>-->
-														<!--<a class="btn btn-dark delete_user" href=""><i class="far fa-trash-alt"></i></a>-->
-														<!-- Button to Open the Modal -->
+
 														<button type="button" class="btn btn-dark btn-show-user-edit" data-user="<?php echo $user->id; ?>">
 															<i class="fas fa-user-cog"></i>
 														</button>
@@ -227,7 +225,75 @@
 					</div>
 
 				</div>
+				<div class="col-xl-8 col-lg-7">
+					<div class="card shadow mb-4">
 
+						<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+
+							<h6 class="m-0 font-weight-bold text-primary">Recommandations à valider</h6>
+
+						</div>
+
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12 ml-1">
+									<div class="table-responsive">
+										<table class="table table-hover table-grey-dark-plus">
+											<thead>
+											<tr>
+												<th scope="col">id</th>
+												<th scope="col">Users</th>
+												<th scope="col">Contenu</th>
+												<th scope="col">Action</th>
+
+											</tr>
+											</thead>
+											<tbody>
+											<?php foreach ($recommandations as $recommandation) { ?>
+												<th scope="row"><?= $recommandation->id ?></th>
+												<td class="align-middle"><?= $recommandation->id_user ?></td>
+												<td class="align-middle"><?= $recommandation->recommandation ?></td>
+												<td class="align-middle">
+
+													<button type="button" class="btn btn-dark recommandation-check" data-user="<?php echo $user->id; ?>">
+														<i class="fas fa-check"></i>
+													</button>
+
+													<button type="button" class="btn btn-dark recommandation-delete" data-user="<?php echo $user->id; ?>">
+														<i class="fas fa-times"></i>
+													</button>
+												</td>
+												</tr>
+											<?php } ?>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal fade" id="modal-user-edit">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modal-user-delete">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+						</div>
+					</div>
+
+				</div>
 
 			</div>
 

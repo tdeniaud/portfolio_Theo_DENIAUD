@@ -1,5 +1,5 @@
 
-<div class="showcase bg-light pb-5">
+<div class="showcase bg-light pb-5 mb-6">
 
 	<div class="row no-gutters shadow">
 

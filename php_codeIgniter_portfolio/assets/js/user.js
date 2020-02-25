@@ -40,7 +40,7 @@ $(document).on('submit', '#form-user-edit', function (e) {
                 $('#form-user-edit p.field-error').each(function () {
                     $(this).text("");
                     for (var key in data.error) {
-                        if ($(this).attr('data-field') === key) { //boucle de batard
+                        if ($(this).attr('data-field') === key) {
                             $(this).html(data.error[key]);
                         }
                     }
@@ -102,7 +102,7 @@ $(document).on('submit', '#form-user-delete', function (e) {
             if (data.error) {
                 elementSelected.each(function () {
                     for (var key in data.error) {
-                        if ($(this).attr('data-field') === key) { //boucle de batard
+                        if ($(this).attr('data-field') === key) {
                             $(this).html(data.error[key]);
                         }
                     }
