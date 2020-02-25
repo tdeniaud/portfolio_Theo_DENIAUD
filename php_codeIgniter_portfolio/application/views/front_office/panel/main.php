@@ -114,25 +114,27 @@
 											</tr>
 											</thead>
 											<tbody>
-											<?php foreach ($users as $user) { ?>
-												<tr id="div-user-<?php echo $user->id ?>" style="font-size: 18px;">
-													<th scope="row"><?= $user->id ?></th>
-													<td class="align-middle"><?= $user->use_pseudo ?></td>
-													<td class="align-middle"><?= $user->use_email ?></td>
-													<td class="align-middle"><?= $user->created_at ?></td>
-													<td class="align-middle"><?= $user->updated_at ?></td>
-													<td class="align-middle">
+											<?php if($users){
+												foreach ($users as $user) { ?>
+													<tr id="div-user-<?php echo $user->id ?>" style="font-size: 18px;">
+														<th scope="row"><?= $user->id ?></th>
+														<td class="align-middle"><?= $user->use_pseudo ?></td>
+														<td class="align-middle"><?= $user->use_email ?></td>
+														<td class="align-middle"><?= $user->created_at ?></td>
+														<td class="align-middle"><?= $user->updated_at ?></td>
+														<td class="align-middle">
 
-														<button type="button" class="btn btn-dark btn-show-user-edit" data-user="<?php echo $user->id; ?>">
-															<i class="fas fa-user-cog"></i>
-														</button>
+															<button type="button" class="btn btn-dark btn-show-user-edit" data-user="<?php echo $user->id; ?>">
+																<i class="fas fa-user-cog"></i>
+															</button>
 
-														<button type="button" class="btn btn-dark btn-show-user-delete" data-user="<?php echo $user->id; ?>">
-															<i class="far fa-trash-alt"></i>
-														</button>
-													</td>
-												</tr>
-											<?php } ?>
+															<button type="button" class="btn btn-dark btn-show-user-delete" data-user="<?php echo $user->id; ?>">
+																<i class="far fa-trash-alt"></i>
+															</button>
+														</td>
+													</tr>
+												<?php }
+											} ?>
 											</tbody>
 										</table>
 									</div>
@@ -188,14 +190,15 @@
 											</tr>
 											</thead>
 											<tbody>
-											<?php foreach ($messages as $message) { ?>
+											<?php if($messages){ foreach ($messages as $message) { ?>
 												<th scope="row"><?= $message->id ?></th>
 												<td class="align-middle"><?= $message->id_contact ?></td>
 												<td class="align-middle"><?= $message->contenu ?></td>
 
 												<td class="align-middle"><?= $message->updated_at ?></td>
 												</tr>
-											<?php } ?>
+											<?php }
+											} ?>
 											</tbody>
 										</table>
 									</div>
@@ -249,22 +252,24 @@
 											</tr>
 											</thead>
 											<tbody>
-											<?php foreach ($recommandations as $recommandation) { ?>
-												<th scope="row"><?= $recommandation->id ?></th>
-												<td class="align-middle"><?= $recommandation->id_user ?></td>
-												<td class="align-middle"><?= $recommandation->recommandation ?></td>
-												<td class="align-middle">
+											<?php if($recommandations) {
+												foreach ($recommandations as $recommandation) { ?>
+													<th scope="row"><?= $recommandation->id ?></th>
+													<td class="align-middle"><?= $recommandation->id_user ?></td>
+													<td class="align-middle"><?= $recommandation->recommandation ?></td>
+													<td class="align-middle">
 
-													<button type="button" class="btn btn-dark recommandation-check" data-user="<?php echo $user->id; ?>">
-														<i class="fas fa-check"></i>
-													</button>
+														<button type="button" class="btn btn-dark recommandation-check" data-user="<?php echo $user->id; ?>">
+															<i class="fas fa-check"></i>
+														</button>
 
-													<button type="button" class="btn btn-dark recommandation-delete" data-user="<?php echo $user->id; ?>">
-														<i class="fas fa-times"></i>
-													</button>
-												</td>
-												</tr>
-											<?php } ?>
+														<button type="button" class="btn btn-dark recommandation-delete" data-user="<?php echo $user->id; ?>">
+															<i class="fas fa-times"></i>
+														</button>
+													</td>
+													</tr>
+												<?php }
+											} ?>
 											</tbody>
 										</table>
 									</div>

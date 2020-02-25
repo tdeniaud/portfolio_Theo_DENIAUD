@@ -35,14 +35,37 @@ class Panel extends MY_Controller {
         // Chargement de la vue
         $this->data['subview'] = 'front_office/panel/main';
 
-		$this->data['users'] = $this->userManager->getUser('*');
-		$this->data['recommandations'] = $this->contentManager->getContent("*","recommandation","etat","A");
 
-		$this->data['messages'] = $this->contentManager->getContent("*","Message");
 		$this->data['nbMessages'] = $this->contentManager->getContent("COUNT(*) as messages","Message",null,null,"row");
 		$this->data['nbRecommandations'] = $this->contentManager->getContent("COUNT(*) as recommandations","recommandation",null,null,"row");
 		$this->data['nbUsers'] = $this->contentManager->getContent("COUNT(*) as users","users",null,null,"row");
 
+		$recommandations = $this->contentManager->getContent("*","recommandation","etat","A");
+
+		if($recommandations) {
+			$this->data['recommandations'] = $recommandations ;
+		}
+		else {
+			$this->data['recommandations'] = false;
+		}
+
+		$users = $this->userManager->getUser('*');
+
+		if($users) {
+			$this->data['users'] = $users ;
+		}
+		else {
+			$this->data['users'] = false;
+		}
+
+		 $messages = $this->contentManager->getContent("*","Message");
+
+		if($messages) {
+			$this->data['messages'] = $messages ;
+		}
+		else {
+			$this->data['messages'] = false;
+		}
 
 
 

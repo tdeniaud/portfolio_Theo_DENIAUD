@@ -18,8 +18,15 @@ class Home extends MY_Controller {
 		$formations = $this->contentManager->getContent("*","CV","section","FORMATION");
 		$this->data['formations'] = $formations;
 
-		$this->data['recommandations'] = $this->contentManager->getContent("*","recommandation","etat","V");
+		$recommandations = $this->contentManager->getContent("*","recommandation","etat","V");
 
+		if($recommandations) {
+			$this->data['recommandations'] = $recommandations ;
+
+		}
+		else {
+			$this->data['recommandations'] = false;
+		}
 
 		// Chargement des CSS
 		$this->data['css'] = $this->layout->add_css(array(

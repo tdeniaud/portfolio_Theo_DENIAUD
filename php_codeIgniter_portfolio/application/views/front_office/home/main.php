@@ -282,7 +282,7 @@
 </section>
 <section>
 	<div class="row m-0">
-		<?php foreach ($recommandations as $recommandation) { ?>
+		<?php if($recommandations) { foreach ($recommandations as $recommandation) { ?>
 		<div class="col-lg-6 mx-auto">
 
 			<!-- CUSTOM BLOCKQUOTE -->
@@ -294,7 +294,8 @@
 			</blockquote><!-- END -->
 
 		</div>
-		<?php } ?>
+		<?php }
+		} ?>
 	</div>
 </section>
 
