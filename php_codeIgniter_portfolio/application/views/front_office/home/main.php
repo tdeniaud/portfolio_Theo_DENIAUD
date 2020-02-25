@@ -281,7 +281,7 @@
 
 </section>
 <section>
-	<div class="row">
+	<div class="row m-0">
 		<?php foreach ($recommandations as $recommandation) { ?>
 		<div class="col-lg-6 mx-auto">
 
