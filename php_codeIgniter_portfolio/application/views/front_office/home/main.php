@@ -289,7 +289,7 @@
 			<blockquote class="blockquote blockquote-custom bg-white p-5 shadow m-5">
 				<div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
 				<p class="mb-0 mt-2 font-italic">"<?= $recommandation->recommandation ?>"</p>
-				<footer class="blockquote-footer pt-4 mt-4 border-top"> <?= $recommandation->id_user ?>
+				<footer class="blockquote-footer pt-4 mt-4 border-top"> <?= $recommandation->use_pseudo ?>
 				</footer>
 			</blockquote><!-- END -->
 
