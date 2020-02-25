@@ -40,32 +40,13 @@ class Panel extends MY_Controller {
 		$this->data['nbRecommandations'] = $this->contentManager->getContent("COUNT(*) as recommandations","recommandation",null,null,"row");
 		$this->data['nbUsers'] = $this->contentManager->getContent("COUNT(*) as users","users",null,null,"row");
 
-		$recommandations = $this->contentManager->getContent("*","recommandation","etat","A");
+		$this->data['recommandations'] = $this->contentManager->getContent("*","recommandation","etat","A");
 
-		if($recommandations) {
-			$this->data['recommandations'] = $recommandations ;
-		}
-		else {
-			$this->data['recommandations'] = false;
-		}
 
-		$users = $this->userManager->getUser('*');
+		$this->data['users'] = $this->userManager->getUser('*');
 
-		if($users) {
-			$this->data['users'] = $users ;
-		}
-		else {
-			$this->data['users'] = false;
-		}
+		$this->data['messages'] = $this->contentManager->getContent("*","Message");
 
-		 $messages = $this->contentManager->getContent("*","Message");
-
-		if($messages) {
-			$this->data['messages'] = $messages ;
-		}
-		else {
-			$this->data['messages'] = false;
-		}
 
 
 
