@@ -252,18 +252,20 @@
 											</tr>
 											</thead>
 											<tbody>
+
 											<?php if($recommandations) {
 												foreach ($recommandations as $recommandation) { ?>
+													<tr>
 													<th scope="row"><?= $recommandation->id ?></th>
 													<td class="align-middle"><?= $recommandation->id_user ?></td>
 													<td class="align-middle"><?= $recommandation->recommandation ?></td>
 													<td class="align-middle">
 
-														<button type="button" class="btn btn-dark recommandation-check" data-user="<?php echo $user->id; ?>">
+														<button type="button" class="btn btn-dark recommandation-check" data-reco="<?php echo $recommandation->id; ?>">
 															<i class="fas fa-check"></i>
 														</button>
 
-														<button type="button" class="btn btn-dark recommandation-delete" data-user="<?php echo $user->id; ?>">
+														<button type="button" class="btn btn-dark recommandation-delete" data-reco="<?php echo $recommandation->id; ?>">
 															<i class="fas fa-times"></i>
 														</button>
 													</td>

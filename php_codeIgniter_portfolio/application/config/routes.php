@@ -73,3 +73,4 @@ $route['administration/user/viewedit'] = 'panel/getviewedit';
 $route['administration/user/viewdelete'] = 'panel/getviewdelete';
 $route['administration/user/edit'] = 'panel/edit';
 $route['administration/user/delete'] = 'panel/delete';
+$route['administration/reco/check'] = 'panel/checkrecommandation';

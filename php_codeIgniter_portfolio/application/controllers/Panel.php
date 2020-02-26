@@ -214,6 +214,24 @@ class Panel extends MY_Controller {
 
 	}
 
+	public function checkRecommandation(){
+		$dataUpdate = array(
+			"etat" => "V"
+
+		);
+		$dataWhere = array(
+			'id' => $this->input->post('reco_id')
+		);
+
+
+
+		$this->contentManager->updateContent('recommandation',$dataUpdate,$dataWhere);
+		echo json_encode(array(
+			'success' => 'Les modifications ont été pris en compte'
+		));
+
+	}
+
 	public function deleteUser(){
 
 	}

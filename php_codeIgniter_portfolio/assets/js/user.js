@@ -122,3 +122,36 @@ $(document).on('submit', '#form-user-delete', function (e) {
         }
     });
 });
+
+
+$('button.recommandation-check').on('click', function () {
+
+	var reco = $(this).attr('data-reco');
+
+	$.ajax({
+		url: site_url + "administration/reco/check",
+		type: 'POST',
+		data: {reco_id:reco},
+		success: function (data) {
+			if (data.error) {
+				Swal.fire({
+					position : 'center',
+					icon : 'error',
+					title : 'Une erreur est survenue !',
+					showConfirmButton : false,
+					timer : 1500,
+				});
+			} else {
+				Swal.fire({
+					position : 'center',
+					icon : 'success',
+					title : 'Recommandation validée !',
+					showConfirmButton : false,
+					timer : 1500,
+				});
+
+
+			}
+		}
+	});
+});

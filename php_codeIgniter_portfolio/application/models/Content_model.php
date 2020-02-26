@@ -62,6 +62,10 @@ class Content_model extends CI_Model
 	}
 
 
+	public function updateContent($table,$dataUpdate, $dataWhere) {
+		$this->db->update($table, $dataUpdate, $dataWhere);
+	}
+
 
 
 
