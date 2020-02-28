@@ -2,6 +2,7 @@
 <a class="scroll-to-top" href="#top_page">
 	<i class="fas fa-angle-up"></i>
 </a>
+
 <footer class="bg-dark mt-5">
 
 	<div class="d-flex justify-content-center align-items-center h-100">

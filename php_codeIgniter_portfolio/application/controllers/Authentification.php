@@ -194,6 +194,10 @@ class Authentification extends MY_Controller {
 
 
 	}
+
+
+	// Fonction de callback
+
 	public function pseudo_check($data) {
 
 

@@ -1,10 +1,10 @@
-
+// Fonction d'affichage des erreurs et validation form contact => redirection
 $(document).on('submit', '#form-contact', function (e) {
 
     //Permet de désactiver toutes les actions par défaut du comportement html (ici un bouton submit doit recharger la page. Ici on empêche ce rechargement)
     e.preventDefault();
     var formData = $(this).serialize();
-    var url = site_url + 'enregistrer'; /* préciser index.php/contact */
+    var url = site_url + 'enregistrer';
     var elementSelected = $('p.field-error');
 
     $.ajax({

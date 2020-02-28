@@ -11,8 +11,7 @@ class User_model extends CI_Model
 		$this->encryption->initialize(
 			array(
 				'cipher' => 'aes-256',
-				'mode' => 'ctr',
-				'key' => 'JeSuisuneCléEtmyMotdep@sseIsTrèsCOmpliqué,BonneCh@anceifyouwantetodécouvrirdiesesPasswort!!'
+				'mode' => 'ctr'
 			)
 		);
 	}

@@ -1,4 +1,4 @@
-
+/* Fonction pour faire disparaitre le bg preload au chargement de la page */
 $(document).ready(function() {
 
 	setTimeout(function(){

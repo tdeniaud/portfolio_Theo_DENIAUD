@@ -1,3 +1,4 @@
+// Fonction permettant de switch entre les deux formulaires
 var clicks = 0;
 
 $('a.switch').on('click', function () {
@@ -14,7 +15,10 @@ $('a.switch').on('click', function () {
 	}
 });
 
+// Fonctions d'affichage des erreurs et validation authentification => redirection
+
 $(document).on('submit', '#form-signup', function (e) {
+
 	//Permet de désactiver toutes les actions par défaut du comportement html (ici un bouton submit doit recharger la page. Ici on empêche ce rechargement)
 	e.preventDefault();
 	var formData = $(this).serialize();

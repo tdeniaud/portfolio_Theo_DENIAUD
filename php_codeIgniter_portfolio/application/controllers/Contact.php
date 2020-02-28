@@ -77,6 +77,8 @@ class Contact extends MY_Controller {
 
 		} else {
 
+			// Enregistrement en bdd du formulaire
+
 			$data['prenom'] = htmlspecialchars($this->input->post('Prenom'));
 			$data['nom'] = htmlspecialchars($this->input->post('Nom'));
 			$data['societe'] = htmlspecialchars($this->input->post('Entreprise'));

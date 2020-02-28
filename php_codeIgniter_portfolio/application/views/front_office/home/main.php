@@ -11,8 +11,6 @@
 		</div>
 	</div>
 
-
-
 </section>
 
 <div class="album py-5 bg-light">
@@ -130,178 +128,187 @@
 
 	</section>
 
-</div>
+</div> <!-- Fin bloc album -->
 
 <section class="showcase bg-light pb-5" id="CV">
 
 	<div class="container-fluid p-0">
 		<div class="row no-gutters shadow" id="MonXP">
 			<img class="col-lg-6 order-lg-2 img-fluid" src="assets/images/back-xp.jpg" alt="Photo by Pixabay from Pexels">
-				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+			<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 
 
-					<?php foreach ($experiences as $experience) { ?>
-					<div class="row justify-content-between align-items-center mb-3">
+				<?php foreach ($experiences as $experience) { ?>
+				<div class="row justify-content-between align-items-center mb-3">
 
-						<p><strong><?= $experience->annee ?> : </strong><?= htmlspecialchars($experience->contenu) ?></p>
-							<img class="logo" src="<?= $experience->img_url ?>" alt="<?= $experience->img_alt ?>"/>
-
-					</div>
-
-					<?php } ?>
-
+					<p><strong><?= $experience->annee ?> : </strong><?= htmlspecialchars($experience->contenu) ?></p>
+					<img class="logo" src="<?= $experience->img_url ?>" alt="<?= $experience->img_alt ?>"/>
 
 				</div>
-			</div>
-		</div>
 
-		<div class="row no-gutters" id="MesCompetences">
-			<img class="col-lg-6 img-fluid" src="assets/images/back-skill.jpg" alt="Photo by Brett Sayles from Pexels">
-				<div class="col-lg-6 my-auto showcase-text pr-5 pl-5">
-
-					<div class="row">
-						<div class="col-md-6">
-
-							<div class="progress-wrap">
-
-								<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">90%</span></h3>
-
-								<div class="progress">
-									<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-									 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="progress-wrap">
-
-								<h3><span class="name-left">Javascript</span><span class="value-right">60%</span></h3>
-
-								<div class="progress">
-									<div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-									 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="progress-wrap">
-
-								<h3><span class="name-left">PHP</span><span class="value-right">75%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-									 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-
-									</div>
-
-								</div>
-							</div>
-
-							<div class="progress-wrap">
-
-								<h3><span class="name-left">MySQL</span><span class="value-right">60%</span></h3>
-								<div class="progress">
-
-									<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-									 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-
-							<div class="progress-wrap">
-
-								<h3><span class="name-left">Design</span><span class="value-right">50%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-									 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-
-									</div>
-
-								</div>
-							</div>
-
-							<div class="progress-wrap">
-
-								<h3><span class="name-left">Python</span><span class="value-right">65%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-									 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-
-									</div>
-
-								</div>
-							</div>
-
-							<div class="progress-wrap">
-
-								<h3><span class="name-left">Windows Server 2019</span><span class="value-right">40%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-									 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row no-gutters shadow-sm" id="MaFormation">
-			<img class="col-lg-6 order-lg-2 img-fluidf" src="assets/images/back-learn.jpg" alt="Photo by Startup Stock Photos from Pexels">
-				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+				<?php } ?>
 
 
-					<?php foreach ($formations as $formation) { ?>
-						<div class="row justify-content-between align-items-center mb-3">
-
-							<p><strong><?= $formation->annee ?> : </strong><?= htmlspecialchars($formation->contenu) ?></p>
-							<img class="logo" src="<?= $formation->img_url ?>" alt="<?= $formation->img_alt ?>"/>
-
-						</div>
-
-					<?php } ?>
-
-
-				</div>
 			</div>
 		</div>
 	</div>
 
+	<div class="row no-gutters" id="MesCompetences">
+
+		<img class="col-lg-6 img-fluid" src="assets/images/back-skill.jpg" alt="Photo by Brett Sayles from Pexels">
+		<div class="col-lg-6 my-auto showcase-text pr-5 pl-5">
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="progress-wrap">
+
+						<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">90%</span></h3>
+
+						<div class="progress">
+
+							<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+							 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="progress-wrap">
+
+						<h3><span class="name-left">Javascript</span><span class="value-right">60%</span></h3>
+
+						<div class="progress">
+
+							<div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+							 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="progress-wrap">
+
+						<h3><span class="name-left">PHP</span><span class="value-right">75%</span></h3>
+						<div class="progress">
+
+							<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+							 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="progress-wrap">
+
+						<h3><span class="name-left">MySQL</span><span class="value-right">60%</span></h3>
+						<div class="progress">
+
+							<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+							 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+							</div>
+
+						</div>
+
+					</div>
+
+				</div> <!-- Fin première colonne -->
+
+				<div class="col-md-6">
+
+					<div class="progress-wrap">
+
+						<h3><span class="name-left">Design</span><span class="value-right">50%</span></h3>
+						<div class="progress">
+
+							<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
+							 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="progress-wrap">
+
+						<h3><span class="name-left">Python</span><span class="value-right">65%</span></h3>
+						<div class="progress">
+
+							<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+							 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="progress-wrap">
+
+						<h3><span class="name-left">Windows Server 2019</span><span class="value-right">40%</span></h3>
+						<div class="progress">
+
+							<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+							 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+							</div>
+
+						</div>
+
+					</div>
+
+				</div> <!-- Fin deuxième colonne -->
+
+			</div> <!-- Fin flex row -->
+
+		</div>
+
+	</div> <!-- Fin mes compétences -->
+
+
+	<div class="row no-gutters shadow-sm" id="MaFormation">
+
+		<img class="col-lg-6 order-lg-2 img-fluidf" src="assets/images/back-learn.jpg" alt="Photo by Startup Stock Photos from Pexels">
+		<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+
+			<?php foreach ($formations as $formation) { ?>
+			<div class="row justify-content-between align-items-center mb-3">
+
+				<p><strong><?= $formation->annee ?> : </strong><?= htmlspecialchars($formation->contenu) ?></p>
+				<img class="logo" src="<?= $formation->img_url ?>" alt="<?= $formation->img_alt ?>"/>
+
+			</div>
+
+			<?php } ?>
+
+
+		</div>
+	</div>
+
 </section>
+
 <section>
+
 	<div class="row m-0">
+
 		<?php if($recommandations) { foreach ($recommandations as $recommandation) { ?>
 		<div class="col-lg-6 mx-auto">
 
 			<!-- CUSTOM BLOCKQUOTE -->
 			<blockquote class="blockquote blockquote-custom bg-white p-5 shadow m-5">
+
 				<div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
 				<p class="mb-0 mt-2 font-italic">"<?= $recommandation->recommandation ?>"</p>
+
 				<footer class="blockquote-footer pt-4 mt-4 border-top"> <?= $recommandation->use_pseudo ?>
 				</footer>
+
 			</blockquote><!-- END -->
 
 		</div>
 		<?php }
 		} ?>
+
 	</div>
+
 </section>
-
-
-
-
-
-
-

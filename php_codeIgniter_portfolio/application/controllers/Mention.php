@@ -13,15 +13,9 @@ class Mention extends MY_Controller {
 	public function index() {
 
 
-		/*$this->data['css'] = $this->layout->add_css(array(
-
-		));*/
-
 		// Chargement des JS
 		$this->data['js'] = $this->layout->add_js(array(
 			'assets/js/nav'
-
-
 
 		));
 

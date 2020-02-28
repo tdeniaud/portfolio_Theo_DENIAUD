@@ -35,13 +35,14 @@ class Panel extends MY_Controller {
         // Chargement de la vue
         $this->data['subview'] = 'front_office/panel/main';
 
-
+		// Affichage des statistiques
 		$this->data['nbMessages'] = $this->contentManager->getContent("COUNT(*) as messages","Message",null,null,"row");
 		$this->data['nbRecommandations'] = $this->contentManager->getContent("COUNT(*) as recommandations","recommandation",null,null,"row");
 		$this->data['nbUsers'] = $this->contentManager->getContent("COUNT(*) as users","users",null,null,"row");
 
-		$this->data['recommandations'] = $this->contentManager->getContent("*","recommandation","etat","A");
 
+		// Affichage des tables de la bdd
+		$this->data['recommandations'] = $this->contentManager->getContent("*","recommandation","etat","A");
 
 		$this->data['users'] = $this->userManager->getUser('*');
 
@@ -72,13 +73,13 @@ class Panel extends MY_Controller {
 
 			header('Content-type:application/json');
 			echo json_encode(array(
-				'error' => "Un problème est survenue"
+				'error' => "Un problème est survenu"
 			));
 
 		} else {
 
 			$this->data['user'] = $this->userManager->getUser('*', 'id', $this->input->post('user_id'), $returnType = 'row');
-			$view = $this->load->view('front_office/panel/form_edit', $this->data, true); // boolean true pour permet de mettre la view dans une variable
+			$view = $this->load->view('front_office/panel/form_edit', $this->data, true); // boolean true permettant de mettre la view dans une variable
 
 			//renvoie en JSON succes + view
 			header('Content-type:application/json');
@@ -102,17 +103,17 @@ class Panel extends MY_Controller {
 		$this->form_validation->set_rules($rulesArray);
 
 		if ($this->form_validation->run() === FALSE) {
-			//echo 'Erreur';
+
 			header('Content-type:application/json');
 			echo json_encode(array(
-				'error' => "Un problème est survenue"
+				'error' => "Un problème est survenu"
 			));
 
 		} else {
 
 			$this->data['user'] = $this->userManager->getUser('*', 'id', $this->input->post('user_id'), $returnType = 'row');
 
-			$view = $this->load->view('front_office/panel/form_delete', $this->data, true); // boolean true pour permet de mettre la view dans une variable
+			$view = $this->load->view('front_office/panel/form_delete', $this->data, true);
 
 			header('Content-type:application/json');
 			echo json_encode(array(
@@ -222,8 +223,6 @@ class Panel extends MY_Controller {
 		$dataWhere = array(
 			'id' => $this->input->post('reco_id')
 		);
-
-
 
 		$this->contentManager->updateContent('recommandation',$dataUpdate,$dataWhere);
 		echo json_encode(array(

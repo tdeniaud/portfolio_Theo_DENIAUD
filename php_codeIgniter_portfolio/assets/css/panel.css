@@ -13,6 +13,7 @@
 	width: 85% !important;
 }
 
+/* Position lien sidebar */
 .top25 {
 	position: relative;
 	top: 25%;
@@ -37,12 +38,10 @@ a.nav-link.row.text-white {
 	margin: 0;
 }
 
-
 svg.svg-inline--fa.fa-male.fa-w-6.text-white,
 svg.svg-inline--fa.fa-check.fa-w-16.text-white {
 	width: 2em;
 }
-
 
 .no-margin {
 	margin: 0;

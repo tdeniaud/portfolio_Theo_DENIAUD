@@ -1,4 +1,4 @@
-
+/* Fonction de modification navbar au défilement de la page */
 $(window).trigger('scroll');
 $(window).on('scroll', function () {
 	var pixels = 50;

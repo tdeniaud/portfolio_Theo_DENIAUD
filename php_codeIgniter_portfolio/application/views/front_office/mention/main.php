@@ -210,7 +210,4 @@
 		Tout litige en relation avec l’utilisation du site&nbsp;<a href="https://theodeniaud.fr">https://theodeniaud.fr</a>&nbsp;est soumis au droit français.
 		En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de </p>
 
-
-
-
-</div>
+</div> <!-- Fin bloc container -->

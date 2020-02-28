@@ -12,12 +12,13 @@ class Home extends MY_Controller {
 
 	public function index() {
 
-
+		// Affichage des données CV
 		$experiences = $this->contentManager->getContent("*","CV","section","XP");
 		$this->data['experiences'] = $experiences;
 		$formations = $this->contentManager->getContent("*","CV","section","FORMATION");
 		$this->data['formations'] = $formations;
 
+		// Afficher les recommandations validées
 		$this->data['recommandations'] = $this->contentManager->getRecommandation("*","etat","V");
 
 

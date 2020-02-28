@@ -1,21 +1,25 @@
 <div class="d-flex row no-margin">
 
 	<ul class="d-flex flex-column bg-dark sidebar">
+
 		<li class="top25">
 			<a class="nav-link row text-white" href="#">
 				<i class="fas fa-male text-white"></i>
-				<span>Utilisateur</span></a>
-
+				<span>Utilisateur</span>
+			</a>
 		</li>
 
 		<li class="top26">
 			<a class="nav-link row text-white" href="#">
 				<i class="fas fa-check text-white"></i>
-				<span>Recommandation</span></a>
+				<span>Recommandation</span>
+			</a>
 		</li>
+
 	</ul>
 
 	<div class="d-flex flex-column po85">
+
 		<?php $this->load->view('components_home/header_logged') ?>
 		<div class="container-fluid mt-5">
 
@@ -24,7 +28,6 @@
 				<h1 class="h3 mb-0 ">Tableau de bord</h1>
 
 			</div>
-
 
 			<div class="row w-100">
 
@@ -37,9 +40,11 @@
 									<div class="h5 mb-0 font-weight-bold"><?php echo $nbUsers->users ?></div>
 
 								</div>
+
 								<div class="col-auto">
 									<i class="fas fa-male"></i>
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -54,9 +59,11 @@
 									<div class="h5 mb-0 font-weight-bold"><?php echo $nbRecommandations->recommandations ?></div>
 
 								</div>
+
 								<div class="col-auto">
 									<i class="fas fa-check"></i>
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -71,23 +78,19 @@
 									<div class="h5 mb-0 font-weight-bold"><?php echo $nbMessages->messages ?></div>
 
 								</div>
+
 								<div class="col-auto">
 									<i class="fas fa-envelope"></i>
 								</div>
+
 							</div>
 						</div>
 					</div>
 				</div>
 
-
-
-
-
-			</div>
-
+			</div> <!-- Fin ligne statistiques -->
 
 			<div class="row">
-
 
 				<div class="col-xl-8 col-lg-7">
 					<div class="card shadow mb-4">
@@ -102,41 +105,45 @@
 							<div class="row">
 								<div class="col-12 ml-1">
 									<div class="table-responsive">
+
 										<table class="table table-hover table-grey-dark-plus">
 											<thead>
-											<tr>
-												<th scope="col">id</th>
-												<th scope="col">Pseudo</th>
-												<th scope="col">Email</th>
-												<th scope="col">Créé le</th>
-												<th scope="col">Màj</th>
-												<th scope="col">Action</th>
-											</tr>
+												<tr>
+													<th scope="col">id</th>
+													<th scope="col">Pseudo</th>
+													<th scope="col">Email</th>
+													<th scope="col">Créé le</th>
+													<th scope="col">Màj</th>
+													<th scope="col">Action</th>
+												</tr>
 											</thead>
+
 											<tbody>
-											<?php if($users){
-												foreach ($users as $user) { ?>
-													<tr id="div-user-<?php echo $user->id ?>" style="font-size: 18px;">
-														<th scope="row"><?= $user->id ?></th>
-														<td class="align-middle"><?= $user->use_pseudo ?></td>
-														<td class="align-middle"><?= $user->use_email ?></td>
-														<td class="align-middle"><?= $user->created_at ?></td>
-														<td class="align-middle"><?= $user->updated_at ?></td>
-														<td class="align-middle">
+											<?php if($users){ foreach ($users as $user) { ?>
+												<tr id="div-user-<?php echo $user->id ?>" style="font-size: 18px;">
 
-															<button type="button" class="btn btn-dark btn-show-user-edit" data-user="<?php echo $user->id; ?>">
-																<i class="fas fa-user-cog"></i>
-															</button>
+													<th scope="row"><?= $user->id ?></th>
+													<td class="align-middle"><?= $user->use_pseudo ?></td>
+													<td class="align-middle"><?= $user->use_email ?></td>
+													<td class="align-middle"><?= $user->created_at ?></td>
+													<td class="align-middle"><?= $user->updated_at ?></td>
+													<td class="align-middle">
 
-															<button type="button" class="btn btn-dark btn-show-user-delete" data-user="<?php echo $user->id; ?>">
-																<i class="far fa-trash-alt"></i>
-															</button>
-														</td>
-													</tr>
-												<?php }
+													<button type="button" class="btn btn-dark btn-show-user-edit" data-user="<?php echo $user->id; ?>">
+														<i class="fas fa-user-cog"></i>
+													</button>
+
+													<button type="button" class="btn btn-dark btn-show-user-delete" data-user="<?php echo $user->id; ?>">
+														<i class="far fa-trash-alt"></i>
+													</button>
+													</td>
+												</tr>
+											<?php }
 											} ?>
 											</tbody>
+
 										</table>
+
 									</div>
 								</div>
 							</div>
@@ -156,15 +163,10 @@
 								</div>
 							</div>
 
+						</div> <!-- Fin card-body -->
 
-
-
-
-						</div>
 					</div>
-
 				</div>
-
 
 				<div class="col-xl-8 col-lg-7">
 					<div class="card shadow mb-4">
@@ -180,7 +182,9 @@
 								<div class="col-12 ml-1">
 									<div class="table-responsive">
 										<table class="table table-hover table-grey-dark-plus">
+
 											<thead>
+
 											<tr>
 												<th scope="col">id</th>
 												<th scope="col">Contact</th>
@@ -188,7 +192,9 @@
 
 												<th scope="col">Màj</th>
 											</tr>
+
 											</thead>
+
 											<tbody>
 											<?php if($messages){ foreach ($messages as $message) { ?>
 												<th scope="row"><?= $message->id ?></th>
@@ -200,7 +206,9 @@
 											<?php }
 											} ?>
 											</tbody>
+
 										</table>
+
 									</div>
 								</div>
 							</div>
@@ -220,14 +228,11 @@
 								</div>
 							</div>
 
+						</div> <!-- Fin card-body -->
 
-
-
-
-						</div>
 					</div>
-
 				</div>
+
 				<div class="col-xl-8 col-lg-7">
 					<div class="card shadow mb-4">
 
@@ -241,8 +246,11 @@
 							<div class="row">
 								<div class="col-12 ml-1">
 									<div class="table-responsive">
+
 										<table class="table table-hover table-grey-dark-plus">
+
 											<thead>
+
 											<tr>
 												<th scope="col">id</th>
 												<th scope="col">Users</th>
@@ -250,12 +258,13 @@
 												<th scope="col">Action</th>
 
 											</tr>
+
 											</thead>
+
 											<tbody>
 
-											<?php if($recommandations) {
-												foreach ($recommandations as $recommandation) { ?>
-													<tr>
+											<?php if($recommandations) { foreach ($recommandations as $recommandation) { ?>
+												<tr>
 													<th scope="row"><?= $recommandation->id ?></th>
 													<td class="align-middle"><?= $recommandation->id_user ?></td>
 													<td class="align-middle"><?= $recommandation->recommandation ?></td>
@@ -268,12 +277,17 @@
 														<button type="button" class="btn btn-dark recommandation-delete" data-reco="<?php echo $recommandation->id; ?>">
 															<i class="fas fa-times"></i>
 														</button>
+
 													</td>
-													</tr>
-												<?php }
+
+												</tr>
+											<?php }
 											} ?>
+
 											</tbody>
+
 										</table>
+
 									</div>
 								</div>
 							</div>
@@ -293,26 +307,16 @@
 								</div>
 							</div>
 
+						</div> <!-- Fin card-body -->
 
-
-
-
-						</div>
 					</div>
-
 				</div>
 
-			</div>
+			</div> <!-- Fin du bloc row -->
 
 
-
-
-		</div>
-
+		</div> <!-- Fin du bloc container => dashboard -->
 
 	</div>
 
-
-
-
-</div>
+</div> <!-- Fin bloc main -->

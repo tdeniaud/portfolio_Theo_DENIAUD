@@ -1,16 +1,12 @@
-
 <div class="showcase bg-light pb-5 mb-6">
 
 	<div class="row no-gutters shadow">
 
 		<img class="col-lg-6" src="assets/images/signin.jpg" alt="Photo by Tirachard Kumtanom from Pexels"/>
 
-		<div class="col-lg-6 my-auto showcase-text">
-			
+		<div class="col-lg-6 my-auto showcase-text"> <!-- Début bloc formulaire -->
 
 			<div class="login">
-
-
 
 				<form id="form-signin">
 
@@ -27,9 +23,8 @@
 						<input type="password" id="loginPassword" name="loginPassword" class="form-control" placeholder="Mot de Passe" required>
 
 					</div>
+
 					<p class="field-error mb-2" data-field="error_general"></p>
-
-
 
 					<button class="mt-4" type="submit">Connexion</button>
 
@@ -39,29 +34,23 @@
 
 			<div class="register" style="display: none">
 
-
 				<form id="form-signup">
 
+					<div class="col-md-6">
 
+						<label for="registerPseudo" class="sr-only">Pseudo</label>
+						<input type="text" id="registerPseudo" name="registerPseudo" class="form-control mb-2" placeholder="Pseudo" required autofocus>
+						<p class="field-error" data-field="registerPseudo"></p>
 
-						<div class="col-md-6">
+					</div>
 
-							<label for="registerPseudo" class="sr-only">Pseudo</label>
-							<input type="text" id="registerPseudo" name="registerPseudo" class="form-control mb-2" placeholder="Pseudo" required autofocus>
-							<p class="field-error" data-field="registerPseudo"></p>
+					<div class="col-md-6">
 
-						</div>
+						<label for="registerEmail" class="sr-only">Email</label>
+						<input type="email" id="registerEmail" name="registerEmail" class="form-control mb-2" placeholder="Email" required autofocus>
+						<p class="field-error" data-field="registerEmail"></p>
 
-
-						<div class="col-md-6">
-
-							<label for="registerEmail" class="sr-only">Email</label>
-							<input type="email" id="registerEmail" name="registerEmail" class="form-control mb-2" placeholder="Email" required autofocus>
-							<p class="field-error" data-field="registerEmail"></p>
-
-						</div>
-
-
+					</div>
 
 					<div class="col-md-6">
 						<label for="registerPassword" class="sr-only">Mot de Passe</label>
@@ -69,6 +58,7 @@
 						<p class="field-error" data-field="registerPassword"></p>
 
 					</div>
+
 					<div class="col-md-6">
 						<label for="registerPasswordConfirm" class="sr-only">Confirmer mot de Passe</label>
 						<input type="password" id="registerPasswordConfirm" name="registerPasswordConfirm" class="form-control" placeholder="Confirmation" required>
@@ -78,19 +68,18 @@
 
 					<button class="mt-4" type="submit">Inscription</button>
 
+				</form>
 
-			</form>
+			</div>
 
-		</div>
 			<div class="col-4">
 				<a class="links switch text-dark" href="#">S'inscrire</a>
 			</div>
 
-	</div>
-
-
+		</div> <!-- Fin bloc formulaire -->
 
 	</div>
+
 </div>
 
 
