@@ -7,6 +7,7 @@
 
 <div id="loader-wrapper">
 	<div id="loader"></div>
+	<div class="animation-loading" id="loader-progress" style="z-index: 1001;"></div>
 
 	<div class="loader-section section-left"></div>
 	<div class="loader-section section-right"></div>

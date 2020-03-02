@@ -3,6 +3,11 @@
 	var nav = $('nav');
 	var navHeight = nav.outerHeight();
 
+	/* Fonction qui force le retour en haut au refresh de la page */
+	$(window).on('beforeunload', function() {
+		$(window).scrollTop(0,0);
+	});
+
 
 	// Cacher et montrer le boutton scroll-to-top
 	$(document).scroll(function() {

@@ -8,6 +8,10 @@ $(document).ready(function() {
 	}, 500);
 
 	setTimeout(function(){
+		$('#loader-progress').css('display','none')
+	}, 1000);
+
+	setTimeout(function(){
 		$('#mainNav').removeClass('display-none');
 		$('#loader-wrapper').css('display','none');
 	}, 1400);
